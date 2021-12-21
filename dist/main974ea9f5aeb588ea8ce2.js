@@ -22,13 +22,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/Prompt-Regular.ttf */ "./src/fonts/Prompt-Regular.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../img/Test-Logo.svg */ "./src/img/Test-Logo.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/Montserrat-Regular.ttf */ "./src/fonts/Montserrat-Regular.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/Montserrat-Bold.ttf */ "./src/fonts/Montserrat-Bold.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: generalFont;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n}\n\nhtml {\n  font-family: generalFont;\n}\n\nh1 {\n  color: darkcyan;\n}\n\n.container__subtitle {\n  color: darkslateblue;\n  display: block;\n  height: 140px;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\n}", "",{"version":3,"sources":["webpack://./src/styles/_fonts.scss","webpack://./src/styles/index.scss","webpack://./src/styles/_header.scss","webpack://./src/styles/_global.scss"],"names":[],"mappings":"AAAA;EACI,wBAAA;EACA,+DAAA;ACCJ;ACHA;EACI,aAAA;EACA,2BAAA;ADKJ;;ACHA;EACI,YAAA;ADMJ;;AENA;EACI,wBAAA;AFSJ;;AENA;EACI,eARW;AFiBf;;AENI;EACI,oBAXS;EAYT,cAAA;EACA,aAAA;EACA,mDAAA;AFSR","sourcesContent":["@font-face {\r\n    font-family: generalFont;\r\n    src: url(\"../fonts/Prompt-Regular.ttf\")format(\"truetype\");\r\n}","@font-face {\n  font-family: generalFont;\n  src: url(\"../fonts/Prompt-Regular.ttf\") format(\"truetype\");\n}\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n}\n\nhtml {\n  font-family: generalFont;\n}\n\nh1 {\n  color: darkcyan;\n}\n\n.container__subtitle {\n  color: darkslateblue;\n  display: block;\n  height: 140px;\n  background: url(\"../img/Test-Logo.svg\");\n}",".header__container{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n}\r\n.header__logo{\r\n    margin: 30px;\r\n}","@use'header';\r\n\r\n$primaryColor: darkcyan;\r\n$secondaryColor: darkslateblue;\r\n\r\nhtml {\r\n    font-family: generalFont;\r\n}\r\n\r\nh1 {\r\n    color: $primaryColor;\r\n}\r\n.container{\r\n    &__subtitle {\r\n        color:$secondaryColor;\r\n        display: block;\r\n        height: 140px;\r\n        background: url(\"../img/Test-Logo.svg\");\r\n    }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: generalFont;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\nhtml {\n  font-family: generalFont;\n}\n\n.main__container {\n  display: flex;\n  justify-content: space-between;\n}\n\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n}", "",{"version":3,"sources":["webpack://./src/styles/_fonts.scss","webpack://./src/styles/index.scss","webpack://./src/styles/_global.scss","webpack://./src/styles/header/_header.scss"],"names":[],"mappings":"AAAA;EACI,wBAAA;EACA,2HAAA;ACCJ;ACHA;EACI,wBAAA;ADKJ;;ACFA;EACI,aAAA;EACA,8BAAA;ADKJ;;AEXA;EACI,aAAA;EACA,2BAAA;AFcJ;;AEZA;EACI,YAAA;AFeJ","sourcesContent":["@font-face {\r\n    font-family: generalFont;\r\n    src: url(\"../fonts/Montserrat-Regular.ttf\")format(\"truetype\"),\r\n         url(\"../fonts/Montserrat-Bold.ttf\")format(\"truetype\");\r\n}\r\n","@font-face {\n  font-family: generalFont;\n  src: url(\"../fonts/Montserrat-Regular.ttf\") format(\"truetype\"), url(\"../fonts/Montserrat-Bold.ttf\") format(\"truetype\");\n}\nhtml {\n  font-family: generalFont;\n}\n\n.main__container {\n  display: flex;\n  justify-content: space-between;\n}\n\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n}","html {\r\n    font-family: generalFont;\r\n}\r\n\r\n.main__container{\r\n    display:flex;\r\n    justify-content: space-between;\r\n}",".header__container{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n}\r\n.header__logo{\r\n    margin: 30px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11477,25 +11477,25 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/fonts/Prompt-Regular.ttf":
-/*!**************************************!*\
-  !*** ./src/fonts/Prompt-Regular.ttf ***!
-  \**************************************/
+/***/ "./src/fonts/Montserrat-Bold.ttf":
+/*!***************************************!*\
+  !*** ./src/fonts/Montserrat-Bold.ttf ***!
+  \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/20f7485906118ce5f6e3.ttf";
+module.exports = __webpack_require__.p + "assets/079ca05d3ded9bc107ab.ttf";
 
 /***/ }),
 
-/***/ "./src/img/Test-Logo.svg":
-/*!*******************************!*\
-  !*** ./src/img/Test-Logo.svg ***!
-  \*******************************/
+/***/ "./src/fonts/Montserrat-Regular.ttf":
+/*!******************************************!*\
+  !*** ./src/fonts/Montserrat-Regular.ttf ***!
+  \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "assets/e904a0dc7b4793ae71a1.svg";
+module.exports = __webpack_require__.p + "assets/3cd786652b8a2e9d41f2.ttf";
 
 /***/ })
 
@@ -11649,4 +11649,4 @@ console.log("it works");
 
 /******/ })()
 ;
-//# sourceMappingURL=main8f34f15884b9e9408ca4.js.map
+//# sourceMappingURL=main974ea9f5aeb588ea8ce2.js.map
