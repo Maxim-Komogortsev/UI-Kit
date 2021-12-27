@@ -5,40 +5,54 @@ html
     include pug/_head
     body
         include pug/header
-        .main__container
+        section
             .container
                 .color__block 
-                    div(class="color__rectangle dark-100") 
+                    .color__rectangle.dark-100
                     .color__text 
-                        h4 Dark Shade 100%
+                        h3 Dark Shade 100%
                         p #1F2041
                 .color__block 
-                    div(class="color__rectangle dark-75") 
+                    .color__rectangle.dark-75 
                     .color__text 
-                        h4 Dark Shade 75%
+                        h3 Dark Shade 75%
                         p #1F2041
                 .color__block 
-                    div(class="color__rectangle dark-50") 
+                    .color__rectangle.dark-50 
                     .color__text 
-                        h4 Dark Shade 50%
+                        h3 Dark Shade 50%
                         p #1F2041
                 .color__block 
-                    div(class="color__rectangle dark-25") 
+                    .color__rectangle.dark-25 
                     .color__text 
-                        h4 Dark Shade 25%
+                        h3 Dark Shade 25%
                         p #1F2041
                 .color__block
-                    div(class="color__rectangle dark-5") 
+                    .color__rectangle.dark-5
                     .color__text 
-                        h4 Dark Shade 5%
+                        h3 Dark Shade 5%
                         p #1F2041
                 .color__block
-                    div(class="color__rectangle purple") 
+                    .color__rectangle.purple 
                     .color__text 
-                        h4 Purple
+                        h3 Purple
                         p #BC9CFF
                 .color__block
-                    div(class="color__rectangle green") 
+                    .color__rectangle.green 
                     .color__text 
-                        h4 Green
+                        h3 Green
                         p #6FCF97
+            .container
+                        .title
+                            .title__label-1 H1  
+                            h1.title__text-1 This one is the sub-section or widget title
+                        .title
+                            .title__label-2 H2 
+                            h2.title__text-2 Next one is the item title inside widgets   
+                        .title
+                            .title__label-3 H3 
+                            h3.title__text-3 this is the label or cta text
+                        .title 
+                            .title__label-p Body 
+                            p.title__text-p This is the body text which is used for most of the design, like paragraphs, lists etc.
+                        
