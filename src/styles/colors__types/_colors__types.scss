@@ -1,0 +1,139 @@
+@import "../mixins/text-size";
+
+.dark{
+    &-100{
+        background: #1F2041;
+    }
+    &-75{
+        background: rgba(31, 32, 65, 0.75)
+    }
+    &-50 {
+        background: rgba(31, 32, 65, 0.50)
+    }
+    &-25{
+        background: rgba(31, 32, 65, 0.50)
+    }
+    &-5{
+        background: rgba(31, 32, 65, 0.05)
+    }
+}
+
+.purple{
+    background: #BC9CFF;
+}
+
+.green{
+    background: #6FCF97;
+}
+
+.color__block {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.color__block:first-child{
+    margin-top: 0;
+}
+
+.color__rectangle{
+    height: 70px;
+    width: 70px;
+    border-radius: 6px;
+}
+
+.color__text{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+
+    h3 {
+        font-weight: bold;
+        margin: 0;
+    }
+
+    p {
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.title{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 500px;
+    margin-top: 50px;
+    :first-child {
+        margin-top: 0;
+    }
+}
+
+.title__label {    
+    &-1{
+        @include text-size(29px, 400, 29px);
+        color:rgba(31, 32, 65, 0.25);
+        width: 37px;
+        text-align: right;
+        margin-right: 30px;
+    }
+    &-2 {
+        @include text-size(19px, 400, 23px);
+        color:rgba(31, 32, 65, 0.25); 
+        width: 37px;
+        text-align: right;
+        margin-right: 30px;
+    }
+    
+    &-3 {
+        @include text-size(12px, 400, 15px);
+        color:rgba(31, 32, 65, 0.25);
+        width: 37px;
+        text-align: right;
+        margin-right: 30px;
+    }
+    &-p {
+        @include text-size(14px, 400, 24px);
+        color:rgba(31, 32, 65, 0.25);
+        width: 37px;
+        text-align: right;
+        margin-right: 30px;
+    }
+}
+
+%for-text{
+    &_1 {
+        @include text-size(29px, 700, 29px);
+        margin: 0;
+    }
+    &_2 {
+        @include text-size(19px, 700, 23px);
+        margin: 0;
+    }
+    &_3 {
+        text-transform: uppercase;
+        @include text-size(14px, 700, 15px);
+        margin: 0;
+    }
+    &_p {
+        @include text-size(14px, 400, 24px);
+        color:rgba(31, 32, 65, 0.25);
+        margin: 0;
+    }
+}
+
+.title__text{
+    &_1 {
+        @extend %for-text_1;
+    }
+    &_2 {
+        @extend %for-text_2;
+    }
+    &_3 {
+        @extend %for-text_3;
+    }
+    &_p {
+       @extend %for-text_p;
+    }
+}
+

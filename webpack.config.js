@@ -14,18 +14,22 @@ module.exports = {
     output: {
       filename: '[name][contenthash].js',
       assetModuleFilename : "assets/[hash][ext][query]",
-      clean : true
+      clean : true,
       // path: path.resolve(__dirname, './dist'),
-      // filename: 'main.js',
+      // filename: '[name][contenthash].js',
     },
     devtool: 'source-map',
     plugins: [
       new MiniCssExtractPlugin({
         filename : '[name].[contenthash].css'
       }),
+      // new HtmlWebpackPlugin({
+      //   name: 'ColorsTypes.html',
+      //   template: 'src/pug/ColorsTypes.pug'}),
       new HtmlWebpackPlugin({
-      template: 'src/index.pug'
-    })],
+        name: 'formElem.html',
+        template: 'src/pug/formElem.pug'})
+    ],
     module: {
       rules: [
         {

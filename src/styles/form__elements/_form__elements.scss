@@ -1,0 +1,11 @@
+@use 'elements/input/input.scss';
+@use 'elements/dropdown/dropdown.scss';
+
+.container{
+    .form__element{
+        margin-top:20px;
+        :first-child{
+            margin-top: 0;
+        }
+    }
+}

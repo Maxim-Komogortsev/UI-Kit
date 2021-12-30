@@ -1,144 +1,21 @@
 html {
     font-family: generalFont;
     color: #1F2041;
-}
-// COLORS
-.dark-100{
-    background: #1F2041;
-}
-.dark-75{
-    background: rgba(31, 32, 65, 0.75);
-}
-.dark-50{
-    background: rgba(31, 32, 65, 0.5);
-}
-.dark-25{
-    background: rgba(31, 32, 65, 0.25);
-}
-.dark-25{
-    background: rgba(31, 32, 65, 0.25);
-}
-.dark-5{
-    background: rgba(31, 32, 65, 0.05);
-}
-.purple{
-    background: #BC9CFF;
-}
-.green{
-    background: #6FCF97;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .container{
     display:flex;
     flex-direction: column;
-    ul {
-        list-style: none;
-    }
 }
-//COLOR BLOCK
+
 section{
     display:flex;
     justify-content: space-evenly;
     margin-top: 37px;
 }
 
-.color__block {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
 
-.color__block:first-child{
-    margin-top: 0;
-}
 
-.color__rectangle{
-    height: 70px;
-    width: 70px;
-    border-radius: 6px;
-}
-
-.color__text{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 40px;
-    // width: 180px;
-
-    h3 {
-        font-weight: bold;
-        margin: 0;
-    }
-
-    p {
-        font-weight: 400;
-        margin: 0;
-    }
-}
-
-//LIST
-@mixin text-size($size, $weight, $height) {
-    font: {
-        size: $size;
-        weight: $weight;
-    }
-    line-height: $height;
-}
-.title{
-    display: flex;
-    justify-content: space-around;
-    max-width: 500px;
-    margin-top: 50px
-}
-.title:first-child{
-    margin-top: 0;
-}
-.title__label {    
-    &-1{
-        @include text-size(29px, 400, 29px);
-        color:rgba(31, 32, 65, 0.25);
-        width: 37px;
-        text-align: right;
-    }
-    &-2 {
-        @include text-size(19px, 400, 23px);
-        color:rgba(31, 32, 65, 0.25); 
-        width: 37px;
-        text-align: right;
-    }
-    
-    &-3 {
-        @include text-size(12px, 400, 15px);
-        color:rgba(31, 32, 65, 0.25);
-        width: 37px;
-        text-align: right;
-    }
-    &-p {
-        @include text-size(14px, 400, 24px);
-        color:rgba(31, 32, 65, 0.25);
-        width: 37px;
-        text-align: right;
-    }
-}
-
-.title__text{
-    &-1 {
-        @include text-size(29px, 700, 29px);
-        margin: auto auto auto 30px;
-    }
-    &-2 {
-        @include text-size(19px, 700, 23px);
-        margin: auto auto auto 30px;
-    }
-    &-3 {
-        text-transform: uppercase;
-        @include text-size(12px, 700, 15px);
-        margin: auto auto auto 30px;
-    }
-    &-p {
-        @include text-size(14px, 400, 24px);
-        color:rgba(31, 32, 65, 0.25);
-        margin: auto auto auto 30px;
-    }
-}
 
