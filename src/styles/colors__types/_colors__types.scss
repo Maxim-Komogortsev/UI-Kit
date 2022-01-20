@@ -112,12 +112,12 @@
     }
     &_3 {
         text-transform: uppercase;
-        @include text-size(14px, 700, 15px);
+        @include text-size(12px, 700, 15px);
         margin: 0;
     }
     &_p {
         @include text-size(14px, 400, 24px);
-        color:rgba(31, 32, 65, 0.25);
+        color:rgba(31, 32, 65, 0.75);
         margin: 0;
     }
 }

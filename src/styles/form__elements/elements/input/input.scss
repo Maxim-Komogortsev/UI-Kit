@@ -1,36 +1,75 @@
-.input__title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20px;
-}
-
-.input__area{
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 4px;
-    height: 44px;
-    width: 320px;
-    padding-left: 15px;
-    margin-top: 3px;
-
-    &::placeholder{
-    color: rgba(31, 32, 65, 0.25);
-    font-weight: 400;
-    font-size: 14px;
+@import "/src/styles/colors__types/_colors__types";
+@import "/src/styles/mixins/text-size";
+.field {
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15px;
+        .title__text_p{
+            color: rgba(31, 32, 65, 0.5);
+            @include text-size(12px, 400, 15px);
+        }
     }
 
-    &:hover{
-        border: 1px solid rgba(31, 32, 65, 0.5);
-        color: rgba(31, 32, 65, 0.75);
-        &::placeholder{
-            color: rgba(31, 32, 65, 0.75);
+    &__area{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        height: 42px;
+        width: 318px;
+        margin-top: 5px;
+        input{
+            outline: 0;
+            border: none;
+            margin-left: 15px;
+            &::placeholder{
+                @extend .title__text_p;
+                color:rgba(31, 32, 65, 0.25);
+            }
+        }
+
+        p {
+            margin-left: 15px;
+        }
+
+        img{
+            margin-right: 15px;
+        }
+
+        &:hover{
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            p {
+                color: rgba(31, 32, 65, 0.75);
+            }
         }
     }
 }
-.dropdown{
-    @extend .input__area;
-    &::placeholder{
-        color: rgba(31, 32, 65, 0.75);
+.dropdown-boxfield{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-box{
+    display: inline-block;
+}
+.date-dropdown-small{
+    @extend .field__area;
+    width: 148px;
+}
+
+.date-dropdown-medium{
+    @extend .field__area;
+    width: 264px;
+    
+}
+
+.sub-field{
+    @extend .date-dropdown-medium;
+    
+    p{
+        color:rgba(31, 32, 65, 0.5)
     }
-    background: scroll url('/src/img/expand_more.svg') bottom 5% / 5% no-repeat;
 }
