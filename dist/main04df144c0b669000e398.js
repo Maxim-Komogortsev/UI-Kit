@@ -5,216 +5,9 @@
 /*!**********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
   \**********************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
-// Imports
-
-
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/Montserrat-Regular.ttf */ "./src/fonts/Montserrat-Regular.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/Montserrat-Bold.ttf */ "./src/fonts/Montserrat-Bold.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: generalFont;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\nhtml {\n  font-family: generalFont;\n  color: #1F2041;\n  box-sizing: border-box;\n  margin: 0;\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n}\n\nsection {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 37px;\n}\n\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n  max-width: 48px;\n  max-height: 48px;\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 14px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.title__text_p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  margin: 0;\n}\n\n.input__title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 20px;\n}\n\n.input__area {\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 44px;\n  width: 320px;\n  padding-left: 15px;\n  margin-top: 3px;\n  outline: 0;\n}\n.input__area::-moz-placeholder {\n  color: rgba(31, 32, 65, 0.25);\n  font-weight: 400;\n  font-size: 14px;\n}\n.input__area:-ms-input-placeholder {\n  color: rgba(31, 32, 65, 0.25);\n  font-weight: 400;\n  font-size: 14px;\n}\n.input__area::placeholder {\n  color: rgba(31, 32, 65, 0.25);\n  font-weight: 400;\n  font-size: 14px;\n}\n.input__area:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  color: rgba(31, 32, 65, 0.75);\n}\n.input__area:hover::-moz-placeholder {\n  color: rgba(31, 32, 65, 0.75);\n}\n.input__area:hover:-ms-input-placeholder {\n  color: rgba(31, 32, 65, 0.75);\n}\n.input__area:hover::placeholder {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.dropdown {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 44px;\n  width: 320px;\n  padding-left: 15px;\n  margin-top: 3px;\n}\n.dropdown:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n}\n\n.container .form__element {\n  margin-top: 20px;\n}\n.container .form__element :first-child {\n  margin-top: 0;\n}", "",{"version":3,"sources":["webpack://./src/styles/_fonts.scss","webpack://./src/styles/index.scss","webpack://./src/styles/_global.scss","webpack://./src/styles/header/_header.scss","webpack://./src/styles/colors__types/_colors__types.scss","webpack://./src/styles/mixins/_text-size.scss","webpack://./src/styles/form__elements/elements/input/input.scss","webpack://./src/styles/form__elements/_form__elements.scss"],"names":[],"mappings":"AAAA;EACI,wBAAA;EACA,uLAAA;ACCJ;ACHA;EACI,wBAAA;EACA,cAAA;EACA,sBAAA;EACA,SAAA;ADKJ;;ACFA;EACI,aAAA;EACA,sBAAA;ADKJ;;ACFA;EACI,aAAA;EACA,6BAAA;EACA,gBAAA;ADKJ;;AEpBA;EACI,aAAA;EACA,2BAAA;AFuBJ;;AErBA;EACI,YAAA;EACA,eAAA;EACA,gBAAA;AFwBJ;;AG5BI;EACI,mBAAA;AH+BR;AG7BI;EACI,kCAAA;AH+BR;AG7BI;EACI,iCAAA;AH+BR;AG7BI;EACI,iCAAA;AH+BR;AG7BI;EACI,kCAAA;AH+BR;;AG3BA;EACI,mBAAA;AH8BJ;;AG3BA;EACI,mBAAA;AH8BJ;;AG3BA;EACI,aAAA;EACA,mBAAA;EACA,gBAAA;AH8BJ;;AG3BA;EACI,aAAA;AH8BJ;;AG3BA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AH8BJ;;AG3BA;EACI,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,iBAAA;AH8BJ;AG5BI;EACI,iBAAA;EACA,SAAA;AH8BR;AG3BI;EACI,gBAAA;EACA,SAAA;AH6BR;;AGzBA;EACI,aAAA;EACA,2BAAA;EACA,gBAAA;EACA,gBAAA;AH4BJ;AG3BI;EACI,aAAA;AH6BR;;AGxBI;ECtEI,eDuEmB;ECtEnB,gBDsEyB;ECpE7B,iBDoEkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AH6BR;AG3BI;EC7EI,eD8EmB;EC7EnB,gBD6EyB;EC3E7B,iBD2EkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AH+BR;AG5BI;ECrFI,eDsFmB;ECrFnB,gBDqFyB;ECnF7B,iBDmFkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AHgCR;AG9BI;EC5FI,eD6FmB;EC5FnB,gBD4FyB;EC1F7B,iBD0FkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AHkCR;;AG7BI;ECtGI,eDuGmB;ECtGnB,gBDsGyB;ECpG7B,iBDoGkC;EAC9B,SAAA;AHkCR;AGhCI;EC1GI,eD2GmB;EC1GnB,gBD0GyB;ECxG7B,iBDwGkC;EAC9B,SAAA;AHoCR;AGlCI;EACI,yBAAA;EC/GA,eDgHmB;EC/GnB,gBD+GyB;EC7G7B,iBD6GkC;EAC9B,SAAA;AHsCR;AGpCI;ECnHI,eDoHmB;ECnHnB,gBDmHyB;ECjH7B,iBDiHkC;EAC9B,6BAAA;EACA,SAAA;AHwCR;;AKhKA;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,YAAA;ALmKJ;;AKhKA;EACI,wCAAA;EACA,kBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,UAAA;ALmKJ;AKjKI;EACA,6BAAA;EACA,gBAAA;EACA,eAAA;ALmKJ;AKtKI;EACA,6BAAA;EACA,gBAAA;EACA,eAAA;ALmKJ;AKtKI;EACA,6BAAA;EACA,gBAAA;EACA,eAAA;ALmKJ;AKhKI;EACI,uCAAA;EACA,6BAAA;ALkKR;AKjKQ;EACI,6BAAA;ALmKZ;AKpKQ;EACI,6BAAA;ALmKZ;AKpKQ;EACI,6BAAA;ALmKZ;;AK/JA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,wCAAA;EACA,kBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;ALkKJ;AKjKI;EACI,uCAAA;ALmKR;;AMxMI;EACI,gBAAA;AN2MR;AM1MQ;EACI,aAAA;AN4MZ","sourcesContent":["@font-face {\r\n    font-family: generalFont;\r\n    src: url(\"../fonts/Montserrat-Regular.ttf\")format(\"truetype\"),\r\n         url(\"../fonts/Montserrat-Bold.ttf\")format(\"truetype\"),\r\n         url(\"../fonts/Montserrat-Bold.ttf\")format(\"truetype\");\r\n}\r\n","@font-face {\n  font-family: generalFont;\n  src: url(\"../fonts/Montserrat-Regular.ttf\") format(\"truetype\"), url(\"../fonts/Montserrat-Bold.ttf\") format(\"truetype\"), url(\"../fonts/Montserrat-Bold.ttf\") format(\"truetype\");\n}\nhtml {\n  font-family: generalFont;\n  color: #1F2041;\n  box-sizing: border-box;\n  margin: 0;\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n}\n\nsection {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 37px;\n}\n\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n  max-width: 48px;\n  max-height: 48px;\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 14px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.title__text_p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  margin: 0;\n}\n\n.input__title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 20px;\n}\n\n.input__area {\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 44px;\n  width: 320px;\n  padding-left: 15px;\n  margin-top: 3px;\n  outline: 0;\n}\n.input__area::placeholder {\n  color: rgba(31, 32, 65, 0.25);\n  font-weight: 400;\n  font-size: 14px;\n}\n.input__area:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n  color: rgba(31, 32, 65, 0.75);\n}\n.input__area:hover::placeholder {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.dropdown {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 44px;\n  width: 320px;\n  padding-left: 15px;\n  margin-top: 3px;\n}\n.dropdown:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n}\n\n.container .form__element {\n  margin-top: 20px;\n}\n.container .form__element :first-child {\n  margin-top: 0;\n}","html {\r\n    font-family: generalFont;\r\n    color: #1F2041;\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n}\r\n\r\n.container{\r\n    display:flex;\r\n    flex-direction: column;\r\n}\r\n\r\nsection{\r\n    display:flex;\r\n    justify-content: space-evenly;\r\n    margin-top: 37px;\r\n}\r\n\r\n\r\n\r\n\r\n",".header__container{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n}\r\n.header__logo{\r\n    margin: 30px;\r\n    max-width: 48px;\r\n    max-height: 48px;\r\n}","@import \"../mixins/text-size\";\r\n\r\n.dark{\r\n    &-100{\r\n        background: #1F2041;\r\n    }\r\n    &-75{\r\n        background: rgba(31, 32, 65, 0.75)\r\n    }\r\n    &-50 {\r\n        background: rgba(31, 32, 65, 0.50)\r\n    }\r\n    &-25{\r\n        background: rgba(31, 32, 65, 0.50)\r\n    }\r\n    &-5{\r\n        background: rgba(31, 32, 65, 0.05)\r\n    }\r\n}\r\n\r\n.purple{\r\n    background: #BC9CFF;\r\n}\r\n\r\n.green{\r\n    background: #6FCF97;\r\n}\r\n\r\n.color__block {\r\n    display: flex;\r\n    align-items: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.color__block:first-child{\r\n    margin-top: 0;\r\n}\r\n\r\n.color__rectangle{\r\n    height: 70px;\r\n    width: 70px;\r\n    border-radius: 6px;\r\n}\r\n\r\n.color__text{\r\n    display:flex;\r\n    flex-direction: column;\r\n    justify-content: space-evenly;\r\n    margin-left: 40px;\r\n\r\n    h3 {\r\n        font-weight: bold;\r\n        margin: 0;\r\n    }\r\n\r\n    p {\r\n        font-weight: 400;\r\n        margin: 0;\r\n    }\r\n}\r\n\r\n.title{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    max-width: 500px;\r\n    margin-top: 50px;\r\n    :first-child {\r\n        margin-top: 0;\r\n    }\r\n}\r\n\r\n.title__label {    \r\n    &-1{\r\n        @include text-size(29px, 400, 29px);\r\n        color:rgba(31, 32, 65, 0.25);\r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n    &-2 {\r\n        @include text-size(19px, 400, 23px);\r\n        color:rgba(31, 32, 65, 0.25); \r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n    \r\n    &-3 {\r\n        @include text-size(12px, 400, 15px);\r\n        color:rgba(31, 32, 65, 0.25);\r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n    &-p {\r\n        @include text-size(14px, 400, 24px);\r\n        color:rgba(31, 32, 65, 0.25);\r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n}\r\n\r\n%for-text{\r\n    &_1 {\r\n        @include text-size(29px, 700, 29px);\r\n        margin: 0;\r\n    }\r\n    &_2 {\r\n        @include text-size(19px, 700, 23px);\r\n        margin: 0;\r\n    }\r\n    &_3 {\r\n        text-transform: uppercase;\r\n        @include text-size(14px, 700, 15px);\r\n        margin: 0;\r\n    }\r\n    &_p {\r\n        @include text-size(14px, 400, 24px);\r\n        color:rgba(31, 32, 65, 0.25);\r\n        margin: 0;\r\n    }\r\n}\r\n\r\n.title__text{\r\n    &_1 {\r\n        @extend %for-text_1;\r\n    }\r\n    &_2 {\r\n        @extend %for-text_2;\r\n    }\r\n    &_3 {\r\n        @extend %for-text_3;\r\n    }\r\n    &_p {\r\n       @extend %for-text_p;\r\n    }\r\n}\r\n\r\n","@mixin text-size($size, $weight, $height) {\r\n    font: {\r\n        size: $size;\r\n        weight: $weight;\r\n    }\r\n    line-height: $height;\r\n}",".input__title{\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    height: 20px;\r\n}\r\n\r\n.input__area{\r\n    border: 1px solid rgba(31, 32, 65, 0.25);\r\n    border-radius: 4px;\r\n    height: 44px;\r\n    width: 320px;\r\n    padding-left: 15px;\r\n    margin-top: 3px;\r\n    outline: 0;\r\n\r\n    &::placeholder{\r\n    color: rgba(31, 32, 65, 0.25);\r\n    font-weight: 400;\r\n    font-size: 14px;\r\n    }\r\n\r\n    &:hover{\r\n        border: 1px solid rgba(31, 32, 65, 0.5);\r\n        color: rgba(31, 32, 65, 0.75);\r\n        &::placeholder{\r\n            color: rgba(31, 32, 65, 0.75);\r\n        }\r\n    }\r\n}\r\n.dropdown{\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    border: 1px solid rgba(31, 32, 65, 0.25);\r\n    border-radius: 4px;\r\n    height: 44px;\r\n    width: 320px;\r\n    padding-left: 15px;\r\n    margin-top: 3px;\r\n    &:hover{\r\n        border: 1px solid rgba(31, 32, 65, 0.5);\r\n    }\r\n}\r\n","@use 'elements/input/input.scss';\r\n@use 'elements/dropdown/dropdown.scss';\r\n\r\n.container{\r\n    .form__element{\r\n        margin-top:20px;\r\n        :first-child{\r\n            margin-top: 0;\r\n        }\r\n    }\r\n}\r\n"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-module.exports = function (cssWithMappingToString) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = "";
-      var needLayer = typeof item[5] !== "undefined";
-
-      if (item[4]) {
-        content += "@supports (".concat(item[4], ") {");
-      }
-
-      if (item[2]) {
-        content += "@media ".concat(item[2], " {");
-      }
-
-      if (needLayer) {
-        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
-      }
-
-      content += cssWithMappingToString(item);
-
-      if (needLayer) {
-        content += "}";
-      }
-
-      if (item[2]) {
-        content += "}";
-      }
-
-      if (item[4]) {
-        content += "}";
-      }
-
-      return content;
-    }).join("");
-  }; // import a list of modules into the list
-
-
-  list.i = function i(modules, media, dedupe, supports, layer) {
-    if (typeof modules === "string") {
-      modules = [[null, modules, undefined]];
-    }
-
-    var alreadyImportedModules = {};
-
-    if (dedupe) {
-      for (var k = 0; k < this.length; k++) {
-        var id = this[k][0];
-
-        if (id != null) {
-          alreadyImportedModules[id] = true;
-        }
-      }
-    }
-
-    for (var _k = 0; _k < modules.length; _k++) {
-      var item = [].concat(modules[_k]);
-
-      if (dedupe && alreadyImportedModules[item[0]]) {
-        continue;
-      }
-
-      if (typeof layer !== "undefined") {
-        if (typeof item[5] === "undefined") {
-          item[5] = layer;
-        } else {
-          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
-          item[5] = layer;
-        }
-      }
-
-      if (media) {
-        if (!item[2]) {
-          item[2] = media;
-        } else {
-          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
-          item[2] = media;
-        }
-      }
-
-      if (supports) {
-        if (!item[4]) {
-          item[4] = "".concat(supports);
-        } else {
-          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
-          item[4] = supports;
-        }
-      }
-
-      list.push(item);
-    }
-  };
-
-  return list;
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    options = {};
-  }
-
-  if (!url) {
-    return url;
-  }
-
-  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
-
-  if (/^['"].*['"]$/.test(url)) {
-    url = url.slice(1, -1);
-  }
-
-  if (options.hash) {
-    url += options.hash;
-  } // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-
-
-  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
-  }
-
-  return url;
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
-/*!************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
-  \************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (item) {
-  var content = item[1];
-  var cssMapping = item[3];
-
-  if (!cssMapping) {
-    return content;
-  }
-
-  if (typeof btoa === "function") {
-    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
-    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
-    var sourceMapping = "/*# ".concat(data, " */");
-    var sourceURLs = cssMapping.sources.map(function (source) {
-      return "/*# sourceURL=".concat(cssMapping.sourceRoot || "").concat(source, " */");
-    });
-    return [content].concat(sourceURLs).concat([sourceMapping]).join("\n");
-  }
-
-  return [content].join("\n");
-};
+throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: The target selector was not found.\nUse \"@extend .field__area !optional\" to avoid this error.\n   ╷\n12 │     @extend .field__area;\r\n   │     ^^^^^^^^^^^^^^^^^^^^\n   ╵\n  src\\styles\\form__elements\\elements\\dropdown\\_dropdown.scss 12:5  root stylesheet");
 
 /***/ }),
 
@@ -11134,6 +10927,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../../node_modules/sass-loader/dist/cjs.js!./index.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 
       
       
@@ -11155,12 +10952,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default()), options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default()) && (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default().locals) ? (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default().locals) : undefined);
 
 
 /***/ }),
@@ -11475,28 +11272,6 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ "./src/fonts/Montserrat-Bold.ttf":
-/*!***************************************!*\
-  !*** ./src/fonts/Montserrat-Bold.ttf ***!
-  \***************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/079ca05d3ded9bc107ab.ttf";
-
-/***/ }),
-
-/***/ "./src/fonts/Montserrat-Regular.ttf":
-/*!******************************************!*\
-  !*** ./src/fonts/Montserrat-Regular.ttf ***!
-  \******************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "assets/3cd786652b8a2e9d41f2.ttf";
-
 /***/ })
 
 /******/ 	});
@@ -11513,7 +11288,7 @@ module.exports = __webpack_require__.p + "assets/3cd786652b8a2e9d41f2.ttf";
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
+/******/ 			// no module.id needed
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -11524,9 +11299,6 @@ module.exports = __webpack_require__.p + "assets/3cd786652b8a2e9d41f2.ttf";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -11553,18 +11325,6 @@ module.exports = __webpack_require__.p + "assets/3cd786652b8a2e9d41f2.ttf";
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -11579,52 +11339,6 @@ module.exports = __webpack_require__.p + "assets/3cd786652b8a2e9d41f2.ttf";
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"main": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		// no on chunks loaded
-/******/ 		
-/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -11649,4 +11363,4 @@ console.log("it works");
 
 /******/ })()
 ;
-//# sourceMappingURL=main25861b19242a8b573e5b.js.map
+//# sourceMappingURL=main04df144c0b669000e398.js.map
