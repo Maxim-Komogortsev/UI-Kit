@@ -2,7 +2,7 @@
 @import "/src/styles/colors__types/_colors__types";
 
 .checkfield {
-    margin-top: 17.12px;
+    margin-top: 17.12px                 ;
 }
 
 .check{
@@ -34,11 +34,16 @@
 
     }
 }
+.check__input:focus + .check__box{
+    background: url('/src/styles/form__elements/elements/checkbox/focused.svg');
+}
+
 .check__input:hover + .check__box{
     background: url('/src/styles/form__elements/elements/checkbox/focused.svg');
 }
+
 .check__input:checked + .check__box {
-    background: url('/src/styles/form__elements/elements/checkbox/focused.svg'), 
+    background: url('/src/styles/form__elements/elements/checkbox/focused.svg'),
     center / 48% no-repeat url('/src/styles/form__elements/elements/checkbox/enabled.svg');
 }
 
