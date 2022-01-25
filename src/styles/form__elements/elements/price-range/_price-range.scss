@@ -1,0 +1,40 @@
+
+.pricefield{
+    display: flex;
+    align-items: center;
+}
+.noUi-handle::after, 
+.noUi-handle::before  {
+    display: none;
+}
+
+.noUi-target{
+    height: 4px;
+    width: 264px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: none;
+}
+
+.noUi-horizontal {
+    .noUi-handle{
+        box-shadow: none;
+        height: 12px;
+        width: 12px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); 
+        right: -5px;
+        top: -5px
+    }
+}
+
+.noUi-connect{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+// #slider{
+//     height: 6px;
+//     width: 266px;
+// }

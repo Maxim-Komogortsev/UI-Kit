@@ -1,12 +1,22 @@
 @use 'elements/input/input.scss';
 @use 'elements/dropdown/dropdown.scss';
 @use 'elements/checkbox/checkbox';
+@use 'elements/radio/radio';
+@use 'elements/toggle/toggle';
+@use 'elements/like-button/like-button';
+@use 'elements/rating/rating';
+@use  'elements/price-range/price-range';
 
-.container {
-    .field {
-        margin-top: 20px;
-        &:first-child{
-            margin-top: 0;
-        }
+.field-20 {
+    margin-top: 20px;
+    &:first-child{
+        margin-top: 0;
     }
 }
+
+.field-40{
+    margin-top: 40px;
+   &:first-child{
+       margin-top: 0;
+    }
+} 

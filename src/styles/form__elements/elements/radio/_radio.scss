@@ -1,0 +1,44 @@
+@import '/src/styles/mixins/text-size';
+
+.radio{
+    display: flex;
+    margin: 0;
+}
+
+.radio__box{
+    input[type=radio] {
+        display: none;
+    }
+    label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 0;
+        line-height: 18px;
+        user-select: none;
+        @include text-size(14px,400,24px);
+        color: rgba(31, 32, 65, 0.5);
+        margin-right: 20px;
+        margin-top: 0;
+    }
+    label:before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 2px;
+        background: url("/src/styles/form__elements/elements/radio/inactive.svg") 0 0 no-repeat;
+        transition: .3s;
+    }
+    input[type=radio]:checked + label:before {
+        background: url('/src/styles/form__elements/elements/radio/radio-active.svg');
+    }
+
+    input[type=radio]:checked + label{
+        color: rgba(31, 32, 65, 0.75);
+    }
+}

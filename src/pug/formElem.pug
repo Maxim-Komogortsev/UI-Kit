@@ -5,21 +5,41 @@ html
         section
             // INPUTS
             .container
-                .field
+                .field-20
                     include blocks/text-field/_text-field
-                .field
+                .field-20
                     include blocks/dropdown/default/_default
-                .dropdown-boxfield
-                    include blocks/dropdown/small/_small 
-                    include blocks/dropdown/small/_small
-                .dropdown-boxfield
-                    include blocks/dropdown/medium/_medium
-                .dropdown-boxfield
-                    include blocks/subscription-email/_subscription
+                .field-40
+                    .dropfield                        
+                        include blocks/dropdown/small/_small                        
+                        include blocks/dropdown/small/_small
+                .field-40
+                    .dropfield
+                        include blocks/dropdown/medium/_medium
+                .field-40
+                    .dropfield
+                        include blocks/subscription-email/_subscription
                     
             // CHECK BUTTONS
             .container
-                .field 
+                .field-40
                     include blocks/checkboxes/_checkboxes
+                .field-40
+                    include blocks/radio/_radio
+                .field-40 
+                    include blocks/toggle/_toggle
+                .field-40
+                    include blocks/like-button/_like-button
+                .field-40
+                    include blocks/rate/_rate
+            
+            // OTHER WIDGETS
+
+            .conatiner
+                .field-40
+                    include blocks/price-range/_price-range
+
+
+                    
                         
                         

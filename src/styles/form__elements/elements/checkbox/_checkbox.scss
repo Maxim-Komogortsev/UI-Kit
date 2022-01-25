@@ -1,8 +1,7 @@
-@use "/src/styles/mixins/text-size";
-@import "/src/styles/colors__types/_colors__types";
+@import '/src/styles/mixins/text-size';
 
 .checkfield {
-    margin-top: 17.12px                 ;
+    margin-top: 16px;
 }
 
 .check{
@@ -10,10 +9,13 @@
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0;
+    }
     cursor: pointer;
     @include text-size(14px, 400, 18px);
     color: rgba(31, 32, 65, 0.5);
-    max-width: 196px;
+    max-width: 200px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -28,23 +30,20 @@
         position:absolute;
         width: 20px;
         height: 20px;
-        background: url('/src/styles/form__elements/elements/checkbox/disabled.svg');
+        background: url('/src/styles/form__elements/elements/checkbox/checkbox-inactive.svg');
         margin-left: -30px;
         margin-top: -2px;
+        transition: .2s;
 
     }
 }
-.check__input:focus + .check__box{
-    background: url('/src/styles/form__elements/elements/checkbox/focused.svg');
-}
 
 .check__input:hover + .check__box{
-    background: url('/src/styles/form__elements/elements/checkbox/focused.svg');
+    background: url('/src/styles/form__elements/elements/checkbox/checkbox-focused.svg');
 }
 
 .check__input:checked + .check__box {
-    background: url('/src/styles/form__elements/elements/checkbox/focused.svg'),
-    center / 48% no-repeat url('/src/styles/form__elements/elements/checkbox/enabled.svg');
+    background: url('/src/styles/form__elements/elements/checkbox/checkbox-active.svg');
 }
 
 
