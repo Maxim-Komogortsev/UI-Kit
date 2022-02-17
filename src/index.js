@@ -1,7 +1,6 @@
 import $ from "jquery";
 import * as noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
-
 import './styles/index.scss';
 
 document.querySelectorAll('.rating__star').forEach(item => {

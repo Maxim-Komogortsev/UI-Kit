@@ -6,6 +6,7 @@
 @use 'elements/like-button/like-button';
 @use 'elements/rating/rating';
 @use  'elements/price-range/price-range';
+@use 'elements/buttons/buttons';
 
 .field-20 {
     margin-top: 20px;
@@ -20,3 +21,13 @@
        margin-top: 0;
     }
 } 
+
+.right-20{
+    margin-right: 20px;
+}
+
+.button-row{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
