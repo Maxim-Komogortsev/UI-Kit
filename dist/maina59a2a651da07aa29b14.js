@@ -1,13 +1,269 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/nouislider/dist/nouislider.css":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/nouislider/dist/nouislider.css ***!
+  \********************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "/* Functional styling;\n * These styles are required for noUiSlider to function.\n * You don't need to change these rules to apply your design.\n */\n.noUi-target,\n.noUi-target * {\n  -webkit-touch-callout: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n  -webkit-user-select: none;\n  touch-action: none;\n  -ms-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  box-sizing: content-box;\n}\n\n.noUi-target {\n  position: relative;\n}\n\n.noUi-base,\n.noUi-connects {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  z-index: 1;\n}\n\n/* Wrapper for all connect elements.\n */\n.noUi-connects {\n  overflow: hidden;\n  z-index: 0;\n}\n\n.noUi-connect,\n.noUi-origin {\n  will-change: transform;\n  position: absolute;\n  z-index: 1;\n  top: 0;\n  right: 0;\n  height: 100%;\n  width: 100%;\n  -ms-transform-origin: 0 0;\n  -webkit-transform-origin: 0 0;\n  -webkit-transform-style: preserve-3d;\n  transform-origin: 0 0;\n  transform-style: flat;\n}\n\n/* Offset direction\n */\n.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {\n  left: 0;\n  right: auto;\n}\n\n/* Give origins 0 height/width so they don't interfere with clicking the\n * connect elements.\n */\n.noUi-vertical .noUi-origin {\n  top: -100%;\n  width: 0;\n}\n\n.noUi-horizontal .noUi-origin {\n  height: 0;\n}\n\n.noUi-handle {\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n  position: absolute;\n}\n\n.noUi-touch-area {\n  height: 100%;\n  width: 100%;\n}\n\n.noUi-state-tap .noUi-connect,\n.noUi-state-tap .noUi-origin {\n  transition: transform 0.3s;\n}\n\n.noUi-state-drag * {\n  cursor: inherit !important;\n}\n\n/* Slider size and handle placement;\n */\n.noUi-horizontal {\n  height: 18px;\n}\n\n.noUi-horizontal .noUi-handle {\n  width: 34px;\n  height: 28px;\n  right: -17px;\n  top: -6px;\n}\n\n.noUi-vertical {\n  width: 18px;\n}\n\n.noUi-vertical .noUi-handle {\n  width: 28px;\n  height: 34px;\n  right: -6px;\n  bottom: -17px;\n}\n\n.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {\n  left: -17px;\n  right: auto;\n}\n\n/* Styling;\n * Giving the connect element a border radius causes issues with using transform: scale\n */\n.noUi-target {\n  background: white;\n  border-radius: 4px;\n  border: none;\n  box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;\n}\n\n.noUi-connects {\n  border-radius: 3px;\n}\n\n.noUi-connect {\n  background: #3FB8AF;\n}\n\n/* Handles and cursors;\n */\n.noUi-draggable {\n  cursor: ew-resize;\n}\n\n.noUi-vertical .noUi-draggable {\n  cursor: ns-resize;\n}\n\n.noUi-handle {\n  border: 1px solid #D9D9D9;\n  border-radius: 3px;\n  background: #FFF;\n  cursor: default;\n  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;\n}\n\n.noUi-active {\n  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;\n}\n\n/* Handle stripes;\n */\n.noUi-handle:before,\n.noUi-handle:after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  height: 14px;\n  width: 1px;\n  background: #E8E7E6;\n  left: 14px;\n  top: 6px;\n}\n\n.noUi-handle:after {\n  left: 17px;\n}\n\n.noUi-vertical .noUi-handle:before,\n.noUi-vertical .noUi-handle:after {\n  width: 14px;\n  height: 1px;\n  left: 6px;\n  top: 14px;\n}\n\n.noUi-vertical .noUi-handle:after {\n  top: 17px;\n}\n\n/* Disabled state;\n */\n[disabled] .noUi-connect {\n  background: #B8B8B8;\n}\n\n[disabled].noUi-target,\n[disabled].noUi-handle,\n[disabled] .noUi-handle {\n  cursor: not-allowed;\n}\n\n/* Base;\n *\n */\n.noUi-pips,\n.noUi-pips * {\n  box-sizing: border-box;\n}\n\n.noUi-pips {\n  position: absolute;\n  color: #999;\n}\n\n/* Values;\n *\n */\n.noUi-value {\n  position: absolute;\n  white-space: nowrap;\n  text-align: center;\n}\n\n.noUi-value-sub {\n  color: #ccc;\n  font-size: 10px;\n}\n\n/* Markings;\n *\n */\n.noUi-marker {\n  position: absolute;\n  background: #CCC;\n}\n\n.noUi-marker-sub {\n  background: #AAA;\n}\n\n.noUi-marker-large {\n  background: #AAA;\n}\n\n/* Horizontal layout;\n *\n */\n.noUi-pips-horizontal {\n  padding: 10px 0;\n  height: 80px;\n  top: 100%;\n  left: 0;\n  width: 100%;\n}\n\n.noUi-value-horizontal {\n  transform: translate(-50%, 50%);\n}\n\n.noUi-rtl .noUi-value-horizontal {\n  transform: translate(50%, 50%);\n}\n\n.noUi-marker-horizontal.noUi-marker {\n  margin-left: -1px;\n  width: 2px;\n  height: 5px;\n}\n\n.noUi-marker-horizontal.noUi-marker-sub {\n  height: 10px;\n}\n\n.noUi-marker-horizontal.noUi-marker-large {\n  height: 15px;\n}\n\n/* Vertical layout;\n *\n */\n.noUi-pips-vertical {\n  padding: 0 10px;\n  height: 100%;\n  top: 0;\n  left: 100%;\n}\n\n.noUi-value-vertical {\n  transform: translate(0, -50%);\n  padding-left: 25px;\n}\n\n.noUi-rtl .noUi-value-vertical {\n  transform: translate(0, 50%);\n}\n\n.noUi-marker-vertical.noUi-marker {\n  width: 5px;\n  height: 2px;\n  margin-top: -1px;\n}\n\n.noUi-marker-vertical.noUi-marker-sub {\n  width: 10px;\n}\n\n.noUi-marker-vertical.noUi-marker-large {\n  width: 15px;\n}\n\n.noUi-tooltip {\n  display: block;\n  position: absolute;\n  border: 1px solid #D9D9D9;\n  border-radius: 3px;\n  background: #fff;\n  color: #000;\n  padding: 5px;\n  text-align: center;\n  white-space: nowrap;\n}\n\n.noUi-horizontal .noUi-tooltip {\n  transform: translate(-50%, 0);\n  left: 50%;\n  bottom: 120%;\n}\n\n.noUi-vertical .noUi-tooltip {\n  transform: translate(0, -50%);\n  top: 50%;\n  right: 120%;\n}\n\n.noUi-horizontal .noUi-origin > .noUi-tooltip {\n  transform: translate(50%, 0);\n  left: auto;\n  bottom: 10px;\n}\n\n.noUi-vertical .noUi-origin > .noUi-tooltip {\n  transform: translate(0, -18px);\n  top: auto;\n  right: 28px;\n}", "",{"version":3,"sources":["webpack://./node_modules/nouislider/dist/nouislider.css"],"names":[],"mappings":"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","sourcesContent":["/* Functional styling;\n * These styles are required for noUiSlider to function.\n * You don't need to change these rules to apply your design.\n */\n.noUi-target,\n.noUi-target * {\n  -webkit-touch-callout: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n  -webkit-user-select: none;\n  -ms-touch-action: none;\n  touch-action: none;\n  -ms-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  -moz-box-sizing: border-box;\n  box-sizing: content-box;\n}\n.noUi-target {\n  position: relative;\n}\n.noUi-base,\n.noUi-connects {\n  width: 100%;\n  height: 100%;\n  position: relative;\n  z-index: 1;\n}\n/* Wrapper for all connect elements.\n */\n.noUi-connects {\n  overflow: hidden;\n  z-index: 0;\n}\n.noUi-connect,\n.noUi-origin {\n  will-change: transform;\n  position: absolute;\n  z-index: 1;\n  top: 0;\n  right: 0;\n  height: 100%;\n  width: 100%;\n  -ms-transform-origin: 0 0;\n  -webkit-transform-origin: 0 0;\n  -webkit-transform-style: preserve-3d;\n  transform-origin: 0 0;\n  transform-style: flat;\n}\n/* Offset direction\n */\n.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {\n  left: 0;\n  right: auto;\n}\n/* Give origins 0 height/width so they don't interfere with clicking the\n * connect elements.\n */\n.noUi-vertical .noUi-origin {\n  top: -100%;\n  width: 0;\n}\n.noUi-horizontal .noUi-origin {\n  height: 0;\n}\n.noUi-handle {\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n  position: absolute;\n}\n.noUi-touch-area {\n  height: 100%;\n  width: 100%;\n}\n.noUi-state-tap .noUi-connect,\n.noUi-state-tap .noUi-origin {\n  -webkit-transition: transform 0.3s;\n  transition: transform 0.3s;\n}\n.noUi-state-drag * {\n  cursor: inherit !important;\n}\n/* Slider size and handle placement;\n */\n.noUi-horizontal {\n  height: 18px;\n}\n.noUi-horizontal .noUi-handle {\n  width: 34px;\n  height: 28px;\n  right: -17px;\n  top: -6px;\n}\n.noUi-vertical {\n  width: 18px;\n}\n.noUi-vertical .noUi-handle {\n  width: 28px;\n  height: 34px;\n  right: -6px;\n  bottom: -17px;\n}\n.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {\n  left: -17px;\n  right: auto;\n}\n/* Styling;\n * Giving the connect element a border radius causes issues with using transform: scale\n */\n.noUi-target {\n  background: white;\n  border-radius: 4px;\n  border: none;\n  box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;\n}\n.noUi-connects {\n  border-radius: 3px;\n}\n.noUi-connect {\n  background: #3FB8AF;\n}\n/* Handles and cursors;\n */\n.noUi-draggable {\n  cursor: ew-resize;\n}\n.noUi-vertical .noUi-draggable {\n  cursor: ns-resize;\n}\n.noUi-handle {\n  border: 1px solid #D9D9D9;\n  border-radius: 3px;\n  background: #FFF;\n  cursor: default;\n  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;\n}\n.noUi-active {\n  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;\n}\n/* Handle stripes;\n */\n.noUi-handle:before,\n.noUi-handle:after {\n  content: \"\";\n  display: block;\n  position: absolute;\n  height: 14px;\n  width: 1px;\n  background: #E8E7E6;\n  left: 14px;\n  top: 6px;\n}\n.noUi-handle:after {\n  left: 17px;\n}\n.noUi-vertical .noUi-handle:before,\n.noUi-vertical .noUi-handle:after {\n  width: 14px;\n  height: 1px;\n  left: 6px;\n  top: 14px;\n}\n.noUi-vertical .noUi-handle:after {\n  top: 17px;\n}\n/* Disabled state;\n */\n[disabled] .noUi-connect {\n  background: #B8B8B8;\n}\n[disabled].noUi-target,\n[disabled].noUi-handle,\n[disabled] .noUi-handle {\n  cursor: not-allowed;\n}\n/* Base;\n *\n */\n.noUi-pips,\n.noUi-pips * {\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n.noUi-pips {\n  position: absolute;\n  color: #999;\n}\n/* Values;\n *\n */\n.noUi-value {\n  position: absolute;\n  white-space: nowrap;\n  text-align: center;\n}\n.noUi-value-sub {\n  color: #ccc;\n  font-size: 10px;\n}\n/* Markings;\n *\n */\n.noUi-marker {\n  position: absolute;\n  background: #CCC;\n}\n.noUi-marker-sub {\n  background: #AAA;\n}\n.noUi-marker-large {\n  background: #AAA;\n}\n/* Horizontal layout;\n *\n */\n.noUi-pips-horizontal {\n  padding: 10px 0;\n  height: 80px;\n  top: 100%;\n  left: 0;\n  width: 100%;\n}\n.noUi-value-horizontal {\n  -webkit-transform: translate(-50%, 50%);\n  transform: translate(-50%, 50%);\n}\n.noUi-rtl .noUi-value-horizontal {\n  -webkit-transform: translate(50%, 50%);\n  transform: translate(50%, 50%);\n}\n.noUi-marker-horizontal.noUi-marker {\n  margin-left: -1px;\n  width: 2px;\n  height: 5px;\n}\n.noUi-marker-horizontal.noUi-marker-sub {\n  height: 10px;\n}\n.noUi-marker-horizontal.noUi-marker-large {\n  height: 15px;\n}\n/* Vertical layout;\n *\n */\n.noUi-pips-vertical {\n  padding: 0 10px;\n  height: 100%;\n  top: 0;\n  left: 100%;\n}\n.noUi-value-vertical {\n  -webkit-transform: translate(0, -50%);\n  transform: translate(0, -50%);\n  padding-left: 25px;\n}\n.noUi-rtl .noUi-value-vertical {\n  -webkit-transform: translate(0, 50%);\n  transform: translate(0, 50%);\n}\n.noUi-marker-vertical.noUi-marker {\n  width: 5px;\n  height: 2px;\n  margin-top: -1px;\n}\n.noUi-marker-vertical.noUi-marker-sub {\n  width: 10px;\n}\n.noUi-marker-vertical.noUi-marker-large {\n  width: 15px;\n}\n.noUi-tooltip {\n  display: block;\n  position: absolute;\n  border: 1px solid #D9D9D9;\n  border-radius: 3px;\n  background: #fff;\n  color: #000;\n  padding: 5px;\n  text-align: center;\n  white-space: nowrap;\n}\n.noUi-horizontal .noUi-tooltip {\n  -webkit-transform: translate(-50%, 0);\n  transform: translate(-50%, 0);\n  left: 50%;\n  bottom: 120%;\n}\n.noUi-vertical .noUi-tooltip {\n  -webkit-transform: translate(0, -50%);\n  transform: translate(0, -50%);\n  top: 50%;\n  right: 120%;\n}\n.noUi-horizontal .noUi-origin > .noUi-tooltip {\n  -webkit-transform: translate(50%, 0);\n  transform: translate(50%, 0);\n  left: auto;\n  bottom: 10px;\n}\n.noUi-vertical .noUi-origin > .noUi-tooltip {\n  -webkit-transform: translate(0, -18px);\n  transform: translate(0, -18px);\n  top: auto;\n  right: 28px;\n}\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss":
 /*!**********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss ***!
   \**********************************************************************************************************************************************************************************/
-/***/ (() => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: The target selector was not found.\nUse \"@extend .field__area !optional\" to avoid this error.\n   ╷\n12 │     @extend .field__area;\r\n   │     ^^^^^^^^^^^^^^^^^^^^\n   ╵\n  src\\styles\\form__elements\\elements\\dropdown\\_dropdown.scss 12:5  root stylesheet");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/Montserrat-Regular.ttf */ "./src/fonts/Montserrat-Regular.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../fonts/Montserrat-Bold.ttf */ "./src/fonts/Montserrat-Bold.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/checkbox/checkbox-inactive.svg */ "./src/styles/form__elements/elements/checkbox/checkbox-inactive.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/checkbox/checkbox-focused.svg */ "./src/styles/form__elements/elements/checkbox/checkbox-focused.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/checkbox/checkbox-active.svg */ "./src/styles/form__elements/elements/checkbox/checkbox-active.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/radio/inactive.svg */ "./src/styles/form__elements/elements/radio/inactive.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/radio/radio-active.svg */ "./src/styles/form__elements/elements/radio/radio-active.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/toggle/switch-off.svg */ "./src/styles/form__elements/elements/toggle/switch-off.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/toggle/switch-on.svg */ "./src/styles/form__elements/elements/toggle/switch-on.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/like-button/favorite_border.svg */ "./src/styles/form__elements/elements/like-button/favorite_border.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/like-button/favorite.svg */ "./src/styles/form__elements/elements/like-button/favorite.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_11___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/rating/star_border.svg */ "./src/styles/form__elements/elements/rating/star_border.svg"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_12___ = new URL(/* asset import */ __webpack_require__(/*! ../../src/styles/form__elements/elements/rating/star.svg */ "./src/styles/form__elements/elements/rating/star.svg"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_4___);
+var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_5___);
+var ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_6___);
+var ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_7___);
+var ___CSS_LOADER_URL_REPLACEMENT_8___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_8___);
+var ___CSS_LOADER_URL_REPLACEMENT_9___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_9___);
+var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_10___);
+var ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
+var ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: generalFont;\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\nhtml {\n  font-family: generalFont;\n  color: #1F2041;\n  box-sizing: border-box;\n  margin: 0;\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n}\n\nsection {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 37px;\n}\n\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n  max-width: 48px;\n  max-height: 48px;\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.title__text_p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.field__area input::-moz-placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n.field__area input:-ms-input-placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n.title__text_p, .field__area input::placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n\n.field__title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 15px;\n}\n.field__title .field__area input::-moz-placeholder, .field__area .field__title input::-moz-placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__title .field__area input:-ms-input-placeholder, .field__area .field__title input:-ms-input-placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__title .title__text_p, .field__title .field__area input::placeholder, .field__area .field__title input::placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__area {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 42px;\n  width: 318px;\n  margin-top: 5px;\n}\n.field__area input {\n  height: 40px;\n  width: 200px;\n  outline: 0;\n  border: none;\n  margin-left: 15px;\n}\n.field__area input::-moz-placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area input:-ms-input-placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area input::placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area p {\n  margin-left: 15px;\n}\n.field__area img {\n  margin-right: 15px;\n}\n.field__area:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n}\n.field__area:hover p {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.field__area input::-moz-placeholder, .date-dropdown-medium input::-moz-placeholder, .sub-field input::-moz-placeholder, .date-dropdown-small input::-moz-placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n.field__area input:-ms-input-placeholder, .date-dropdown-medium input:-ms-input-placeholder, .sub-field input:-ms-input-placeholder, .date-dropdown-small input:-ms-input-placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n.title__text_p, .field__area input::placeholder, .date-dropdown-medium input::placeholder, .sub-field input::placeholder, .date-dropdown-small input::placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n\n.field__title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 15px;\n}\n.field__title .field__area input::-moz-placeholder, .field__title .date-dropdown-medium input::-moz-placeholder, .field__title .sub-field input::-moz-placeholder, .field__title .date-dropdown-small input::-moz-placeholder, .field__area .field__title input::-moz-placeholder, .date-dropdown-medium .field__title input::-moz-placeholder, .sub-field .field__title input::-moz-placeholder, .date-dropdown-small .field__title input::-moz-placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__title .field__area input:-ms-input-placeholder, .field__title .date-dropdown-medium input:-ms-input-placeholder, .field__title .sub-field input:-ms-input-placeholder, .field__title .date-dropdown-small input:-ms-input-placeholder, .field__area .field__title input:-ms-input-placeholder, .date-dropdown-medium .field__title input:-ms-input-placeholder, .sub-field .field__title input:-ms-input-placeholder, .date-dropdown-small .field__title input:-ms-input-placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__title .title__text_p, .field__title .field__area input::placeholder, .field__title .date-dropdown-medium input::placeholder, .field__title .sub-field input::placeholder, .field__title .date-dropdown-small input::placeholder, .field__area .field__title input::placeholder, .date-dropdown-medium .field__title input::placeholder, .sub-field .field__title input::placeholder, .date-dropdown-small .field__title input::placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__area, .date-dropdown-medium, .sub-field, .date-dropdown-small {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 42px;\n  width: 318px;\n  margin-top: 5px;\n}\n.field__area input, .date-dropdown-medium input, .sub-field input, .date-dropdown-small input {\n  height: 40px;\n  width: 200px;\n  outline: 0;\n  border: none;\n  margin-left: 15px;\n}\n.field__area input::-moz-placeholder, .date-dropdown-medium input::-moz-placeholder, .sub-field input::-moz-placeholder, .date-dropdown-small input::-moz-placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area input:-ms-input-placeholder, .date-dropdown-medium input:-ms-input-placeholder, .sub-field input:-ms-input-placeholder, .date-dropdown-small input:-ms-input-placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area input::placeholder, .date-dropdown-medium input::placeholder, .sub-field input::placeholder, .date-dropdown-small input::placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area p, .date-dropdown-medium p, .sub-field p, .date-dropdown-small p {\n  margin-left: 15px;\n}\n.field__area img, .date-dropdown-medium img, .sub-field img, .date-dropdown-small img {\n  margin-right: 15px;\n}\n.field__area:hover, .date-dropdown-medium:hover, .sub-field:hover, .date-dropdown-small:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n}\n.field__area:hover p, .date-dropdown-medium:hover p, .sub-field:hover p, .date-dropdown-small:hover p {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.dropfield {\n  display: flex;\n  justify-content: space-between;\n}\n\n.dropdown-box {\n  display: inline-block;\n}\n\n.date-dropdown-small {\n  width: 148px;\n}\n\n.date-dropdown-medium, .sub-field {\n  width: 264px;\n}\n\n.sub-field p {\n  color: rgba(31, 32, 65, 0.5);\n}\n\n.checkfield {\n  margin-top: 16px;\n}\n\n.check {\n  display: block;\n  position: relative;\n  padding-left: 30px;\n  margin-bottom: 10px;\n  cursor: pointer;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 18px;\n  color: rgba(31, 32, 65, 0.5);\n  max-width: 200px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.check:last-child {\n  margin-bottom: 0;\n}\n.check__input {\n  position: absolute;\n  -webkit-appearance: none;\n}\n.check__box {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  margin-left: -30px;\n  margin-top: -2px;\n  transition: 0.2s;\n}\n\n.check__input:hover + .check__box {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n}\n\n.check__input:checked + .check__box {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n}\n\n.radio {\n  display: flex;\n  margin: 0;\n}\n\n.radio__box input[type=radio] {\n  display: none;\n}\n.radio__box label {\n  display: inline-block;\n  cursor: pointer;\n  position: relative;\n  padding-left: 25px;\n  margin-right: 0;\n  line-height: 18px;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.5);\n  margin-right: 20px;\n  margin-top: 0;\n}\n.radio__box label:before {\n  content: \"\";\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 2px;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") 0 0 no-repeat;\n  transition: 0.3s;\n}\n.radio__box input[type=radio]:checked + label:before {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ");\n}\n.radio__box input[type=radio]:checked + label {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.checkfield {\n  margin-top: 16px;\n}\n\n.check, .toggle {\n  display: block;\n  position: relative;\n  padding-left: 30px;\n  margin-bottom: 10px;\n  cursor: pointer;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 18px;\n  color: rgba(31, 32, 65, 0.5);\n  max-width: 200px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.check:last-child, .toggle:last-child {\n  margin-bottom: 0;\n}\n.check__input, .toggle__input {\n  position: absolute;\n  -webkit-appearance: none;\n}\n.check__box {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ");\n  margin-left: -30px;\n  margin-top: -2px;\n  transition: 0.2s;\n}\n\n.check__input:hover + .check__box, .toggle__input:hover + .check__box {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ");\n}\n\n.check__input:checked + .check__box, .toggle__input:checked + .check__box {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ");\n}\n\n.toggle {\n  font-size: 14px;\n  font-weight: 200;\n  line-height: 24px;\n  padding-left: 50px;\n  color: rgba(31, 32, 65, 0.75);\n  max-width: 260px;\n}\n.toggle__box {\n  width: 40px;\n  height: 21px;\n  margin-left: -50px;\n  margin-top: 1px;\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ");\n}\n\n.toggle__input:hover + .toggle__box {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ");\n}\n\n.toggle__input:checked + .toggle__box {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ");\n}\n\n.likefield {\n  display: flex;\n  height: 20px;\n}\n\n.like {\n  display: block;\n  position: relative;\n  cursor: pointer;\n  margin-right: 50px;\n}\n.like__input {\n  position: absolute;\n  -webkit-appearance: none;\n}\n.like__box {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  height: 18px;\n  min-width: 28px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 10px;\n  padding-left: 10px;\n  background: 11% center no-repeat url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ");\n  transition: 0.2s;\n}\n.like__box p {\n  display: inline;\n  font-size: 10px;\n  font-weight: 400;\n  line-height: 12px;\n  color: rgba(31, 32, 65, 0.25);\n}\n\n.like__input:checked + .like__box {\n  background: 11% center no-repeat url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ");\n  border-color: #BC9CFF;\n}\n.like__input:checked + .like__box p {\n  color: #BC9CFF;\n}\n\n.ratefield {\n  display: flex;\n}\n\n.rating {\n  margin-right: 20px;\n  display: inline-flex;\n  flex-direction: row-reverse;\n}\n.rating__star {\n  height: 24px;\n  width: 24px;\n  cursor: pointer;\n  background: center no-repeat url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ");\n  transition: 0.2s;\n}\n.rating__star:hover, .rating__star:hover ~ .rating__star {\n  background: center no-repeat url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ");\n}\n.rating[data-total-value=\"1\"] .rating__star:nth-child(n+5), .rating[data-total-value=\"2\"] .rating__star:nth-child(n+4), .rating[data-total-value=\"3\"] .rating__star:nth-child(n+3), .rating[data-total-value=\"4\"] .rating__star:nth-child(n+2), .rating[data-total-value=\"5\"] .rating__star:nth-child(n+1) {\n  background: center no-repeat url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ");\n}\n\n.range-widget {\n  width: 266px;\n}\n\n.pricefield {\n  display: flex;\n  align-items: center;\n}\n\n.noUi-handle::after,\n.noUi-handle::before {\n  display: none;\n}\n\n.range-slider,\n.range-slider .noUi-handle {\n  box-shadow: none;\n}\n\n.noUi-target {\n  box-sizing: border-box;\n  height: 6px;\n  width: 264px;\n  border-radius: 3px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  background-color: white;\n  box-shadow: none;\n}\n\n.noUi-horizontal .noUi-handle {\n  box-shadow: none;\n  height: 12px;\n  width: 12px;\n  border: 2px solid white;\n  border-radius: 10px;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  right: -5px;\n  top: -6px;\n}\n\n.noUi-connects {\n  overflow: visible;\n}\n\n.noUi-connect {\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  height: 6px;\n  top: -1px;\n}\n\n.full-button {\n  cursor: pointer;\n  line-height: 15px;\n  padding: 14px 20.5px 15px;\n  font-weight: bold;\n  font-size: 12px;\n  text-transform: uppercase;\n  color: white;\n  text-transform: uppercase;\n  border-radius: 22px;\n  border: none;\n  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\n}\n.full-button[disabled] {\n  opacity: 0.5;\n}\n\n.empty-button {\n  cursor: pointer;\n  line-height: 15px;\n  padding: 12px 18.5px 13px;\n  font-weight: bold;\n  font-size: 12px;\n  text-transform: uppercase;\n  color: #BC9CFF;\n  border: 2px solid transparent;\n  border-radius: 22px;\n  box-shadow: 2px 1000px 1px #fff inset;\n  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\n  background-origin: border-box;\n  background-clip: content-box, border-box;\n}\n.empty-button:hover, .empty-button:focus {\n  box-shadow: none;\n  color: white;\n}\n.empty-button[disabled] {\n  opacity: 0.5;\n}\n\n.link-button {\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  font-weight: bold;\n  font-size: 12px;\n  text-transform: uppercase;\n  line-height: 15px;\n  color: #BC9CFF;\n}\n.link-button[disabled] {\n  color: rgba(31, 32, 65, 0.5);\n}\n\n.pass-button {\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  width: 320px;\n  height: 44px;\n  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\n  border-radius: 22px;\n  cursor: pointer;\n}\n.pass-button h3 {\n  color: white;\n  justify-self: center;\n}\n.pass-button img {\n  margin: 13px;\n}\n\n.field-20 {\n  margin-top: 20px;\n}\n.field-20:first-child {\n  margin-top: 0;\n}\n\n.field-40 {\n  margin-top: 40px;\n}\n.field-40:first-child {\n  margin-top: 0;\n}\n\n.right-20 {\n  margin-right: 20px;\n}\n\n.button-row {\n  display: flex;\n  justify-content: flex-start;\n  margin-bottom: 30px;\n}", "",{"version":3,"sources":["webpack://./src/styles/_fonts.scss","webpack://./src/styles/index.scss","webpack://./src/styles/_global.scss","webpack://./src/styles/header/_header.scss","webpack://./src/styles/colors__types/_colors__types.scss","webpack://./src/styles/mixins/_text-size.scss","webpack://./src/styles/form__elements/elements/input/_input.scss","webpack://./src/styles/form__elements/elements/dropdown/_dropdown.scss","webpack://./src/styles/form__elements/elements/checkbox/_checkbox.scss","webpack://./src/styles/form__elements/elements/radio/_radio.scss","webpack://./src/styles/form__elements/elements/toggle/_toggle.scss","webpack://./src/styles/form__elements/elements/like-button/_like-button.scss","webpack://./src/styles/form__elements/elements/rating/_rating.scss","webpack://./src/styles/form__elements/elements/price-range/_price-range.scss","webpack://./src/styles/form__elements/elements/buttons/_buttons.scss","webpack://./src/styles/form__elements/_form__elements.scss"],"names":[],"mappings":"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H6UJ;AG3UI;EACI,iBAAA;EACA,SAAA;AH6UR;AG1UI;EACI,gBAAA;EACA,SAAA;AH4UR;;AGxUA;EACI,aAAA;EACA,2BAAA;EACA,gBAAA;EACA,gBAAA;AH2UJ;AG1UI;EACI,aAAA;AH4UR;;AGvUI;ECtEI,eDuEmB;ECtEnB,gBDsEyB;ECpE7B,iBDoEkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AH4UR;AG1UI;EC7EI,eD8EmB;EC7EnB,gBD6EyB;EC3E7B,iBD2EkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AH8UR;AG3UI;ECrFI,eDsFmB;ECrFnB,gBDqFyB;ECnF7B,iBDmFkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AH+UR;AG7UI;EC5FI,eD6FmB;EC5FnB,gBD4FyB;EC1F7B,iBD0FkC;EAC9B,6BAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AHiVR;;AG5UI;ECtGI,eDuGmB;ECtGnB,gBDsGyB;ECpG7B,iBDoGkC;EAC9B,SAAA;AHiVR;AG/UI;EC1GI,eD2GmB;EC1GnB,gBD0GyB;ECxG7B,iBDwGkC;EAC9B,SAAA;AHmVR;AGjVI;EACI,yBAAA;EC/GA,eDgHmB;EC/GnB,gBD+GyB;EC7G7B,iBD6GkC;EAC9B,SAAA;AHqVR;AGnVI;ECnHI,eDoHmB;ECnHnB,gBDmHyB;ECjH7B,iBDiHkC;EAC9B,6BAAA;EACA,SAAA;AHuVR;AG1VI;ECnHI,eDoHmB;ECnHnB,gBDmHyB;ECjH7B,iBDiHkC;EAC9B,6BAAA;EACA,SAAA;AHuVR;AG1VI;ECnHI,eDoHmB;ECnHnB,gBDmHyB;ECjH7B,iBDiHkC;EAC9B,6BAAA;EACA,SAAA;AHuVR;;AK3cI;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,YAAA;AL8cR;AK7cQ;EACI,4BAAA;EDRJ,eCSuB;EDRvB,gBCQ6B;EDNjC,iBCMsC;ALid1C;AKndQ;EACI,4BAAA;EDRJ,eCSuB;EDRvB,gBCQ6B;EDNjC,iBCMsC;ALid1C;AKndQ;EACI,4BAAA;EDRJ,eCSuB;EDRvB,gB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","sourcesContent":["@font-face {\r\n    font-family: generalFont;\r\n    src: url(\"../fonts/Montserrat-Regular.ttf\")format(\"truetype\"),\r\n         url(\"../fonts/Montserrat-Bold.ttf\")format(\"truetype\"),\r\n         url(\"../fonts/Montserrat-Bold.ttf\")format(\"truetype\");\r\n}\r\n","@font-face {\n  font-family: generalFont;\n  src: url(\"../fonts/Montserrat-Regular.ttf\") format(\"truetype\"), url(\"../fonts/Montserrat-Bold.ttf\") format(\"truetype\"), url(\"../fonts/Montserrat-Bold.ttf\") format(\"truetype\");\n}\nhtml {\n  font-family: generalFont;\n  color: #1F2041;\n  box-sizing: border-box;\n  margin: 0;\n}\n\n.container {\n  display: flex;\n  flex-direction: column;\n}\n\nsection {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 37px;\n}\n\n.header__container {\n  display: flex;\n  justify-content: flex-start;\n}\n\n.header__logo {\n  margin: 30px;\n  max-width: 48px;\n  max-height: 48px;\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.title__text_p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.title__text_p, .field__area input::placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n\n.field__title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 15px;\n}\n.field__title .title__text_p, .field__title .field__area input::placeholder, .field__area .field__title input::placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__area {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 42px;\n  width: 318px;\n  margin-top: 5px;\n}\n.field__area input {\n  height: 40px;\n  width: 200px;\n  outline: 0;\n  border: none;\n  margin-left: 15px;\n}\n.field__area input::placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area p {\n  margin-left: 15px;\n}\n.field__area img {\n  margin-right: 15px;\n}\n.field__area:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n}\n.field__area:hover p {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.dark-100 {\n  background: #1F2041;\n}\n.dark-75 {\n  background: rgba(31, 32, 65, 0.75);\n}\n.dark-50 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-25 {\n  background: rgba(31, 32, 65, 0.5);\n}\n.dark-5 {\n  background: rgba(31, 32, 65, 0.05);\n}\n\n.purple {\n  background: #BC9CFF;\n}\n\n.green {\n  background: #6FCF97;\n}\n\n.color__block {\n  display: flex;\n  align-items: center;\n  margin-top: 20px;\n}\n\n.color__block:first-child {\n  margin-top: 0;\n}\n\n.color__rectangle {\n  height: 70px;\n  width: 70px;\n  border-radius: 6px;\n}\n\n.color__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  margin-left: 40px;\n}\n.color__text h3 {\n  font-weight: bold;\n  margin: 0;\n}\n.color__text p {\n  font-weight: 400;\n  margin: 0;\n}\n\n.title {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 500px;\n  margin-top: 50px;\n}\n.title :first-child {\n  margin-top: 0;\n}\n\n.title__label-1 {\n  font-size: 29px;\n  font-weight: 400;\n  line-height: 29px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-2 {\n  font-size: 19px;\n  font-weight: 400;\n  line-height: 23px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-3 {\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n.title__label-p {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.25);\n  width: 37px;\n  text-align: right;\n  margin-right: 30px;\n}\n\n.title__text_1 {\n  font-size: 29px;\n  font-weight: 700;\n  line-height: 29px;\n  margin: 0;\n}\n.title__text_2 {\n  font-size: 19px;\n  font-weight: 700;\n  line-height: 23px;\n  margin: 0;\n}\n.title__text_3 {\n  text-transform: uppercase;\n  font-size: 12px;\n  font-weight: 700;\n  line-height: 15px;\n  margin: 0;\n}\n.title__text_p, .field__area input::placeholder, .date-dropdown-medium input::placeholder, .sub-field input::placeholder, .date-dropdown-small input::placeholder {\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.75);\n  margin: 0;\n}\n\n.field__title {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 15px;\n}\n.field__title .title__text_p, .field__title .field__area input::placeholder, .field__title .date-dropdown-medium input::placeholder, .field__title .sub-field input::placeholder, .field__title .date-dropdown-small input::placeholder, .field__area .field__title input::placeholder, .date-dropdown-medium .field__title input::placeholder, .sub-field .field__title input::placeholder, .date-dropdown-small .field__title input::placeholder {\n  color: rgba(31, 32, 65, 0.5);\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 15px;\n}\n.field__area, .date-dropdown-medium, .sub-field, .date-dropdown-small {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 4px;\n  height: 42px;\n  width: 318px;\n  margin-top: 5px;\n}\n.field__area input, .date-dropdown-medium input, .sub-field input, .date-dropdown-small input {\n  height: 40px;\n  width: 200px;\n  outline: 0;\n  border: none;\n  margin-left: 15px;\n}\n.field__area input::placeholder, .date-dropdown-medium input::placeholder, .sub-field input::placeholder, .date-dropdown-small input::placeholder {\n  color: rgba(31, 32, 65, 0.25);\n}\n.field__area p, .date-dropdown-medium p, .sub-field p, .date-dropdown-small p {\n  margin-left: 15px;\n}\n.field__area img, .date-dropdown-medium img, .sub-field img, .date-dropdown-small img {\n  margin-right: 15px;\n}\n.field__area:hover, .date-dropdown-medium:hover, .sub-field:hover, .date-dropdown-small:hover {\n  border: 1px solid rgba(31, 32, 65, 0.5);\n}\n.field__area:hover p, .date-dropdown-medium:hover p, .sub-field:hover p, .date-dropdown-small:hover p {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.dropfield {\n  display: flex;\n  justify-content: space-between;\n}\n\n.dropdown-box {\n  display: inline-block;\n}\n\n.date-dropdown-small {\n  width: 148px;\n}\n\n.date-dropdown-medium, .sub-field {\n  width: 264px;\n}\n\n.sub-field p {\n  color: rgba(31, 32, 65, 0.5);\n}\n\n.checkfield {\n  margin-top: 16px;\n}\n\n.check {\n  display: block;\n  position: relative;\n  padding-left: 30px;\n  margin-bottom: 10px;\n  cursor: pointer;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 18px;\n  color: rgba(31, 32, 65, 0.5);\n  max-width: 200px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.check:last-child {\n  margin-bottom: 0;\n}\n.check__input {\n  position: absolute;\n  -webkit-appearance: none;\n}\n.check__box {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background: url(\"/src/styles/form__elements/elements/checkbox/checkbox-inactive.svg\");\n  margin-left: -30px;\n  margin-top: -2px;\n  transition: 0.2s;\n}\n\n.check__input:hover + .check__box {\n  background: url(\"/src/styles/form__elements/elements/checkbox/checkbox-focused.svg\");\n}\n\n.check__input:checked + .check__box {\n  background: url(\"/src/styles/form__elements/elements/checkbox/checkbox-active.svg\");\n}\n\n.radio {\n  display: flex;\n  margin: 0;\n}\n\n.radio__box input[type=radio] {\n  display: none;\n}\n.radio__box label {\n  display: inline-block;\n  cursor: pointer;\n  position: relative;\n  padding-left: 25px;\n  margin-right: 0;\n  line-height: 18px;\n  user-select: none;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 24px;\n  color: rgba(31, 32, 65, 0.5);\n  margin-right: 20px;\n  margin-top: 0;\n}\n.radio__box label:before {\n  content: \"\";\n  display: inline-block;\n  width: 20px;\n  height: 20px;\n  position: absolute;\n  left: 0;\n  right: 0;\n  bottom: 2px;\n  background: url(\"/src/styles/form__elements/elements/radio/inactive.svg\") 0 0 no-repeat;\n  transition: 0.3s;\n}\n.radio__box input[type=radio]:checked + label:before {\n  background: url(\"/src/styles/form__elements/elements/radio/radio-active.svg\");\n}\n.radio__box input[type=radio]:checked + label {\n  color: rgba(31, 32, 65, 0.75);\n}\n\n.checkfield {\n  margin-top: 16px;\n}\n\n.check, .toggle {\n  display: block;\n  position: relative;\n  padding-left: 30px;\n  margin-bottom: 10px;\n  cursor: pointer;\n  font-size: 14px;\n  font-weight: 400;\n  line-height: 18px;\n  color: rgba(31, 32, 65, 0.5);\n  max-width: 200px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.check:last-child, .toggle:last-child {\n  margin-bottom: 0;\n}\n.check__input, .toggle__input {\n  position: absolute;\n  -webkit-appearance: none;\n}\n.check__box {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background: url(\"/src/styles/form__elements/elements/checkbox/checkbox-inactive.svg\");\n  margin-left: -30px;\n  margin-top: -2px;\n  transition: 0.2s;\n}\n\n.check__input:hover + .check__box, .toggle__input:hover + .check__box {\n  background: url(\"/src/styles/form__elements/elements/checkbox/checkbox-focused.svg\");\n}\n\n.check__input:checked + .check__box, .toggle__input:checked + .check__box {\n  background: url(\"/src/styles/form__elements/elements/checkbox/checkbox-active.svg\");\n}\n\n.toggle {\n  font-size: 14px;\n  font-weight: 200;\n  line-height: 24px;\n  padding-left: 50px;\n  color: rgba(31, 32, 65, 0.75);\n  max-width: 260px;\n}\n.toggle__box {\n  width: 40px;\n  height: 21px;\n  margin-left: -50px;\n  margin-top: 1px;\n  background: url(\"/src/styles/form__elements/elements/toggle/switch-off.svg\");\n}\n\n.toggle__input:hover + .toggle__box {\n  background: url(\"/src/styles/form__elements/elements/toggle/switch-off.svg\");\n}\n\n.toggle__input:checked + .toggle__box {\n  background: url(\"/src/styles/form__elements/elements/toggle/switch-on.svg\");\n}\n\n.likefield {\n  display: flex;\n  height: 20px;\n}\n\n.like {\n  display: block;\n  position: relative;\n  cursor: pointer;\n  margin-right: 50px;\n}\n.like__input {\n  position: absolute;\n  -webkit-appearance: none;\n}\n.like__box {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  height: 18px;\n  min-width: 28px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  border-radius: 10px;\n  padding-left: 10px;\n  background: 11% center no-repeat url(\"/src/styles/form__elements/elements/like-button/favorite_border.svg\");\n  transition: 0.2s;\n}\n.like__box p {\n  display: inline;\n  font-size: 10px;\n  font-weight: 400;\n  line-height: 12px;\n  color: rgba(31, 32, 65, 0.25);\n}\n\n.like__input:checked + .like__box {\n  background: 11% center no-repeat url(\"/src/styles/form__elements/elements/like-button/favorite.svg\");\n  border-color: #BC9CFF;\n}\n.like__input:checked + .like__box p {\n  color: #BC9CFF;\n}\n\n.ratefield {\n  display: flex;\n}\n\n.rating {\n  margin-right: 20px;\n  display: inline-flex;\n  flex-direction: row-reverse;\n}\n.rating__star {\n  height: 24px;\n  width: 24px;\n  cursor: pointer;\n  background: center no-repeat url(\"/src/styles/form__elements/elements/rating/star_border.svg\");\n  transition: 0.2s;\n}\n.rating__star:hover, .rating__star:hover ~ .rating__star {\n  background: center no-repeat url(\"/src/styles/form__elements/elements/rating/star.svg\");\n}\n.rating[data-total-value=\"1\"] .rating__star:nth-child(n+5), .rating[data-total-value=\"2\"] .rating__star:nth-child(n+4), .rating[data-total-value=\"3\"] .rating__star:nth-child(n+3), .rating[data-total-value=\"4\"] .rating__star:nth-child(n+2), .rating[data-total-value=\"5\"] .rating__star:nth-child(n+1) {\n  background: center no-repeat url(\"/src/styles/form__elements/elements/rating/star.svg\");\n}\n\n.range-widget {\n  width: 266px;\n}\n\n.pricefield {\n  display: flex;\n  align-items: center;\n}\n\n.noUi-handle::after,\n.noUi-handle::before {\n  display: none;\n}\n\n.range-slider,\n.range-slider .noUi-handle {\n  box-shadow: none;\n}\n\n.noUi-target {\n  box-sizing: border-box;\n  height: 6px;\n  width: 264px;\n  border-radius: 3px;\n  border: 1px solid rgba(31, 32, 65, 0.25);\n  background-color: white;\n  box-shadow: none;\n}\n\n.noUi-horizontal .noUi-handle {\n  box-shadow: none;\n  height: 12px;\n  width: 12px;\n  border: 2px solid white;\n  border-radius: 10px;\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  right: -5px;\n  top: -6px;\n}\n\n.noUi-connects {\n  overflow: visible;\n}\n\n.noUi-connect {\n  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\n  height: 6px;\n  top: -1px;\n}\n\n.full-button {\n  cursor: pointer;\n  line-height: 15px;\n  padding: 14px 20.5px 15px;\n  font-weight: bold;\n  font-size: 12px;\n  text-transform: uppercase;\n  color: white;\n  text-transform: uppercase;\n  border-radius: 22px;\n  border: none;\n  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\n}\n.full-button[disabled] {\n  opacity: 0.5;\n}\n\n.empty-button {\n  cursor: pointer;\n  line-height: 15px;\n  padding: 12px 18.5px 13px;\n  font-weight: bold;\n  font-size: 12px;\n  text-transform: uppercase;\n  color: #BC9CFF;\n  border: 2px solid transparent;\n  border-radius: 22px;\n  box-shadow: 2px 1000px 1px #fff inset;\n  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\n  background-origin: border-box;\n  background-clip: content-box, border-box;\n}\n.empty-button:hover, .empty-button:focus {\n  box-shadow: none;\n  color: white;\n}\n.empty-button[disabled] {\n  opacity: 0.5;\n}\n\n.link-button {\n  cursor: pointer;\n  border: none;\n  background-color: transparent;\n  font-weight: bold;\n  font-size: 12px;\n  text-transform: uppercase;\n  line-height: 15px;\n  color: #BC9CFF;\n}\n.link-button[disabled] {\n  color: rgba(31, 32, 65, 0.5);\n}\n\n.pass-button {\n  display: flex;\n  justify-content: flex-end;\n  align-items: center;\n  width: 320px;\n  height: 44px;\n  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\n  border-radius: 22px;\n  cursor: pointer;\n}\n.pass-button h3 {\n  color: white;\n  justify-self: center;\n}\n.pass-button img {\n  margin: 13px;\n}\n\n.field-20 {\n  margin-top: 20px;\n}\n.field-20:first-child {\n  margin-top: 0;\n}\n\n.field-40 {\n  margin-top: 40px;\n}\n.field-40:first-child {\n  margin-top: 0;\n}\n\n.right-20 {\n  margin-right: 20px;\n}\n\n.button-row {\n  display: flex;\n  justify-content: flex-start;\n  margin-bottom: 30px;\n}","html {\r\n    font-family: generalFont;\r\n    color: #1F2041;\r\n    box-sizing: border-box;\r\n    margin: 0;\r\n}\r\n\r\n.container{\r\n    display:flex;\r\n    flex-direction: column;\r\n}\r\n\r\nsection{\r\n    display:flex;\r\n    justify-content: space-evenly;\r\n    margin-top: 37px;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",".header__container{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n}\r\n.header__logo{\r\n    margin: 30px;\r\n    max-width: 48px;\r\n    max-height: 48px;\r\n}","@import \"../mixins/text-size\";\r\n\r\n.dark{\r\n    &-100{\r\n        background: #1F2041;\r\n    }\r\n    &-75{\r\n        background: rgba(31, 32, 65, 0.75)\r\n    }\r\n    &-50 {\r\n        background: rgba(31, 32, 65, 0.50)\r\n    }\r\n    &-25{\r\n        background: rgba(31, 32, 65, 0.50)\r\n    }\r\n    &-5{\r\n        background: rgba(31, 32, 65, 0.05)\r\n    }\r\n}\r\n\r\n.purple{\r\n    background: #BC9CFF;\r\n}\r\n\r\n.green{\r\n    background: #6FCF97;\r\n}\r\n\r\n.color__block {\r\n    display: flex;\r\n    align-items: center;\r\n    margin-top: 20px;\r\n}\r\n\r\n.color__block:first-child{\r\n    margin-top: 0;\r\n}\r\n\r\n.color__rectangle{\r\n    height: 70px;\r\n    width: 70px;\r\n    border-radius: 6px;\r\n}\r\n\r\n.color__text{\r\n    display:flex;\r\n    flex-direction: column;\r\n    justify-content: space-evenly;\r\n    margin-left: 40px;\r\n\r\n    h3 {\r\n        font-weight: bold;\r\n        margin: 0;\r\n    }\r\n\r\n    p {\r\n        font-weight: 400;\r\n        margin: 0;\r\n    }\r\n}\r\n\r\n.title{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    max-width: 500px;\r\n    margin-top: 50px;\r\n    :first-child {\r\n        margin-top: 0;\r\n    }\r\n}\r\n\r\n.title__label {    \r\n    &-1{\r\n        @include text-size(29px, 400, 29px);\r\n        color:rgba(31, 32, 65, 0.25);\r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n    &-2 {\r\n        @include text-size(19px, 400, 23px);\r\n        color:rgba(31, 32, 65, 0.25); \r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n    \r\n    &-3 {\r\n        @include text-size(12px, 400, 15px);\r\n        color:rgba(31, 32, 65, 0.25);\r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n    &-p {\r\n        @include text-size(14px, 400, 24px);\r\n        color:rgba(31, 32, 65, 0.25);\r\n        width: 37px;\r\n        text-align: right;\r\n        margin-right: 30px;\r\n    }\r\n}\r\n\r\n%for-text{\r\n    &_1 {\r\n        @include text-size(29px, 700, 29px);\r\n        margin: 0;\r\n    }\r\n    &_2 {\r\n        @include text-size(19px, 700, 23px);\r\n        margin: 0;\r\n    }\r\n    &_3 {\r\n        text-transform: uppercase;\r\n        @include text-size(12px, 700, 15px);\r\n        margin: 0;\r\n    }\r\n    &_p {\r\n        @include text-size(14px, 400, 24px);\r\n        color:rgba(31, 32, 65, 0.75);\r\n        margin: 0;\r\n    }\r\n}\r\n\r\n.title__text{\r\n    &_1 {\r\n        @extend %for-text_1;\r\n    }\r\n    &_2 {\r\n        @extend %for-text_2;\r\n    }\r\n    &_3 {\r\n        @extend %for-text_3;\r\n    }\r\n    &_p {\r\n       @extend %for-text_p;\r\n    }\r\n}\r\n\r\n","@mixin text-size($size, $weight, $height) {\r\n    font: {\r\n        size: $size;\r\n        weight: $weight;\r\n    }\r\n    line-height: $height;\r\n}","@use \"/src/styles/mixins/text-size\";\r\n@import \"/src/styles/colors__types/_colors__types\";\r\n\r\n.field {\r\n    &__title{\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        height: 15px;\r\n        .title__text_p{\r\n            color: rgba(31, 32, 65, 0.5);\r\n            @include text-size(12px, 400, 15px);\r\n        }\r\n    }\r\n\r\n    &__area{\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: space-between;\r\n        border: 1px solid rgba(31, 32, 65, 0.25);\r\n        border-radius: 4px;\r\n        height: 42px;\r\n        width: 318px;\r\n        margin-top: 5px;\r\n        input{\r\n            height: 40px;\r\n            width: 200px;\r\n            outline: 0;\r\n            border: none;\r\n            margin-left: 15px;\r\n            &::placeholder{\r\n                @extend .title__text_p;\r\n                color:rgba(31, 32, 65, 0.25);\r\n            }\r\n        }\r\n\r\n        p {\r\n            margin-left: 15px;\r\n        }\r\n\r\n        img{\r\n            margin-right: 15px;\r\n        }\r\n\r\n        &:hover{\r\n            border: 1px solid rgba(31, 32, 65, 0.5);\r\n            p {\r\n                color: rgba(31, 32, 65, 0.75);\r\n            }\r\n        }\r\n    }\r\n}\r\n","@import '/src/styles/form__elements/elements/input/_input.scss';\r\n\r\n.dropfield{\r\n    display: flex;\r\n    justify-content: space-between;\r\n}\r\n.dropdown-box{\r\n    display: inline-block;\r\n}\r\n.date-dropdown-small{\r\n    @extend .field__area;\r\n    width: 148px;\r\n}\r\n\r\n.date-dropdown-medium{\r\n    @extend .field__area;\r\n    width: 264px;\r\n}\r\n\r\n.sub-field{\r\n    @extend .date-dropdown-medium;\r\n    p{\r\n        color:rgba(31, 32, 65, 0.5)\r\n    }\r\n}\r\n","@import '/src/styles/mixins/text-size';\r\n\r\n.checkfield {\r\n    margin-top: 16px;\r\n}\r\n\r\n.check{\r\n    display: block;\r\n    position: relative;\r\n    padding-left: 30px;\r\n    margin-bottom: 10px;\r\n    &:last-child{\r\n        margin-bottom: 0;\r\n    }\r\n    cursor: pointer;\r\n    @include text-size(14px, 400, 18px);\r\n    color: rgba(31, 32, 65, 0.5);\r\n    max-width: 200px;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n\r\n    &__input{\r\n        position: absolute;\r\n        -webkit-appearance: none;\r\n    }\r\n\r\n    &__box{\r\n        position:absolute;\r\n        width: 20px;\r\n        height: 20px;\r\n        background: url('/src/styles/form__elements/elements/checkbox/checkbox-inactive.svg');\r\n        margin-left: -30px;\r\n        margin-top: -2px;\r\n        transition: .2s;\r\n\r\n    }\r\n}\r\n\r\n.check__input:hover + .check__box{\r\n    background: url('/src/styles/form__elements/elements/checkbox/checkbox-focused.svg');\r\n}\r\n\r\n.check__input:checked + .check__box {\r\n    background: url('/src/styles/form__elements/elements/checkbox/checkbox-active.svg');\r\n}\r\n\r\n\r\n\r\n","@import '/src/styles/mixins/text-size';\r\n\r\n.radio{\r\n    display: flex;\r\n    margin: 0;\r\n}\r\n\r\n.radio__box{\r\n    input[type=radio] {\r\n        display: none;\r\n    }\r\n    label {\r\n        display: inline-block;\r\n        cursor: pointer;\r\n        position: relative;\r\n        padding-left: 25px;\r\n        margin-right: 0;\r\n        line-height: 18px;\r\n        user-select: none;\r\n        @include text-size(14px,400,24px);\r\n        color: rgba(31, 32, 65, 0.5);\r\n        margin-right: 20px;\r\n        margin-top: 0;\r\n    }\r\n    label:before {\r\n        content: \"\";\r\n        display: inline-block;\r\n        width: 20px;\r\n        height: 20px;\r\n        position: absolute;\r\n        left: 0;\r\n        right: 0;\r\n        bottom: 2px;\r\n        background: url(\"/src/styles/form__elements/elements/radio/inactive.svg\") 0 0 no-repeat;\r\n        transition: .3s;\r\n    }\r\n    input[type=radio]:checked + label:before {\r\n        background: url('/src/styles/form__elements/elements/radio/radio-active.svg');\r\n    }\r\n\r\n    input[type=radio]:checked + label{\r\n        color: rgba(31, 32, 65, 0.75);\r\n    }\r\n}","@import '/src/styles/mixins/text-size';\r\n@import '/src/styles/form__elements/elements/checkbox/checkbox';\r\n\r\n.toggle{\r\n    @extend .check;\r\n    @include text-size(14px, 200, 24px);\r\n    padding-left: 50px;\r\n    color: rgba(31, 32, 65, 0.75);\r\n    max-width: 260px;\r\n    &__input{\r\n        @extend .check__input;\r\n    }\r\n    &__box{\r\n        width: 40px;\r\n        height: 21px;\r\n        margin-left: -50px;\r\n        margin-top: 1px;\r\n        background: url('/src/styles/form__elements/elements/toggle/switch-off.svg');\r\n    }\r\n}\r\n\r\n.toggle__input:hover + .toggle__box{\r\n        background: url('/src/styles/form__elements/elements/toggle/switch-off.svg');\r\n}\r\n\r\n.toggle__input:checked + .toggle__box{\r\n    background: url('/src/styles/form__elements/elements/toggle/switch-on.svg');\r\n}\r\n\r\n","@import '/src/styles/mixins/text-size';\r\n\r\n.likefield{\r\n    display: flex;\r\n    height: 20px;\r\n}\r\n\r\n.like{\r\n    display:block;\r\n    position: relative;\r\n    cursor: pointer;\r\n    margin-right: 50px;\r\n\r\n    &__input{\r\n        position: absolute;\r\n        -webkit-appearance: none;\r\n    }\r\n    &__box{\r\n        display: flex;\r\n        align-items: center;\r\n        justify-content: center;\r\n        position: absolute;\r\n        height: 18px;\r\n        min-width: 28px;\r\n        border: 1px solid rgba(31, 32, 65, 0.25); \r\n        border-radius: 10px;\r\n        padding-left: 10px;\r\n        background: 11% center no-repeat url('/src/styles/form__elements/elements/like-button/favorite_border.svg');\r\n        transition: .2s;\r\n        p{\r\n            display: inline;\r\n            @include text-size(10px, 400, 12px);\r\n            color: rgba(31, 32, 65, 0.25);\r\n        }    \r\n    }\r\n}   \r\n.like__input:checked + .like__box{\r\n    background: 11% center no-repeat url('/src/styles/form__elements/elements/like-button/favorite.svg');\r\n    border-color: #BC9CFF;\r\n    p{\r\n        color: #BC9CFF;\r\n    }\r\n}\r\n\r\n\r\n\r\n",".ratefield {\r\n  display: flex;\r\n}\r\n\r\n.rating {\r\n  margin-right: 20px;\r\n  display: inline-flex;\r\n  flex-direction: row-reverse;\r\n  &__star {\r\n    height: 24px;\r\n    width: 24px;\r\n    cursor: pointer;\r\n    background: center no-repeat\r\n      url(\"/src/styles/form__elements/elements/rating/star_border.svg\");\r\n    transition: .2s;\r\n    &:hover,\r\n    &:hover ~ & {\r\n        background: center no-repeat\r\n        url(\"/src/styles/form__elements/elements/rating/star.svg\");\r\n    }\r\n  }\r\n  &[data-total-value=\"1\"] .rating__star:nth-child(n + 5),\r\n  &[data-total-value=\"2\"] .rating__star:nth-child(n + 4),\r\n  &[data-total-value=\"3\"] .rating__star:nth-child(n + 3),\r\n  &[data-total-value=\"4\"] .rating__star:nth-child(n+ 2),\r\n  &[data-total-value=\"5\"] .rating__star:nth-child(n + 1){\r\n    background: center no-repeat\r\n        url(\"/src/styles/form__elements/elements/rating/star.svg\");\r\n  }\r\n}\r\n\r\n\r\n\r\n",".range-widget{\r\n    width: 266px;\r\n}\r\n.pricefield{\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n.noUi-handle::after, \r\n.noUi-handle::before  {\r\n    display: none;\r\n}\r\n.range-slider,\r\n.range-slider .noUi-handle{\r\n    box-shadow: none;\r\n} \r\n\r\n.noUi-target{\r\n    box-sizing: border-box;\r\n    height: 6px;\r\n    width: 264px;\r\n    border-radius: 3px;\r\n    border: 1px solid rgba(31, 32, 65, 0.25);\r\n    background-color: white;\r\n    box-shadow: none;\r\n}\r\n\r\n.noUi-horizontal {\r\n    .noUi-handle{\r\n        box-shadow: none;\r\n        height: 12px;\r\n        width: 12px;\r\n        border: 2px solid white;\r\n        border-radius: 10px;\r\n        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); \r\n        right: -5px;\r\n        top: -6px\r\n    }\r\n}\r\n\r\n.noUi-connects{\r\n    overflow: visible;  \r\n}\r\n.noUi-connect{\r\n    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);\r\n    height: 6px;\r\n    top: -1px\r\n}\r\n\r\n// #slider{\r\n//     height: 6px;\r\n//     width: 266px;\r\n// }\r\n",".full-button{\r\n    cursor: pointer;\r\n    line-height: 15px;\r\n    padding: 14px 20.5px 15px;\r\n    font: {\r\n        weight: bold;\r\n        size: 12px;\r\n    }\r\n\r\n    text-transform: uppercase;\r\n    color: white;\r\n    text-transform: uppercase;\r\n    border-radius: 22px;\r\n    border: none;\r\n    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\r\n\r\n    &[disabled]{\r\n        opacity: 0.5;\r\n    }\r\n}\r\n\r\n.empty-button{\r\n    cursor: pointer;\r\n    line-height: 15px;\r\n    padding: 12px 18.5px 13px;\r\n    font: {\r\n        weight: bold;\r\n        size: 12px;\r\n    }\r\n    text-transform: uppercase;\r\n    color: #BC9CFF;\r\n    border: 2px solid transparent;\r\n    border-radius: 22px;\r\n    box-shadow: 2px 1000px 1px #fff inset;\r\n    background: {\r\n        image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),  linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\r\n        origin: border-box;\r\n        clip: content-box, border-box;\r\n    }\r\n    &:hover,\r\n    &:focus{\r\n        box-shadow: none;\r\n        color: white;\r\n    }\r\n    &[disabled]{\r\n        opacity: 0.5;\r\n    }\r\n}\r\n\r\n.link-button{\r\n    cursor: pointer;\r\n    border:none;\r\n    background-color: transparent;\r\n    font: {\r\n        weight: bold;\r\n        size: 12px;\r\n    }\r\n    text-transform: uppercase;\r\n    line-height: 15px;\r\n    color: #BC9CFF;\r\n    &[disabled]{\r\n        color: rgba(31, 32, 65, 0.5);\r\n    }\r\n}\r\n\r\n.pass-button{\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    align-items: center;\r\n    width: 320px;\r\n    height: 44px;\r\n    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);\r\n    border-radius: 22px;\r\n    cursor: pointer;\r\n    h3{\r\n        color: white;\r\n        justify-self: center;\r\n    }\r\n    img{\r\n        margin: 13px;\r\n    }\r\n}","@use 'elements/input/input.scss';\r\n@use 'elements/dropdown/dropdown.scss';\r\n@use 'elements/checkbox/checkbox';\r\n@use 'elements/radio/radio';\r\n@use 'elements/toggle/toggle';\r\n@use 'elements/like-button/like-button';\r\n@use 'elements/rating/rating';\r\n@use  'elements/price-range/price-range';\r\n@use 'elements/buttons/buttons';\r\n\r\n.field-20 {\r\n    margin-top: 20px;\r\n    &:first-child{\r\n        margin-top: 0;\r\n    }\r\n}\r\n\r\n.field-40{\r\n    margin-top: 40px;\r\n   &:first-child{\r\n       margin-top: 0;\r\n    }\r\n} \r\n\r\n.right-20{\r\n    margin-right: 20px;\r\n}\r\n\r\n.button-row{\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    margin-bottom: 30px;\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+
+      content += cssWithMappingToString(item);
+
+      if (needLayer) {
+        content += "}";
+      }
+
+      if (item[2]) {
+        content += "}";
+      }
+
+      if (item[4]) {
+        content += "}";
+      }
+
+      return content;
+    }).join("");
+  }; // import a list of modules into the list
+
+
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
+/*!************************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
+  \************************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (item) {
+  var content = item[1];
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (typeof btoa === "function") {
+    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
+    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+    var sourceMapping = "/*# ".concat(data, " */");
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || "").concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join("\n");
+  }
+
+  return [content].join("\n");
+};
 
 /***/ }),
 
@@ -10903,6 +11159,2310 @@ return jQuery;
 
 /***/ }),
 
+/***/ "./node_modules/nouislider/dist/nouislider.js":
+/*!****************************************************!*\
+  !*** ./node_modules/nouislider/dist/nouislider.js ***!
+  \****************************************************/
+/***/ (function(__unused_webpack_module, exports) {
+
+(function (global, factory) {
+     true ? factory(exports) :
+    0;
+})(this, (function (exports) { 'use strict';
+
+    exports.PipsMode = void 0;
+    (function (PipsMode) {
+        PipsMode["Range"] = "range";
+        PipsMode["Steps"] = "steps";
+        PipsMode["Positions"] = "positions";
+        PipsMode["Count"] = "count";
+        PipsMode["Values"] = "values";
+    })(exports.PipsMode || (exports.PipsMode = {}));
+    exports.PipsType = void 0;
+    (function (PipsType) {
+        PipsType[PipsType["None"] = -1] = "None";
+        PipsType[PipsType["NoValue"] = 0] = "NoValue";
+        PipsType[PipsType["LargeValue"] = 1] = "LargeValue";
+        PipsType[PipsType["SmallValue"] = 2] = "SmallValue";
+    })(exports.PipsType || (exports.PipsType = {}));
+    //region Helper Methods
+    function isValidFormatter(entry) {
+        return isValidPartialFormatter(entry) && typeof entry.from === "function";
+    }
+    function isValidPartialFormatter(entry) {
+        // partial formatters only need a to function and not a from function
+        return typeof entry === "object" && typeof entry.to === "function";
+    }
+    function removeElement(el) {
+        el.parentElement.removeChild(el);
+    }
+    function isSet(value) {
+        return value !== null && value !== undefined;
+    }
+    // Bindable version
+    function preventDefault(e) {
+        e.preventDefault();
+    }
+    // Removes duplicates from an array.
+    function unique(array) {
+        return array.filter(function (a) {
+            return !this[a] ? (this[a] = true) : false;
+        }, {});
+    }
+    // Round a value to the closest 'to'.
+    function closest(value, to) {
+        return Math.round(value / to) * to;
+    }
+    // Current position of an element relative to the document.
+    function offset(elem, orientation) {
+        var rect = elem.getBoundingClientRect();
+        var doc = elem.ownerDocument;
+        var docElem = doc.documentElement;
+        var pageOffset = getPageOffset(doc);
+        // getBoundingClientRect contains left scroll in Chrome on Android.
+        // I haven't found a feature detection that proves this. Worst case
+        // scenario on mis-match: the 'tap' feature on horizontal sliders breaks.
+        if (/webkit.*Chrome.*Mobile/i.test(navigator.userAgent)) {
+            pageOffset.x = 0;
+        }
+        return orientation ? rect.top + pageOffset.y - docElem.clientTop : rect.left + pageOffset.x - docElem.clientLeft;
+    }
+    // Checks whether a value is numerical.
+    function isNumeric(a) {
+        return typeof a === "number" && !isNaN(a) && isFinite(a);
+    }
+    // Sets a class and removes it after [duration] ms.
+    function addClassFor(element, className, duration) {
+        if (duration > 0) {
+            addClass(element, className);
+            setTimeout(function () {
+                removeClass(element, className);
+            }, duration);
+        }
+    }
+    // Limits a value to 0 - 100
+    function limit(a) {
+        return Math.max(Math.min(a, 100), 0);
+    }
+    // Wraps a variable as an array, if it isn't one yet.
+    // Note that an input array is returned by reference!
+    function asArray(a) {
+        return Array.isArray(a) ? a : [a];
+    }
+    // Counts decimals
+    function countDecimals(numStr) {
+        numStr = String(numStr);
+        var pieces = numStr.split(".");
+        return pieces.length > 1 ? pieces[1].length : 0;
+    }
+    // http://youmightnotneedjquery.com/#add_class
+    function addClass(el, className) {
+        if (el.classList && !/\s/.test(className)) {
+            el.classList.add(className);
+        }
+        else {
+            el.className += " " + className;
+        }
+    }
+    // http://youmightnotneedjquery.com/#remove_class
+    function removeClass(el, className) {
+        if (el.classList && !/\s/.test(className)) {
+            el.classList.remove(className);
+        }
+        else {
+            el.className = el.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " ");
+        }
+    }
+    // https://plainjs.com/javascript/attributes/adding-removing-and-testing-for-classes-9/
+    function hasClass(el, className) {
+        return el.classList ? el.classList.contains(className) : new RegExp("\\b" + className + "\\b").test(el.className);
+    }
+    // https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY#Notes
+    function getPageOffset(doc) {
+        var supportPageOffset = window.pageXOffset !== undefined;
+        var isCSS1Compat = (doc.compatMode || "") === "CSS1Compat";
+        var x = supportPageOffset
+            ? window.pageXOffset
+            : isCSS1Compat
+                ? doc.documentElement.scrollLeft
+                : doc.body.scrollLeft;
+        var y = supportPageOffset
+            ? window.pageYOffset
+            : isCSS1Compat
+                ? doc.documentElement.scrollTop
+                : doc.body.scrollTop;
+        return {
+            x: x,
+            y: y,
+        };
+    }
+    // we provide a function to compute constants instead
+    // of accessing window.* as soon as the module needs it
+    // so that we do not compute anything if not needed
+    function getActions() {
+        // Determine the events to bind. IE11 implements pointerEvents without
+        // a prefix, which breaks compatibility with the IE10 implementation.
+        return window.navigator.pointerEnabled
+            ? {
+                start: "pointerdown",
+                move: "pointermove",
+                end: "pointerup",
+            }
+            : window.navigator.msPointerEnabled
+                ? {
+                    start: "MSPointerDown",
+                    move: "MSPointerMove",
+                    end: "MSPointerUp",
+                }
+                : {
+                    start: "mousedown touchstart",
+                    move: "mousemove touchmove",
+                    end: "mouseup touchend",
+                };
+    }
+    // https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md
+    // Issue #785
+    function getSupportsPassive() {
+        var supportsPassive = false;
+        /* eslint-disable */
+        try {
+            var opts = Object.defineProperty({}, "passive", {
+                get: function () {
+                    supportsPassive = true;
+                },
+            });
+            // @ts-ignore
+            window.addEventListener("test", null, opts);
+        }
+        catch (e) { }
+        /* eslint-enable */
+        return supportsPassive;
+    }
+    function getSupportsTouchActionNone() {
+        return window.CSS && CSS.supports && CSS.supports("touch-action", "none");
+    }
+    //endregion
+    //region Range Calculation
+    // Determine the size of a sub-range in relation to a full range.
+    function subRangeRatio(pa, pb) {
+        return 100 / (pb - pa);
+    }
+    // (percentage) How many percent is this value of this range?
+    function fromPercentage(range, value, startRange) {
+        return (value * 100) / (range[startRange + 1] - range[startRange]);
+    }
+    // (percentage) Where is this value on this range?
+    function toPercentage(range, value) {
+        return fromPercentage(range, range[0] < 0 ? value + Math.abs(range[0]) : value - range[0], 0);
+    }
+    // (value) How much is this percentage on this range?
+    function isPercentage(range, value) {
+        return (value * (range[1] - range[0])) / 100 + range[0];
+    }
+    function getJ(value, arr) {
+        var j = 1;
+        while (value >= arr[j]) {
+            j += 1;
+        }
+        return j;
+    }
+    // (percentage) Input a value, find where, on a scale of 0-100, it applies.
+    function toStepping(xVal, xPct, value) {
+        if (value >= xVal.slice(-1)[0]) {
+            return 100;
+        }
+        var j = getJ(value, xVal);
+        var va = xVal[j - 1];
+        var vb = xVal[j];
+        var pa = xPct[j - 1];
+        var pb = xPct[j];
+        return pa + toPercentage([va, vb], value) / subRangeRatio(pa, pb);
+    }
+    // (value) Input a percentage, find where it is on the specified range.
+    function fromStepping(xVal, xPct, value) {
+        // There is no range group that fits 100
+        if (value >= 100) {
+            return xVal.slice(-1)[0];
+        }
+        var j = getJ(value, xPct);
+        var va = xVal[j - 1];
+        var vb = xVal[j];
+        var pa = xPct[j - 1];
+        var pb = xPct[j];
+        return isPercentage([va, vb], (value - pa) * subRangeRatio(pa, pb));
+    }
+    // (percentage) Get the step that applies at a certain value.
+    function getStep(xPct, xSteps, snap, value) {
+        if (value === 100) {
+            return value;
+        }
+        var j = getJ(value, xPct);
+        var a = xPct[j - 1];
+        var b = xPct[j];
+        // If 'snap' is set, steps are used as fixed points on the slider.
+        if (snap) {
+            // Find the closest position, a or b.
+            if (value - a > (b - a) / 2) {
+                return b;
+            }
+            return a;
+        }
+        if (!xSteps[j - 1]) {
+            return value;
+        }
+        return xPct[j - 1] + closest(value - xPct[j - 1], xSteps[j - 1]);
+    }
+    //endregion
+    //region Spectrum
+    var Spectrum = /** @class */ (function () {
+        function Spectrum(entry, snap, singleStep) {
+            this.xPct = [];
+            this.xVal = [];
+            this.xSteps = [];
+            this.xNumSteps = [];
+            this.xHighestCompleteStep = [];
+            this.xSteps = [singleStep || false];
+            this.xNumSteps = [false];
+            this.snap = snap;
+            var index;
+            var ordered = [];
+            // Map the object keys to an array.
+            Object.keys(entry).forEach(function (index) {
+                ordered.push([asArray(entry[index]), index]);
+            });
+            // Sort all entries by value (numeric sort).
+            ordered.sort(function (a, b) {
+                return a[0][0] - b[0][0];
+            });
+            // Convert all entries to subranges.
+            for (index = 0; index < ordered.length; index++) {
+                this.handleEntryPoint(ordered[index][1], ordered[index][0]);
+            }
+            // Store the actual step values.
+            // xSteps is sorted in the same order as xPct and xVal.
+            this.xNumSteps = this.xSteps.slice(0);
+            // Convert all numeric steps to the percentage of the subrange they represent.
+            for (index = 0; index < this.xNumSteps.length; index++) {
+                this.handleStepPoint(index, this.xNumSteps[index]);
+            }
+        }
+        Spectrum.prototype.getDistance = function (value) {
+            var distances = [];
+            for (var index = 0; index < this.xNumSteps.length - 1; index++) {
+                distances[index] = fromPercentage(this.xVal, value, index);
+            }
+            return distances;
+        };
+        // Calculate the percentual distance over the whole scale of ranges.
+        // direction: 0 = backwards / 1 = forwards
+        Spectrum.prototype.getAbsoluteDistance = function (value, distances, direction) {
+            var xPct_index = 0;
+            // Calculate range where to start calculation
+            if (value < this.xPct[this.xPct.length - 1]) {
+                while (value > this.xPct[xPct_index + 1]) {
+                    xPct_index++;
+                }
+            }
+            else if (value === this.xPct[this.xPct.length - 1]) {
+                xPct_index = this.xPct.length - 2;
+            }
+            // If looking backwards and the value is exactly at a range separator then look one range further
+            if (!direction && value === this.xPct[xPct_index + 1]) {
+                xPct_index++;
+            }
+            if (distances === null) {
+                distances = [];
+            }
+            var start_factor;
+            var rest_factor = 1;
+            var rest_rel_distance = distances[xPct_index];
+            var range_pct = 0;
+            var rel_range_distance = 0;
+            var abs_distance_counter = 0;
+            var range_counter = 0;
+            // Calculate what part of the start range the value is
+            if (direction) {
+                start_factor = (value - this.xPct[xPct_index]) / (this.xPct[xPct_index + 1] - this.xPct[xPct_index]);
+            }
+            else {
+                start_factor = (this.xPct[xPct_index + 1] - value) / (this.xPct[xPct_index + 1] - this.xPct[xPct_index]);
+            }
+            // Do until the complete distance across ranges is calculated
+            while (rest_rel_distance > 0) {
+                // Calculate the percentage of total range
+                range_pct = this.xPct[xPct_index + 1 + range_counter] - this.xPct[xPct_index + range_counter];
+                // Detect if the margin, padding or limit is larger then the current range and calculate
+                if (distances[xPct_index + range_counter] * rest_factor + 100 - start_factor * 100 > 100) {
+                    // If larger then take the percentual distance of the whole range
+                    rel_range_distance = range_pct * start_factor;
+                    // Rest factor of relative percentual distance still to be calculated
+                    rest_factor = (rest_rel_distance - 100 * start_factor) / distances[xPct_index + range_counter];
+                    // Set start factor to 1 as for next range it does not apply.
+                    start_factor = 1;
+                }
+                else {
+                    // If smaller or equal then take the percentual distance of the calculate percentual part of that range
+                    rel_range_distance = ((distances[xPct_index + range_counter] * range_pct) / 100) * rest_factor;
+                    // No rest left as the rest fits in current range
+                    rest_factor = 0;
+                }
+                if (direction) {
+                    abs_distance_counter = abs_distance_counter - rel_range_distance;
+                    // Limit range to first range when distance becomes outside of minimum range
+                    if (this.xPct.length + range_counter >= 1) {
+                        range_counter--;
+                    }
+                }
+                else {
+                    abs_distance_counter = abs_distance_counter + rel_range_distance;
+                    // Limit range to last range when distance becomes outside of maximum range
+                    if (this.xPct.length - range_counter >= 1) {
+                        range_counter++;
+                    }
+                }
+                // Rest of relative percentual distance still to be calculated
+                rest_rel_distance = distances[xPct_index + range_counter] * rest_factor;
+            }
+            return value + abs_distance_counter;
+        };
+        Spectrum.prototype.toStepping = function (value) {
+            value = toStepping(this.xVal, this.xPct, value);
+            return value;
+        };
+        Spectrum.prototype.fromStepping = function (value) {
+            return fromStepping(this.xVal, this.xPct, value);
+        };
+        Spectrum.prototype.getStep = function (value) {
+            value = getStep(this.xPct, this.xSteps, this.snap, value);
+            return value;
+        };
+        Spectrum.prototype.getDefaultStep = function (value, isDown, size) {
+            var j = getJ(value, this.xPct);
+            // When at the top or stepping down, look at the previous sub-range
+            if (value === 100 || (isDown && value === this.xPct[j - 1])) {
+                j = Math.max(j - 1, 1);
+            }
+            return (this.xVal[j] - this.xVal[j - 1]) / size;
+        };
+        Spectrum.prototype.getNearbySteps = function (value) {
+            var j = getJ(value, this.xPct);
+            return {
+                stepBefore: {
+                    startValue: this.xVal[j - 2],
+                    step: this.xNumSteps[j - 2],
+                    highestStep: this.xHighestCompleteStep[j - 2],
+                },
+                thisStep: {
+                    startValue: this.xVal[j - 1],
+                    step: this.xNumSteps[j - 1],
+                    highestStep: this.xHighestCompleteStep[j - 1],
+                },
+                stepAfter: {
+                    startValue: this.xVal[j],
+                    step: this.xNumSteps[j],
+                    highestStep: this.xHighestCompleteStep[j],
+                },
+            };
+        };
+        Spectrum.prototype.countStepDecimals = function () {
+            var stepDecimals = this.xNumSteps.map(countDecimals);
+            return Math.max.apply(null, stepDecimals);
+        };
+        Spectrum.prototype.hasNoSize = function () {
+            return this.xVal[0] === this.xVal[this.xVal.length - 1];
+        };
+        // Outside testing
+        Spectrum.prototype.convert = function (value) {
+            return this.getStep(this.toStepping(value));
+        };
+        Spectrum.prototype.handleEntryPoint = function (index, value) {
+            var percentage;
+            // Covert min/max syntax to 0 and 100.
+            if (index === "min") {
+                percentage = 0;
+            }
+            else if (index === "max") {
+                percentage = 100;
+            }
+            else {
+                percentage = parseFloat(index);
+            }
+            // Check for correct input.
+            if (!isNumeric(percentage) || !isNumeric(value[0])) {
+                throw new Error("noUiSlider: 'range' value isn't numeric.");
+            }
+            // Store values.
+            this.xPct.push(percentage);
+            this.xVal.push(value[0]);
+            var value1 = Number(value[1]);
+            // NaN will evaluate to false too, but to keep
+            // logging clear, set step explicitly. Make sure
+            // not to override the 'step' setting with false.
+            if (!percentage) {
+                if (!isNaN(value1)) {
+                    this.xSteps[0] = value1;
+                }
+            }
+            else {
+                this.xSteps.push(isNaN(value1) ? false : value1);
+            }
+            this.xHighestCompleteStep.push(0);
+        };
+        Spectrum.prototype.handleStepPoint = function (i, n) {
+            // Ignore 'false' stepping.
+            if (!n) {
+                return;
+            }
+            // Step over zero-length ranges (#948);
+            if (this.xVal[i] === this.xVal[i + 1]) {
+                this.xSteps[i] = this.xHighestCompleteStep[i] = this.xVal[i];
+                return;
+            }
+            // Factor to range ratio
+            this.xSteps[i] =
+                fromPercentage([this.xVal[i], this.xVal[i + 1]], n, 0) / subRangeRatio(this.xPct[i], this.xPct[i + 1]);
+            var totalSteps = (this.xVal[i + 1] - this.xVal[i]) / this.xNumSteps[i];
+            var highestStep = Math.ceil(Number(totalSteps.toFixed(3)) - 1);
+            var step = this.xVal[i] + this.xNumSteps[i] * highestStep;
+            this.xHighestCompleteStep[i] = step;
+        };
+        return Spectrum;
+    }());
+    //endregion
+    //region Options
+    /*	Every input option is tested and parsed. This will prevent
+        endless validation in internal methods. These tests are
+        structured with an item for every option available. An
+        option can be marked as required by setting the 'r' flag.
+        The testing function is provided with three arguments:
+            - The provided value for the option;
+            - A reference to the options object;
+            - The name for the option;
+
+        The testing function returns false when an error is detected,
+        or true when everything is OK. It can also modify the option
+        object, to make sure all values can be correctly looped elsewhere. */
+    //region Defaults
+    var defaultFormatter = {
+        to: function (value) {
+            return value === undefined ? "" : value.toFixed(2);
+        },
+        from: Number,
+    };
+    var cssClasses = {
+        target: "target",
+        base: "base",
+        origin: "origin",
+        handle: "handle",
+        handleLower: "handle-lower",
+        handleUpper: "handle-upper",
+        touchArea: "touch-area",
+        horizontal: "horizontal",
+        vertical: "vertical",
+        background: "background",
+        connect: "connect",
+        connects: "connects",
+        ltr: "ltr",
+        rtl: "rtl",
+        textDirectionLtr: "txt-dir-ltr",
+        textDirectionRtl: "txt-dir-rtl",
+        draggable: "draggable",
+        drag: "state-drag",
+        tap: "state-tap",
+        active: "active",
+        tooltip: "tooltip",
+        pips: "pips",
+        pipsHorizontal: "pips-horizontal",
+        pipsVertical: "pips-vertical",
+        marker: "marker",
+        markerHorizontal: "marker-horizontal",
+        markerVertical: "marker-vertical",
+        markerNormal: "marker-normal",
+        markerLarge: "marker-large",
+        markerSub: "marker-sub",
+        value: "value",
+        valueHorizontal: "value-horizontal",
+        valueVertical: "value-vertical",
+        valueNormal: "value-normal",
+        valueLarge: "value-large",
+        valueSub: "value-sub",
+    };
+    // Namespaces of internal event listeners
+    var INTERNAL_EVENT_NS = {
+        tooltips: ".__tooltips",
+        aria: ".__aria",
+    };
+    //endregion
+    function testStep(parsed, entry) {
+        if (!isNumeric(entry)) {
+            throw new Error("noUiSlider: 'step' is not numeric.");
+        }
+        // The step option can still be used to set stepping
+        // for linear sliders. Overwritten if set in 'range'.
+        parsed.singleStep = entry;
+    }
+    function testKeyboardPageMultiplier(parsed, entry) {
+        if (!isNumeric(entry)) {
+            throw new Error("noUiSlider: 'keyboardPageMultiplier' is not numeric.");
+        }
+        parsed.keyboardPageMultiplier = entry;
+    }
+    function testKeyboardMultiplier(parsed, entry) {
+        if (!isNumeric(entry)) {
+            throw new Error("noUiSlider: 'keyboardMultiplier' is not numeric.");
+        }
+        parsed.keyboardMultiplier = entry;
+    }
+    function testKeyboardDefaultStep(parsed, entry) {
+        if (!isNumeric(entry)) {
+            throw new Error("noUiSlider: 'keyboardDefaultStep' is not numeric.");
+        }
+        parsed.keyboardDefaultStep = entry;
+    }
+    function testRange(parsed, entry) {
+        // Filter incorrect input.
+        if (typeof entry !== "object" || Array.isArray(entry)) {
+            throw new Error("noUiSlider: 'range' is not an object.");
+        }
+        // Catch missing start or end.
+        if (entry.min === undefined || entry.max === undefined) {
+            throw new Error("noUiSlider: Missing 'min' or 'max' in 'range'.");
+        }
+        parsed.spectrum = new Spectrum(entry, parsed.snap || false, parsed.singleStep);
+    }
+    function testStart(parsed, entry) {
+        entry = asArray(entry);
+        // Validate input. Values aren't tested, as the public .val method
+        // will always provide a valid location.
+        if (!Array.isArray(entry) || !entry.length) {
+            throw new Error("noUiSlider: 'start' option is incorrect.");
+        }
+        // Store the number of handles.
+        parsed.handles = entry.length;
+        // When the slider is initialized, the .val method will
+        // be called with the start options.
+        parsed.start = entry;
+    }
+    function testSnap(parsed, entry) {
+        if (typeof entry !== "boolean") {
+            throw new Error("noUiSlider: 'snap' option must be a boolean.");
+        }
+        // Enforce 100% stepping within subranges.
+        parsed.snap = entry;
+    }
+    function testAnimate(parsed, entry) {
+        if (typeof entry !== "boolean") {
+            throw new Error("noUiSlider: 'animate' option must be a boolean.");
+        }
+        // Enforce 100% stepping within subranges.
+        parsed.animate = entry;
+    }
+    function testAnimationDuration(parsed, entry) {
+        if (typeof entry !== "number") {
+            throw new Error("noUiSlider: 'animationDuration' option must be a number.");
+        }
+        parsed.animationDuration = entry;
+    }
+    function testConnect(parsed, entry) {
+        var connect = [false];
+        var i;
+        // Map legacy options
+        if (entry === "lower") {
+            entry = [true, false];
+        }
+        else if (entry === "upper") {
+            entry = [false, true];
+        }
+        // Handle boolean options
+        if (entry === true || entry === false) {
+            for (i = 1; i < parsed.handles; i++) {
+                connect.push(entry);
+            }
+            connect.push(false);
+        }
+        // Reject invalid input
+        else if (!Array.isArray(entry) || !entry.length || entry.length !== parsed.handles + 1) {
+            throw new Error("noUiSlider: 'connect' option doesn't match handle count.");
+        }
+        else {
+            connect = entry;
+        }
+        parsed.connect = connect;
+    }
+    function testOrientation(parsed, entry) {
+        // Set orientation to an a numerical value for easy
+        // array selection.
+        switch (entry) {
+            case "horizontal":
+                parsed.ort = 0;
+                break;
+            case "vertical":
+                parsed.ort = 1;
+                break;
+            default:
+                throw new Error("noUiSlider: 'orientation' option is invalid.");
+        }
+    }
+    function testMargin(parsed, entry) {
+        if (!isNumeric(entry)) {
+            throw new Error("noUiSlider: 'margin' option must be numeric.");
+        }
+        // Issue #582
+        if (entry === 0) {
+            return;
+        }
+        parsed.margin = parsed.spectrum.getDistance(entry);
+    }
+    function testLimit(parsed, entry) {
+        if (!isNumeric(entry)) {
+            throw new Error("noUiSlider: 'limit' option must be numeric.");
+        }
+        parsed.limit = parsed.spectrum.getDistance(entry);
+        if (!parsed.limit || parsed.handles < 2) {
+            throw new Error("noUiSlider: 'limit' option is only supported on linear sliders with 2 or more handles.");
+        }
+    }
+    function testPadding(parsed, entry) {
+        var index;
+        if (!isNumeric(entry) && !Array.isArray(entry)) {
+            throw new Error("noUiSlider: 'padding' option must be numeric or array of exactly 2 numbers.");
+        }
+        if (Array.isArray(entry) && !(entry.length === 2 || isNumeric(entry[0]) || isNumeric(entry[1]))) {
+            throw new Error("noUiSlider: 'padding' option must be numeric or array of exactly 2 numbers.");
+        }
+        if (entry === 0) {
+            return;
+        }
+        if (!Array.isArray(entry)) {
+            entry = [entry, entry];
+        }
+        // 'getDistance' returns false for invalid values.
+        parsed.padding = [parsed.spectrum.getDistance(entry[0]), parsed.spectrum.getDistance(entry[1])];
+        for (index = 0; index < parsed.spectrum.xNumSteps.length - 1; index++) {
+            // last "range" can't contain step size as it is purely an endpoint.
+            if (parsed.padding[0][index] < 0 || parsed.padding[1][index] < 0) {
+                throw new Error("noUiSlider: 'padding' option must be a positive number(s).");
+            }
+        }
+        var totalPadding = entry[0] + entry[1];
+        var firstValue = parsed.spectrum.xVal[0];
+        var lastValue = parsed.spectrum.xVal[parsed.spectrum.xVal.length - 1];
+        if (totalPadding / (lastValue - firstValue) > 1) {
+            throw new Error("noUiSlider: 'padding' option must not exceed 100% of the range.");
+        }
+    }
+    function testDirection(parsed, entry) {
+        // Set direction as a numerical value for easy parsing.
+        // Invert connection for RTL sliders, so that the proper
+        // handles get the connect/background classes.
+        switch (entry) {
+            case "ltr":
+                parsed.dir = 0;
+                break;
+            case "rtl":
+                parsed.dir = 1;
+                break;
+            default:
+                throw new Error("noUiSlider: 'direction' option was not recognized.");
+        }
+    }
+    function testBehaviour(parsed, entry) {
+        // Make sure the input is a string.
+        if (typeof entry !== "string") {
+            throw new Error("noUiSlider: 'behaviour' must be a string containing options.");
+        }
+        // Check if the string contains any keywords.
+        // None are required.
+        var tap = entry.indexOf("tap") >= 0;
+        var drag = entry.indexOf("drag") >= 0;
+        var fixed = entry.indexOf("fixed") >= 0;
+        var snap = entry.indexOf("snap") >= 0;
+        var hover = entry.indexOf("hover") >= 0;
+        var unconstrained = entry.indexOf("unconstrained") >= 0;
+        var dragAll = entry.indexOf("drag-all") >= 0;
+        if (fixed) {
+            if (parsed.handles !== 2) {
+                throw new Error("noUiSlider: 'fixed' behaviour must be used with 2 handles");
+            }
+            // Use margin to enforce fixed state
+            testMargin(parsed, parsed.start[1] - parsed.start[0]);
+        }
+        if (unconstrained && (parsed.margin || parsed.limit)) {
+            throw new Error("noUiSlider: 'unconstrained' behaviour cannot be used with margin or limit");
+        }
+        parsed.events = {
+            tap: tap || snap,
+            drag: drag,
+            dragAll: dragAll,
+            fixed: fixed,
+            snap: snap,
+            hover: hover,
+            unconstrained: unconstrained,
+        };
+    }
+    function testTooltips(parsed, entry) {
+        if (entry === false) {
+            return;
+        }
+        if (entry === true || isValidPartialFormatter(entry)) {
+            parsed.tooltips = [];
+            for (var i = 0; i < parsed.handles; i++) {
+                parsed.tooltips.push(entry);
+            }
+        }
+        else {
+            entry = asArray(entry);
+            if (entry.length !== parsed.handles) {
+                throw new Error("noUiSlider: must pass a formatter for all handles.");
+            }
+            entry.forEach(function (formatter) {
+                if (typeof formatter !== "boolean" && !isValidPartialFormatter(formatter)) {
+                    throw new Error("noUiSlider: 'tooltips' must be passed a formatter or 'false'.");
+                }
+            });
+            parsed.tooltips = entry;
+        }
+    }
+    function testHandleAttributes(parsed, entry) {
+        if (entry.length !== parsed.handles) {
+            throw new Error("noUiSlider: must pass a attributes for all handles.");
+        }
+        parsed.handleAttributes = entry;
+    }
+    function testAriaFormat(parsed, entry) {
+        if (!isValidPartialFormatter(entry)) {
+            throw new Error("noUiSlider: 'ariaFormat' requires 'to' method.");
+        }
+        parsed.ariaFormat = entry;
+    }
+    function testFormat(parsed, entry) {
+        if (!isValidFormatter(entry)) {
+            throw new Error("noUiSlider: 'format' requires 'to' and 'from' methods.");
+        }
+        parsed.format = entry;
+    }
+    function testKeyboardSupport(parsed, entry) {
+        if (typeof entry !== "boolean") {
+            throw new Error("noUiSlider: 'keyboardSupport' option must be a boolean.");
+        }
+        parsed.keyboardSupport = entry;
+    }
+    function testDocumentElement(parsed, entry) {
+        // This is an advanced option. Passed values are used without validation.
+        parsed.documentElement = entry;
+    }
+    function testCssPrefix(parsed, entry) {
+        if (typeof entry !== "string" && entry !== false) {
+            throw new Error("noUiSlider: 'cssPrefix' must be a string or `false`.");
+        }
+        parsed.cssPrefix = entry;
+    }
+    function testCssClasses(parsed, entry) {
+        if (typeof entry !== "object") {
+            throw new Error("noUiSlider: 'cssClasses' must be an object.");
+        }
+        if (typeof parsed.cssPrefix === "string") {
+            parsed.cssClasses = {};
+            Object.keys(entry).forEach(function (key) {
+                parsed.cssClasses[key] = parsed.cssPrefix + entry[key];
+            });
+        }
+        else {
+            parsed.cssClasses = entry;
+        }
+    }
+    // Test all developer settings and parse to assumption-safe values.
+    function testOptions(options) {
+        // To prove a fix for #537, freeze options here.
+        // If the object is modified, an error will be thrown.
+        // Object.freeze(options);
+        var parsed = {
+            margin: null,
+            limit: null,
+            padding: null,
+            animate: true,
+            animationDuration: 300,
+            ariaFormat: defaultFormatter,
+            format: defaultFormatter,
+        };
+        // Tests are executed in the order they are presented here.
+        var tests = {
+            step: { r: false, t: testStep },
+            keyboardPageMultiplier: { r: false, t: testKeyboardPageMultiplier },
+            keyboardMultiplier: { r: false, t: testKeyboardMultiplier },
+            keyboardDefaultStep: { r: false, t: testKeyboardDefaultStep },
+            start: { r: true, t: testStart },
+            connect: { r: true, t: testConnect },
+            direction: { r: true, t: testDirection },
+            snap: { r: false, t: testSnap },
+            animate: { r: false, t: testAnimate },
+            animationDuration: { r: false, t: testAnimationDuration },
+            range: { r: true, t: testRange },
+            orientation: { r: false, t: testOrientation },
+            margin: { r: false, t: testMargin },
+            limit: { r: false, t: testLimit },
+            padding: { r: false, t: testPadding },
+            behaviour: { r: true, t: testBehaviour },
+            ariaFormat: { r: false, t: testAriaFormat },
+            format: { r: false, t: testFormat },
+            tooltips: { r: false, t: testTooltips },
+            keyboardSupport: { r: true, t: testKeyboardSupport },
+            documentElement: { r: false, t: testDocumentElement },
+            cssPrefix: { r: true, t: testCssPrefix },
+            cssClasses: { r: true, t: testCssClasses },
+            handleAttributes: { r: false, t: testHandleAttributes },
+        };
+        var defaults = {
+            connect: false,
+            direction: "ltr",
+            behaviour: "tap",
+            orientation: "horizontal",
+            keyboardSupport: true,
+            cssPrefix: "noUi-",
+            cssClasses: cssClasses,
+            keyboardPageMultiplier: 5,
+            keyboardMultiplier: 1,
+            keyboardDefaultStep: 10,
+        };
+        // AriaFormat defaults to regular format, if any.
+        if (options.format && !options.ariaFormat) {
+            options.ariaFormat = options.format;
+        }
+        // Run all options through a testing mechanism to ensure correct
+        // input. It should be noted that options might get modified to
+        // be handled properly. E.g. wrapping integers in arrays.
+        Object.keys(tests).forEach(function (name) {
+            // If the option isn't set, but it is required, throw an error.
+            if (!isSet(options[name]) && defaults[name] === undefined) {
+                if (tests[name].r) {
+                    throw new Error("noUiSlider: '" + name + "' is required.");
+                }
+                return;
+            }
+            tests[name].t(parsed, !isSet(options[name]) ? defaults[name] : options[name]);
+        });
+        // Forward pips options
+        parsed.pips = options.pips;
+        // All recent browsers accept unprefixed transform.
+        // We need -ms- for IE9 and -webkit- for older Android;
+        // Assume use of -webkit- if unprefixed and -ms- are not supported.
+        // https://caniuse.com/#feat=transforms2d
+        var d = document.createElement("div");
+        var msPrefix = d.style.msTransform !== undefined;
+        var noPrefix = d.style.transform !== undefined;
+        parsed.transformRule = noPrefix ? "transform" : msPrefix ? "msTransform" : "webkitTransform";
+        // Pips don't move, so we can place them using left/top.
+        var styles = [
+            ["left", "top"],
+            ["right", "bottom"],
+        ];
+        parsed.style = styles[parsed.dir][parsed.ort];
+        return parsed;
+    }
+    //endregion
+    function scope(target, options, originalOptions) {
+        var actions = getActions();
+        var supportsTouchActionNone = getSupportsTouchActionNone();
+        var supportsPassive = supportsTouchActionNone && getSupportsPassive();
+        // All variables local to 'scope' are prefixed with 'scope_'
+        // Slider DOM Nodes
+        var scope_Target = target;
+        var scope_Base;
+        var scope_Handles;
+        var scope_Connects;
+        var scope_Pips;
+        var scope_Tooltips;
+        // Slider state values
+        var scope_Spectrum = options.spectrum;
+        var scope_Values = [];
+        var scope_Locations = [];
+        var scope_HandleNumbers = [];
+        var scope_ActiveHandlesCount = 0;
+        var scope_Events = {};
+        // Document Nodes
+        var scope_Document = target.ownerDocument;
+        var scope_DocumentElement = options.documentElement || scope_Document.documentElement;
+        var scope_Body = scope_Document.body;
+        // For horizontal sliders in standard ltr documents,
+        // make .noUi-origin overflow to the left so the document doesn't scroll.
+        var scope_DirOffset = scope_Document.dir === "rtl" || options.ort === 1 ? 0 : 100;
+        // Creates a node, adds it to target, returns the new node.
+        function addNodeTo(addTarget, className) {
+            var div = scope_Document.createElement("div");
+            if (className) {
+                addClass(div, className);
+            }
+            addTarget.appendChild(div);
+            return div;
+        }
+        // Append a origin to the base
+        function addOrigin(base, handleNumber) {
+            var origin = addNodeTo(base, options.cssClasses.origin);
+            var handle = addNodeTo(origin, options.cssClasses.handle);
+            addNodeTo(handle, options.cssClasses.touchArea);
+            handle.setAttribute("data-handle", String(handleNumber));
+            if (options.keyboardSupport) {
+                // https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+                // 0 = focusable and reachable
+                handle.setAttribute("tabindex", "0");
+                handle.addEventListener("keydown", function (event) {
+                    return eventKeydown(event, handleNumber);
+                });
+            }
+            if (options.handleAttributes !== undefined) {
+                var attributes_1 = options.handleAttributes[handleNumber];
+                Object.keys(attributes_1).forEach(function (attribute) {
+                    handle.setAttribute(attribute, attributes_1[attribute]);
+                });
+            }
+            handle.setAttribute("role", "slider");
+            handle.setAttribute("aria-orientation", options.ort ? "vertical" : "horizontal");
+            if (handleNumber === 0) {
+                addClass(handle, options.cssClasses.handleLower);
+            }
+            else if (handleNumber === options.handles - 1) {
+                addClass(handle, options.cssClasses.handleUpper);
+            }
+            return origin;
+        }
+        // Insert nodes for connect elements
+        function addConnect(base, add) {
+            if (!add) {
+                return false;
+            }
+            return addNodeTo(base, options.cssClasses.connect);
+        }
+        // Add handles to the slider base.
+        function addElements(connectOptions, base) {
+            var connectBase = addNodeTo(base, options.cssClasses.connects);
+            scope_Handles = [];
+            scope_Connects = [];
+            scope_Connects.push(addConnect(connectBase, connectOptions[0]));
+            // [::::O====O====O====]
+            // connectOptions = [0, 1, 1, 1]
+            for (var i = 0; i < options.handles; i++) {
+                // Keep a list of all added handles.
+                scope_Handles.push(addOrigin(base, i));
+                scope_HandleNumbers[i] = i;
+                scope_Connects.push(addConnect(connectBase, connectOptions[i + 1]));
+            }
+        }
+        // Initialize a single slider.
+        function addSlider(addTarget) {
+            // Apply classes and data to the target.
+            addClass(addTarget, options.cssClasses.target);
+            if (options.dir === 0) {
+                addClass(addTarget, options.cssClasses.ltr);
+            }
+            else {
+                addClass(addTarget, options.cssClasses.rtl);
+            }
+            if (options.ort === 0) {
+                addClass(addTarget, options.cssClasses.horizontal);
+            }
+            else {
+                addClass(addTarget, options.cssClasses.vertical);
+            }
+            var textDirection = getComputedStyle(addTarget).direction;
+            if (textDirection === "rtl") {
+                addClass(addTarget, options.cssClasses.textDirectionRtl);
+            }
+            else {
+                addClass(addTarget, options.cssClasses.textDirectionLtr);
+            }
+            return addNodeTo(addTarget, options.cssClasses.base);
+        }
+        function addTooltip(handle, handleNumber) {
+            if (!options.tooltips || !options.tooltips[handleNumber]) {
+                return false;
+            }
+            return addNodeTo(handle.firstChild, options.cssClasses.tooltip);
+        }
+        function isSliderDisabled() {
+            return scope_Target.hasAttribute("disabled");
+        }
+        // Disable the slider dragging if any handle is disabled
+        function isHandleDisabled(handleNumber) {
+            var handleOrigin = scope_Handles[handleNumber];
+            return handleOrigin.hasAttribute("disabled");
+        }
+        function removeTooltips() {
+            if (scope_Tooltips) {
+                removeEvent("update" + INTERNAL_EVENT_NS.tooltips);
+                scope_Tooltips.forEach(function (tooltip) {
+                    if (tooltip) {
+                        removeElement(tooltip);
+                    }
+                });
+                scope_Tooltips = null;
+            }
+        }
+        // The tooltips option is a shorthand for using the 'update' event.
+        function tooltips() {
+            removeTooltips();
+            // Tooltips are added with options.tooltips in original order.
+            scope_Tooltips = scope_Handles.map(addTooltip);
+            bindEvent("update" + INTERNAL_EVENT_NS.tooltips, function (values, handleNumber, unencoded) {
+                if (!scope_Tooltips || !options.tooltips) {
+                    return;
+                }
+                if (scope_Tooltips[handleNumber] === false) {
+                    return;
+                }
+                var formattedValue = values[handleNumber];
+                if (options.tooltips[handleNumber] !== true) {
+                    formattedValue = options.tooltips[handleNumber].to(unencoded[handleNumber]);
+                }
+                scope_Tooltips[handleNumber].innerHTML = formattedValue;
+            });
+        }
+        function aria() {
+            removeEvent("update" + INTERNAL_EVENT_NS.aria);
+            bindEvent("update" + INTERNAL_EVENT_NS.aria, function (values, handleNumber, unencoded, tap, positions) {
+                // Update Aria Values for all handles, as a change in one changes min and max values for the next.
+                scope_HandleNumbers.forEach(function (index) {
+                    var handle = scope_Handles[index];
+                    var min = checkHandlePosition(scope_Locations, index, 0, true, true, true);
+                    var max = checkHandlePosition(scope_Locations, index, 100, true, true, true);
+                    var now = positions[index];
+                    // Formatted value for display
+                    var text = String(options.ariaFormat.to(unencoded[index]));
+                    // Map to slider range values
+                    min = scope_Spectrum.fromStepping(min).toFixed(1);
+                    max = scope_Spectrum.fromStepping(max).toFixed(1);
+                    now = scope_Spectrum.fromStepping(now).toFixed(1);
+                    handle.children[0].setAttribute("aria-valuemin", min);
+                    handle.children[0].setAttribute("aria-valuemax", max);
+                    handle.children[0].setAttribute("aria-valuenow", now);
+                    handle.children[0].setAttribute("aria-valuetext", text);
+                });
+            });
+        }
+        function getGroup(pips) {
+            // Use the range.
+            if (pips.mode === exports.PipsMode.Range || pips.mode === exports.PipsMode.Steps) {
+                return scope_Spectrum.xVal;
+            }
+            if (pips.mode === exports.PipsMode.Count) {
+                if (pips.values < 2) {
+                    throw new Error("noUiSlider: 'values' (>= 2) required for mode 'count'.");
+                }
+                // Divide 0 - 100 in 'count' parts.
+                var interval = pips.values - 1;
+                var spread = 100 / interval;
+                var values = [];
+                // List these parts and have them handled as 'positions'.
+                while (interval--) {
+                    values[interval] = interval * spread;
+                }
+                values.push(100);
+                return mapToRange(values, pips.stepped);
+            }
+            if (pips.mode === exports.PipsMode.Positions) {
+                // Map all percentages to on-range values.
+                return mapToRange(pips.values, pips.stepped);
+            }
+            if (pips.mode === exports.PipsMode.Values) {
+                // If the value must be stepped, it needs to be converted to a percentage first.
+                if (pips.stepped) {
+                    return pips.values.map(function (value) {
+                        // Convert to percentage, apply step, return to value.
+                        return scope_Spectrum.fromStepping(scope_Spectrum.getStep(scope_Spectrum.toStepping(value)));
+                    });
+                }
+                // Otherwise, we can simply use the values.
+                return pips.values;
+            }
+            return []; // pips.mode = never
+        }
+        function mapToRange(values, stepped) {
+            return values.map(function (value) {
+                return scope_Spectrum.fromStepping(stepped ? scope_Spectrum.getStep(value) : value);
+            });
+        }
+        function generateSpread(pips) {
+            function safeIncrement(value, increment) {
+                // Avoid floating point variance by dropping the smallest decimal places.
+                return Number((value + increment).toFixed(7));
+            }
+            var group = getGroup(pips);
+            var indexes = {};
+            var firstInRange = scope_Spectrum.xVal[0];
+            var lastInRange = scope_Spectrum.xVal[scope_Spectrum.xVal.length - 1];
+            var ignoreFirst = false;
+            var ignoreLast = false;
+            var prevPct = 0;
+            // Create a copy of the group, sort it and filter away all duplicates.
+            group = unique(group.slice().sort(function (a, b) {
+                return a - b;
+            }));
+            // Make sure the range starts with the first element.
+            if (group[0] !== firstInRange) {
+                group.unshift(firstInRange);
+                ignoreFirst = true;
+            }
+            // Likewise for the last one.
+            if (group[group.length - 1] !== lastInRange) {
+                group.push(lastInRange);
+                ignoreLast = true;
+            }
+            group.forEach(function (current, index) {
+                // Get the current step and the lower + upper positions.
+                var step;
+                var i;
+                var q;
+                var low = current;
+                var high = group[index + 1];
+                var newPct;
+                var pctDifference;
+                var pctPos;
+                var type;
+                var steps;
+                var realSteps;
+                var stepSize;
+                var isSteps = pips.mode === exports.PipsMode.Steps;
+                // When using 'steps' mode, use the provided steps.
+                // Otherwise, we'll step on to the next subrange.
+                if (isSteps) {
+                    step = scope_Spectrum.xNumSteps[index];
+                }
+                // Default to a 'full' step.
+                if (!step) {
+                    step = high - low;
+                }
+                // If high is undefined we are at the last subrange. Make sure it iterates once (#1088)
+                if (high === undefined) {
+                    high = low;
+                }
+                // Make sure step isn't 0, which would cause an infinite loop (#654)
+                step = Math.max(step, 0.0000001);
+                // Find all steps in the subrange.
+                for (i = low; i <= high; i = safeIncrement(i, step)) {
+                    // Get the percentage value for the current step,
+                    // calculate the size for the subrange.
+                    newPct = scope_Spectrum.toStepping(i);
+                    pctDifference = newPct - prevPct;
+                    steps = pctDifference / (pips.density || 1);
+                    realSteps = Math.round(steps);
+                    // This ratio represents the amount of percentage-space a point indicates.
+                    // For a density 1 the points/percentage = 1. For density 2, that percentage needs to be re-divided.
+                    // Round the percentage offset to an even number, then divide by two
+                    // to spread the offset on both sides of the range.
+                    stepSize = pctDifference / realSteps;
+                    // Divide all points evenly, adding the correct number to this subrange.
+                    // Run up to <= so that 100% gets a point, event if ignoreLast is set.
+                    for (q = 1; q <= realSteps; q += 1) {
+                        // The ratio between the rounded value and the actual size might be ~1% off.
+                        // Correct the percentage offset by the number of points
+                        // per subrange. density = 1 will result in 100 points on the
+                        // full range, 2 for 50, 4 for 25, etc.
+                        pctPos = prevPct + q * stepSize;
+                        indexes[pctPos.toFixed(5)] = [scope_Spectrum.fromStepping(pctPos), 0];
+                    }
+                    // Determine the point type.
+                    type = group.indexOf(i) > -1 ? exports.PipsType.LargeValue : isSteps ? exports.PipsType.SmallValue : exports.PipsType.NoValue;
+                    // Enforce the 'ignoreFirst' option by overwriting the type for 0.
+                    if (!index && ignoreFirst && i !== high) {
+                        type = 0;
+                    }
+                    if (!(i === high && ignoreLast)) {
+                        // Mark the 'type' of this point. 0 = plain, 1 = real value, 2 = step value.
+                        indexes[newPct.toFixed(5)] = [i, type];
+                    }
+                    // Update the percentage count.
+                    prevPct = newPct;
+                }
+            });
+            return indexes;
+        }
+        function addMarking(spread, filterFunc, formatter) {
+            var _a, _b;
+            var element = scope_Document.createElement("div");
+            var valueSizeClasses = (_a = {},
+                _a[exports.PipsType.None] = "",
+                _a[exports.PipsType.NoValue] = options.cssClasses.valueNormal,
+                _a[exports.PipsType.LargeValue] = options.cssClasses.valueLarge,
+                _a[exports.PipsType.SmallValue] = options.cssClasses.valueSub,
+                _a);
+            var markerSizeClasses = (_b = {},
+                _b[exports.PipsType.None] = "",
+                _b[exports.PipsType.NoValue] = options.cssClasses.markerNormal,
+                _b[exports.PipsType.LargeValue] = options.cssClasses.markerLarge,
+                _b[exports.PipsType.SmallValue] = options.cssClasses.markerSub,
+                _b);
+            var valueOrientationClasses = [options.cssClasses.valueHorizontal, options.cssClasses.valueVertical];
+            var markerOrientationClasses = [options.cssClasses.markerHorizontal, options.cssClasses.markerVertical];
+            addClass(element, options.cssClasses.pips);
+            addClass(element, options.ort === 0 ? options.cssClasses.pipsHorizontal : options.cssClasses.pipsVertical);
+            function getClasses(type, source) {
+                var a = source === options.cssClasses.value;
+                var orientationClasses = a ? valueOrientationClasses : markerOrientationClasses;
+                var sizeClasses = a ? valueSizeClasses : markerSizeClasses;
+                return source + " " + orientationClasses[options.ort] + " " + sizeClasses[type];
+            }
+            function addSpread(offset, value, type) {
+                // Apply the filter function, if it is set.
+                type = filterFunc ? filterFunc(value, type) : type;
+                if (type === exports.PipsType.None) {
+                    return;
+                }
+                // Add a marker for every point
+                var node = addNodeTo(element, false);
+                node.className = getClasses(type, options.cssClasses.marker);
+                node.style[options.style] = offset + "%";
+                // Values are only appended for points marked '1' or '2'.
+                if (type > exports.PipsType.NoValue) {
+                    node = addNodeTo(element, false);
+                    node.className = getClasses(type, options.cssClasses.value);
+                    node.setAttribute("data-value", String(value));
+                    node.style[options.style] = offset + "%";
+                    node.innerHTML = String(formatter.to(value));
+                }
+            }
+            // Append all points.
+            Object.keys(spread).forEach(function (offset) {
+                addSpread(offset, spread[offset][0], spread[offset][1]);
+            });
+            return element;
+        }
+        function removePips() {
+            if (scope_Pips) {
+                removeElement(scope_Pips);
+                scope_Pips = null;
+            }
+        }
+        function pips(pips) {
+            // Fix #669
+            removePips();
+            var spread = generateSpread(pips);
+            var filter = pips.filter;
+            var format = pips.format || {
+                to: function (value) {
+                    return String(Math.round(value));
+                },
+            };
+            scope_Pips = scope_Target.appendChild(addMarking(spread, filter, format));
+            return scope_Pips;
+        }
+        // Shorthand for base dimensions.
+        function baseSize() {
+            var rect = scope_Base.getBoundingClientRect();
+            var alt = ("offset" + ["Width", "Height"][options.ort]);
+            return options.ort === 0 ? rect.width || scope_Base[alt] : rect.height || scope_Base[alt];
+        }
+        // Handler for attaching events trough a proxy.
+        function attachEvent(events, element, callback, data) {
+            // This function can be used to 'filter' events to the slider.
+            // element is a node, not a nodeList
+            var method = function (event) {
+                var e = fixEvent(event, data.pageOffset, data.target || element);
+                // fixEvent returns false if this event has a different target
+                // when handling (multi-) touch events;
+                if (!e) {
+                    return false;
+                }
+                // doNotReject is passed by all end events to make sure released touches
+                // are not rejected, leaving the slider "stuck" to the cursor;
+                if (isSliderDisabled() && !data.doNotReject) {
+                    return false;
+                }
+                // Stop if an active 'tap' transition is taking place.
+                if (hasClass(scope_Target, options.cssClasses.tap) && !data.doNotReject) {
+                    return false;
+                }
+                // Ignore right or middle clicks on start #454
+                if (events === actions.start && e.buttons !== undefined && e.buttons > 1) {
+                    return false;
+                }
+                // Ignore right or middle clicks on start #454
+                if (data.hover && e.buttons) {
+                    return false;
+                }
+                // 'supportsPassive' is only true if a browser also supports touch-action: none in CSS.
+                // iOS safari does not, so it doesn't get to benefit from passive scrolling. iOS does support
+                // touch-action: manipulation, but that allows panning, which breaks
+                // sliders after zooming/on non-responsive pages.
+                // See: https://bugs.webkit.org/show_bug.cgi?id=133112
+                if (!supportsPassive) {
+                    e.preventDefault();
+                }
+                e.calcPoint = e.points[options.ort];
+                // Call the event handler with the event [ and additional data ].
+                callback(e, data);
+                return;
+            };
+            var methods = [];
+            // Bind a closure on the target for every event type.
+            events.split(" ").forEach(function (eventName) {
+                element.addEventListener(eventName, method, supportsPassive ? { passive: true } : false);
+                methods.push([eventName, method]);
+            });
+            return methods;
+        }
+        // Provide a clean event with standardized offset values.
+        function fixEvent(e, pageOffset, eventTarget) {
+            // Filter the event to register the type, which can be
+            // touch, mouse or pointer. Offset changes need to be
+            // made on an event specific basis.
+            var touch = e.type.indexOf("touch") === 0;
+            var mouse = e.type.indexOf("mouse") === 0;
+            var pointer = e.type.indexOf("pointer") === 0;
+            var x = 0;
+            var y = 0;
+            // IE10 implemented pointer events with a prefix;
+            if (e.type.indexOf("MSPointer") === 0) {
+                pointer = true;
+            }
+            // Erroneous events seem to be passed in occasionally on iOS/iPadOS after user finishes interacting with
+            // the slider. They appear to be of type MouseEvent, yet they don't have usual properties set. Ignore
+            // events that have no touches or buttons associated with them. (#1057, #1079, #1095)
+            if (e.type === "mousedown" && !e.buttons && !e.touches) {
+                return false;
+            }
+            // The only thing one handle should be concerned about is the touches that originated on top of it.
+            if (touch) {
+                // Returns true if a touch originated on the target.
+                var isTouchOnTarget = function (checkTouch) {
+                    var target = checkTouch.target;
+                    return (target === eventTarget ||
+                        eventTarget.contains(target) ||
+                        (e.composed && e.composedPath().shift() === eventTarget));
+                };
+                // In the case of touchstart events, we need to make sure there is still no more than one
+                // touch on the target so we look amongst all touches.
+                if (e.type === "touchstart") {
+                    var targetTouches = Array.prototype.filter.call(e.touches, isTouchOnTarget);
+                    // Do not support more than one touch per handle.
+                    if (targetTouches.length > 1) {
+                        return false;
+                    }
+                    x = targetTouches[0].pageX;
+                    y = targetTouches[0].pageY;
+                }
+                else {
+                    // In the other cases, find on changedTouches is enough.
+                    var targetTouch = Array.prototype.find.call(e.changedTouches, isTouchOnTarget);
+                    // Cancel if the target touch has not moved.
+                    if (!targetTouch) {
+                        return false;
+                    }
+                    x = targetTouch.pageX;
+                    y = targetTouch.pageY;
+                }
+            }
+            pageOffset = pageOffset || getPageOffset(scope_Document);
+            if (mouse || pointer) {
+                x = e.clientX + pageOffset.x;
+                y = e.clientY + pageOffset.y;
+            }
+            e.pageOffset = pageOffset;
+            e.points = [x, y];
+            e.cursor = mouse || pointer; // Fix #435
+            return e;
+        }
+        // Translate a coordinate in the document to a percentage on the slider
+        function calcPointToPercentage(calcPoint) {
+            var location = calcPoint - offset(scope_Base, options.ort);
+            var proposal = (location * 100) / baseSize();
+            // Clamp proposal between 0% and 100%
+            // Out-of-bound coordinates may occur when .noUi-base pseudo-elements
+            // are used (e.g. contained handles feature)
+            proposal = limit(proposal);
+            return options.dir ? 100 - proposal : proposal;
+        }
+        // Find handle closest to a certain percentage on the slider
+        function getClosestHandle(clickedPosition) {
+            var smallestDifference = 100;
+            var handleNumber = false;
+            scope_Handles.forEach(function (handle, index) {
+                // Disabled handles are ignored
+                if (isHandleDisabled(index)) {
+                    return;
+                }
+                var handlePosition = scope_Locations[index];
+                var differenceWithThisHandle = Math.abs(handlePosition - clickedPosition);
+                // Initial state
+                var clickAtEdge = differenceWithThisHandle === 100 && smallestDifference === 100;
+                // Difference with this handle is smaller than the previously checked handle
+                var isCloser = differenceWithThisHandle < smallestDifference;
+                var isCloserAfter = differenceWithThisHandle <= smallestDifference && clickedPosition > handlePosition;
+                if (isCloser || isCloserAfter || clickAtEdge) {
+                    handleNumber = index;
+                    smallestDifference = differenceWithThisHandle;
+                }
+            });
+            return handleNumber;
+        }
+        // Fire 'end' when a mouse or pen leaves the document.
+        function documentLeave(event, data) {
+            if (event.type === "mouseout" &&
+                event.target.nodeName === "HTML" &&
+                event.relatedTarget === null) {
+                eventEnd(event, data);
+            }
+        }
+        // Handle movement on document for handle and range drag.
+        function eventMove(event, data) {
+            // Fix #498
+            // Check value of .buttons in 'start' to work around a bug in IE10 mobile (data.buttonsProperty).
+            // https://connect.microsoft.com/IE/feedback/details/927005/mobile-ie10-windows-phone-buttons-property-of-pointermove-event-always-zero
+            // IE9 has .buttons and .which zero on mousemove.
+            // Firefox breaks the spec MDN defines.
+            if (navigator.appVersion.indexOf("MSIE 9") === -1 && event.buttons === 0 && data.buttonsProperty !== 0) {
+                return eventEnd(event, data);
+            }
+            // Check if we are moving up or down
+            var movement = (options.dir ? -1 : 1) * (event.calcPoint - data.startCalcPoint);
+            // Convert the movement into a percentage of the slider width/height
+            var proposal = (movement * 100) / data.baseSize;
+            moveHandles(movement > 0, proposal, data.locations, data.handleNumbers, data.connect);
+        }
+        // Unbind move events on document, call callbacks.
+        function eventEnd(event, data) {
+            // The handle is no longer active, so remove the class.
+            if (data.handle) {
+                removeClass(data.handle, options.cssClasses.active);
+                scope_ActiveHandlesCount -= 1;
+            }
+            // Unbind the move and end events, which are added on 'start'.
+            data.listeners.forEach(function (c) {
+                scope_DocumentElement.removeEventListener(c[0], c[1]);
+            });
+            if (scope_ActiveHandlesCount === 0) {
+                // Remove dragging class.
+                removeClass(scope_Target, options.cssClasses.drag);
+                setZindex();
+                // Remove cursor styles and text-selection events bound to the body.
+                if (event.cursor) {
+                    scope_Body.style.cursor = "";
+                    scope_Body.removeEventListener("selectstart", preventDefault);
+                }
+            }
+            data.handleNumbers.forEach(function (handleNumber) {
+                fireEvent("change", handleNumber);
+                fireEvent("set", handleNumber);
+                fireEvent("end", handleNumber);
+            });
+        }
+        // Bind move events on document.
+        function eventStart(event, data) {
+            // Ignore event if any handle is disabled
+            if (data.handleNumbers.some(isHandleDisabled)) {
+                return;
+            }
+            var handle;
+            if (data.handleNumbers.length === 1) {
+                var handleOrigin = scope_Handles[data.handleNumbers[0]];
+                handle = handleOrigin.children[0];
+                scope_ActiveHandlesCount += 1;
+                // Mark the handle as 'active' so it can be styled.
+                addClass(handle, options.cssClasses.active);
+            }
+            // A drag should never propagate up to the 'tap' event.
+            event.stopPropagation();
+            // Record the event listeners.
+            var listeners = [];
+            // Attach the move and end events.
+            var moveEvent = attachEvent(actions.move, scope_DocumentElement, eventMove, {
+                // The event target has changed so we need to propagate the original one so that we keep
+                // relying on it to extract target touches.
+                target: event.target,
+                handle: handle,
+                connect: data.connect,
+                listeners: listeners,
+                startCalcPoint: event.calcPoint,
+                baseSize: baseSize(),
+                pageOffset: event.pageOffset,
+                handleNumbers: data.handleNumbers,
+                buttonsProperty: event.buttons,
+                locations: scope_Locations.slice(),
+            });
+            var endEvent = attachEvent(actions.end, scope_DocumentElement, eventEnd, {
+                target: event.target,
+                handle: handle,
+                listeners: listeners,
+                doNotReject: true,
+                handleNumbers: data.handleNumbers,
+            });
+            var outEvent = attachEvent("mouseout", scope_DocumentElement, documentLeave, {
+                target: event.target,
+                handle: handle,
+                listeners: listeners,
+                doNotReject: true,
+                handleNumbers: data.handleNumbers,
+            });
+            // We want to make sure we pushed the listeners in the listener list rather than creating
+            // a new one as it has already been passed to the event handlers.
+            listeners.push.apply(listeners, moveEvent.concat(endEvent, outEvent));
+            // Text selection isn't an issue on touch devices,
+            // so adding cursor styles can be skipped.
+            if (event.cursor) {
+                // Prevent the 'I' cursor and extend the range-drag cursor.
+                scope_Body.style.cursor = getComputedStyle(event.target).cursor;
+                // Mark the target with a dragging state.
+                if (scope_Handles.length > 1) {
+                    addClass(scope_Target, options.cssClasses.drag);
+                }
+                // Prevent text selection when dragging the handles.
+                // In noUiSlider <= 9.2.0, this was handled by calling preventDefault on mouse/touch start/move,
+                // which is scroll blocking. The selectstart event is supported by FireFox starting from version 52,
+                // meaning the only holdout is iOS Safari. This doesn't matter: text selection isn't triggered there.
+                // The 'cursor' flag is false.
+                // See: http://caniuse.com/#search=selectstart
+                scope_Body.addEventListener("selectstart", preventDefault, false);
+            }
+            data.handleNumbers.forEach(function (handleNumber) {
+                fireEvent("start", handleNumber);
+            });
+        }
+        // Move closest handle to tapped location.
+        function eventTap(event) {
+            // The tap event shouldn't propagate up
+            event.stopPropagation();
+            var proposal = calcPointToPercentage(event.calcPoint);
+            var handleNumber = getClosestHandle(proposal);
+            // Tackle the case that all handles are 'disabled'.
+            if (handleNumber === false) {
+                return;
+            }
+            // Flag the slider as it is now in a transitional state.
+            // Transition takes a configurable amount of ms (default 300). Re-enable the slider after that.
+            if (!options.events.snap) {
+                addClassFor(scope_Target, options.cssClasses.tap, options.animationDuration);
+            }
+            setHandle(handleNumber, proposal, true, true);
+            setZindex();
+            fireEvent("slide", handleNumber, true);
+            fireEvent("update", handleNumber, true);
+            if (!options.events.snap) {
+                fireEvent("change", handleNumber, true);
+                fireEvent("set", handleNumber, true);
+            }
+            else {
+                eventStart(event, { handleNumbers: [handleNumber] });
+            }
+        }
+        // Fires a 'hover' event for a hovered mouse/pen position.
+        function eventHover(event) {
+            var proposal = calcPointToPercentage(event.calcPoint);
+            var to = scope_Spectrum.getStep(proposal);
+            var value = scope_Spectrum.fromStepping(to);
+            Object.keys(scope_Events).forEach(function (targetEvent) {
+                if ("hover" === targetEvent.split(".")[0]) {
+                    scope_Events[targetEvent].forEach(function (callback) {
+                        callback.call(scope_Self, value);
+                    });
+                }
+            });
+        }
+        // Handles keydown on focused handles
+        // Don't move the document when pressing arrow keys on focused handles
+        function eventKeydown(event, handleNumber) {
+            if (isSliderDisabled() || isHandleDisabled(handleNumber)) {
+                return false;
+            }
+            var horizontalKeys = ["Left", "Right"];
+            var verticalKeys = ["Down", "Up"];
+            var largeStepKeys = ["PageDown", "PageUp"];
+            var edgeKeys = ["Home", "End"];
+            if (options.dir && !options.ort) {
+                // On an right-to-left slider, the left and right keys act inverted
+                horizontalKeys.reverse();
+            }
+            else if (options.ort && !options.dir) {
+                // On a top-to-bottom slider, the up and down keys act inverted
+                verticalKeys.reverse();
+                largeStepKeys.reverse();
+            }
+            // Strip "Arrow" for IE compatibility. https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key
+            var key = event.key.replace("Arrow", "");
+            var isLargeDown = key === largeStepKeys[0];
+            var isLargeUp = key === largeStepKeys[1];
+            var isDown = key === verticalKeys[0] || key === horizontalKeys[0] || isLargeDown;
+            var isUp = key === verticalKeys[1] || key === horizontalKeys[1] || isLargeUp;
+            var isMin = key === edgeKeys[0];
+            var isMax = key === edgeKeys[1];
+            if (!isDown && !isUp && !isMin && !isMax) {
+                return true;
+            }
+            event.preventDefault();
+            var to;
+            if (isUp || isDown) {
+                var direction = isDown ? 0 : 1;
+                var steps = getNextStepsForHandle(handleNumber);
+                var step = steps[direction];
+                // At the edge of a slider, do nothing
+                if (step === null) {
+                    return false;
+                }
+                // No step set, use the default of 10% of the sub-range
+                if (step === false) {
+                    step = scope_Spectrum.getDefaultStep(scope_Locations[handleNumber], isDown, options.keyboardDefaultStep);
+                }
+                if (isLargeUp || isLargeDown) {
+                    step *= options.keyboardPageMultiplier;
+                }
+                else {
+                    step *= options.keyboardMultiplier;
+                }
+                // Step over zero-length ranges (#948);
+                step = Math.max(step, 0.0000001);
+                // Decrement for down steps
+                step = (isDown ? -1 : 1) * step;
+                to = scope_Values[handleNumber] + step;
+            }
+            else if (isMax) {
+                // End key
+                to = options.spectrum.xVal[options.spectrum.xVal.length - 1];
+            }
+            else {
+                // Home key
+                to = options.spectrum.xVal[0];
+            }
+            setHandle(handleNumber, scope_Spectrum.toStepping(to), true, true);
+            fireEvent("slide", handleNumber);
+            fireEvent("update", handleNumber);
+            fireEvent("change", handleNumber);
+            fireEvent("set", handleNumber);
+            return false;
+        }
+        // Attach events to several slider parts.
+        function bindSliderEvents(behaviour) {
+            // Attach the standard drag event to the handles.
+            if (!behaviour.fixed) {
+                scope_Handles.forEach(function (handle, index) {
+                    // These events are only bound to the visual handle
+                    // element, not the 'real' origin element.
+                    attachEvent(actions.start, handle.children[0], eventStart, {
+                        handleNumbers: [index],
+                    });
+                });
+            }
+            // Attach the tap event to the slider base.
+            if (behaviour.tap) {
+                attachEvent(actions.start, scope_Base, eventTap, {});
+            }
+            // Fire hover events
+            if (behaviour.hover) {
+                attachEvent(actions.move, scope_Base, eventHover, {
+                    hover: true,
+                });
+            }
+            // Make the range draggable.
+            if (behaviour.drag) {
+                scope_Connects.forEach(function (connect, index) {
+                    if (connect === false || index === 0 || index === scope_Connects.length - 1) {
+                        return;
+                    }
+                    var handleBefore = scope_Handles[index - 1];
+                    var handleAfter = scope_Handles[index];
+                    var eventHolders = [connect];
+                    var handlesToDrag = [handleBefore, handleAfter];
+                    var handleNumbersToDrag = [index - 1, index];
+                    addClass(connect, options.cssClasses.draggable);
+                    // When the range is fixed, the entire range can
+                    // be dragged by the handles. The handle in the first
+                    // origin will propagate the start event upward,
+                    // but it needs to be bound manually on the other.
+                    if (behaviour.fixed) {
+                        eventHolders.push(handleBefore.children[0]);
+                        eventHolders.push(handleAfter.children[0]);
+                    }
+                    if (behaviour.dragAll) {
+                        handlesToDrag = scope_Handles;
+                        handleNumbersToDrag = scope_HandleNumbers;
+                    }
+                    eventHolders.forEach(function (eventHolder) {
+                        attachEvent(actions.start, eventHolder, eventStart, {
+                            handles: handlesToDrag,
+                            handleNumbers: handleNumbersToDrag,
+                            connect: connect,
+                        });
+                    });
+                });
+            }
+        }
+        // Attach an event to this slider, possibly including a namespace
+        function bindEvent(namespacedEvent, callback) {
+            scope_Events[namespacedEvent] = scope_Events[namespacedEvent] || [];
+            scope_Events[namespacedEvent].push(callback);
+            // If the event bound is 'update,' fire it immediately for all handles.
+            if (namespacedEvent.split(".")[0] === "update") {
+                scope_Handles.forEach(function (a, index) {
+                    fireEvent("update", index);
+                });
+            }
+        }
+        function isInternalNamespace(namespace) {
+            return namespace === INTERNAL_EVENT_NS.aria || namespace === INTERNAL_EVENT_NS.tooltips;
+        }
+        // Undo attachment of event
+        function removeEvent(namespacedEvent) {
+            var event = namespacedEvent && namespacedEvent.split(".")[0];
+            var namespace = event ? namespacedEvent.substring(event.length) : namespacedEvent;
+            Object.keys(scope_Events).forEach(function (bind) {
+                var tEvent = bind.split(".")[0];
+                var tNamespace = bind.substring(tEvent.length);
+                if ((!event || event === tEvent) && (!namespace || namespace === tNamespace)) {
+                    // only delete protected internal event if intentional
+                    if (!isInternalNamespace(tNamespace) || namespace === tNamespace) {
+                        delete scope_Events[bind];
+                    }
+                }
+            });
+        }
+        // External event handling
+        function fireEvent(eventName, handleNumber, tap) {
+            Object.keys(scope_Events).forEach(function (targetEvent) {
+                var eventType = targetEvent.split(".")[0];
+                if (eventName === eventType) {
+                    scope_Events[targetEvent].forEach(function (callback) {
+                        callback.call(
+                        // Use the slider public API as the scope ('this')
+                        scope_Self, 
+                        // Return values as array, so arg_1[arg_2] is always valid.
+                        scope_Values.map(options.format.to), 
+                        // Handle index, 0 or 1
+                        handleNumber, 
+                        // Un-formatted slider values
+                        scope_Values.slice(), 
+                        // Event is fired by tap, true or false
+                        tap || false, 
+                        // Left offset of the handle, in relation to the slider
+                        scope_Locations.slice(), 
+                        // add the slider public API to an accessible parameter when this is unavailable
+                        scope_Self);
+                    });
+                }
+            });
+        }
+        // Split out the handle positioning logic so the Move event can use it, too
+        function checkHandlePosition(reference, handleNumber, to, lookBackward, lookForward, getValue) {
+            var distance;
+            // For sliders with multiple handles, limit movement to the other handle.
+            // Apply the margin option by adding it to the handle positions.
+            if (scope_Handles.length > 1 && !options.events.unconstrained) {
+                if (lookBackward && handleNumber > 0) {
+                    distance = scope_Spectrum.getAbsoluteDistance(reference[handleNumber - 1], options.margin, false);
+                    to = Math.max(to, distance);
+                }
+                if (lookForward && handleNumber < scope_Handles.length - 1) {
+                    distance = scope_Spectrum.getAbsoluteDistance(reference[handleNumber + 1], options.margin, true);
+                    to = Math.min(to, distance);
+                }
+            }
+            // The limit option has the opposite effect, limiting handles to a
+            // maximum distance from another. Limit must be > 0, as otherwise
+            // handles would be unmovable.
+            if (scope_Handles.length > 1 && options.limit) {
+                if (lookBackward && handleNumber > 0) {
+                    distance = scope_Spectrum.getAbsoluteDistance(reference[handleNumber - 1], options.limit, false);
+                    to = Math.min(to, distance);
+                }
+                if (lookForward && handleNumber < scope_Handles.length - 1) {
+                    distance = scope_Spectrum.getAbsoluteDistance(reference[handleNumber + 1], options.limit, true);
+                    to = Math.max(to, distance);
+                }
+            }
+            // The padding option keeps the handles a certain distance from the
+            // edges of the slider. Padding must be > 0.
+            if (options.padding) {
+                if (handleNumber === 0) {
+                    distance = scope_Spectrum.getAbsoluteDistance(0, options.padding[0], false);
+                    to = Math.max(to, distance);
+                }
+                if (handleNumber === scope_Handles.length - 1) {
+                    distance = scope_Spectrum.getAbsoluteDistance(100, options.padding[1], true);
+                    to = Math.min(to, distance);
+                }
+            }
+            to = scope_Spectrum.getStep(to);
+            // Limit percentage to the 0 - 100 range
+            to = limit(to);
+            // Return false if handle can't move
+            if (to === reference[handleNumber] && !getValue) {
+                return false;
+            }
+            return to;
+        }
+        // Uses slider orientation to create CSS rules. a = base value;
+        function inRuleOrder(v, a) {
+            var o = options.ort;
+            return (o ? a : v) + ", " + (o ? v : a);
+        }
+        // Moves handle(s) by a percentage
+        // (bool, % to move, [% where handle started, ...], [index in scope_Handles, ...])
+        function moveHandles(upward, proposal, locations, handleNumbers, connect) {
+            var proposals = locations.slice();
+            // Store first handle now, so we still have it in case handleNumbers is reversed
+            var firstHandle = handleNumbers[0];
+            var b = [!upward, upward];
+            var f = [upward, !upward];
+            // Copy handleNumbers so we don't change the dataset
+            handleNumbers = handleNumbers.slice();
+            // Check to see which handle is 'leading'.
+            // If that one can't move the second can't either.
+            if (upward) {
+                handleNumbers.reverse();
+            }
+            // Step 1: get the maximum percentage that any of the handles can move
+            if (handleNumbers.length > 1) {
+                handleNumbers.forEach(function (handleNumber, o) {
+                    var to = checkHandlePosition(proposals, handleNumber, proposals[handleNumber] + proposal, b[o], f[o], false);
+                    // Stop if one of the handles can't move.
+                    if (to === false) {
+                        proposal = 0;
+                    }
+                    else {
+                        proposal = to - proposals[handleNumber];
+                        proposals[handleNumber] = to;
+                    }
+                });
+            }
+            // If using one handle, check backward AND forward
+            else {
+                b = f = [true];
+            }
+            var state = false;
+            // Step 2: Try to set the handles with the found percentage
+            handleNumbers.forEach(function (handleNumber, o) {
+                state = setHandle(handleNumber, locations[handleNumber] + proposal, b[o], f[o]) || state;
+            });
+            // Step 3: If a handle moved, fire events
+            if (state) {
+                handleNumbers.forEach(function (handleNumber) {
+                    fireEvent("update", handleNumber);
+                    fireEvent("slide", handleNumber);
+                });
+                // If target is a connect, then fire drag event
+                if (connect != undefined) {
+                    fireEvent("drag", firstHandle);
+                }
+            }
+        }
+        // Takes a base value and an offset. This offset is used for the connect bar size.
+        // In the initial design for this feature, the origin element was 1% wide.
+        // Unfortunately, a rounding bug in Chrome makes it impossible to implement this feature
+        // in this manner: https://bugs.chromium.org/p/chromium/issues/detail?id=798223
+        function transformDirection(a, b) {
+            return options.dir ? 100 - a - b : a;
+        }
+        // Updates scope_Locations and scope_Values, updates visual state
+        function updateHandlePosition(handleNumber, to) {
+            // Update locations.
+            scope_Locations[handleNumber] = to;
+            // Convert the value to the slider stepping/range.
+            scope_Values[handleNumber] = scope_Spectrum.fromStepping(to);
+            var translation = transformDirection(to, 0) - scope_DirOffset;
+            var translateRule = "translate(" + inRuleOrder(translation + "%", "0") + ")";
+            scope_Handles[handleNumber].style[options.transformRule] = translateRule;
+            updateConnect(handleNumber);
+            updateConnect(handleNumber + 1);
+        }
+        // Handles before the slider middle are stacked later = higher,
+        // Handles after the middle later is lower
+        // [[7] [8] .......... | .......... [5] [4]
+        function setZindex() {
+            scope_HandleNumbers.forEach(function (handleNumber) {
+                var dir = scope_Locations[handleNumber] > 50 ? -1 : 1;
+                var zIndex = 3 + (scope_Handles.length + dir * handleNumber);
+                scope_Handles[handleNumber].style.zIndex = String(zIndex);
+            });
+        }
+        // Test suggested values and apply margin, step.
+        // if exactInput is true, don't run checkHandlePosition, then the handle can be placed in between steps (#436)
+        function setHandle(handleNumber, to, lookBackward, lookForward, exactInput) {
+            if (!exactInput) {
+                to = checkHandlePosition(scope_Locations, handleNumber, to, lookBackward, lookForward, false);
+            }
+            if (to === false) {
+                return false;
+            }
+            updateHandlePosition(handleNumber, to);
+            return true;
+        }
+        // Updates style attribute for connect nodes
+        function updateConnect(index) {
+            // Skip connects set to false
+            if (!scope_Connects[index]) {
+                return;
+            }
+            var l = 0;
+            var h = 100;
+            if (index !== 0) {
+                l = scope_Locations[index - 1];
+            }
+            if (index !== scope_Connects.length - 1) {
+                h = scope_Locations[index];
+            }
+            // We use two rules:
+            // 'translate' to change the left/top offset;
+            // 'scale' to change the width of the element;
+            // As the element has a width of 100%, a translation of 100% is equal to 100% of the parent (.noUi-base)
+            var connectWidth = h - l;
+            var translateRule = "translate(" + inRuleOrder(transformDirection(l, connectWidth) + "%", "0") + ")";
+            var scaleRule = "scale(" + inRuleOrder(connectWidth / 100, "1") + ")";
+            scope_Connects[index].style[options.transformRule] =
+                translateRule + " " + scaleRule;
+        }
+        // Parses value passed to .set method. Returns current value if not parse-able.
+        function resolveToValue(to, handleNumber) {
+            // Setting with null indicates an 'ignore'.
+            // Inputting 'false' is invalid.
+            if (to === null || to === false || to === undefined) {
+                return scope_Locations[handleNumber];
+            }
+            // If a formatted number was passed, attempt to decode it.
+            if (typeof to === "number") {
+                to = String(to);
+            }
+            to = options.format.from(to);
+            if (to !== false) {
+                to = scope_Spectrum.toStepping(to);
+            }
+            // If parsing the number failed, use the current value.
+            if (to === false || isNaN(to)) {
+                return scope_Locations[handleNumber];
+            }
+            return to;
+        }
+        // Set the slider value.
+        function valueSet(input, fireSetEvent, exactInput) {
+            var values = asArray(input);
+            var isInit = scope_Locations[0] === undefined;
+            // Event fires by default
+            fireSetEvent = fireSetEvent === undefined ? true : fireSetEvent;
+            // Animation is optional.
+            // Make sure the initial values were set before using animated placement.
+            if (options.animate && !isInit) {
+                addClassFor(scope_Target, options.cssClasses.tap, options.animationDuration);
+            }
+            // First pass, without lookAhead but with lookBackward. Values are set from left to right.
+            scope_HandleNumbers.forEach(function (handleNumber) {
+                setHandle(handleNumber, resolveToValue(values[handleNumber], handleNumber), true, false, exactInput);
+            });
+            var i = scope_HandleNumbers.length === 1 ? 0 : 1;
+            // Spread handles evenly across the slider if the range has no size (min=max)
+            if (isInit && scope_Spectrum.hasNoSize()) {
+                exactInput = true;
+                scope_Locations[0] = 0;
+                if (scope_HandleNumbers.length > 1) {
+                    var space_1 = 100 / (scope_HandleNumbers.length - 1);
+                    scope_HandleNumbers.forEach(function (handleNumber) {
+                        scope_Locations[handleNumber] = handleNumber * space_1;
+                    });
+                }
+            }
+            // Secondary passes. Now that all base values are set, apply constraints.
+            // Iterate all handles to ensure constraints are applied for the entire slider (Issue #1009)
+            for (; i < scope_HandleNumbers.length; ++i) {
+                scope_HandleNumbers.forEach(function (handleNumber) {
+                    setHandle(handleNumber, scope_Locations[handleNumber], true, true, exactInput);
+                });
+            }
+            setZindex();
+            scope_HandleNumbers.forEach(function (handleNumber) {
+                fireEvent("update", handleNumber);
+                // Fire the event only for handles that received a new value, as per #579
+                if (values[handleNumber] !== null && fireSetEvent) {
+                    fireEvent("set", handleNumber);
+                }
+            });
+        }
+        // Reset slider to initial values
+        function valueReset(fireSetEvent) {
+            valueSet(options.start, fireSetEvent);
+        }
+        // Set value for a single handle
+        function valueSetHandle(handleNumber, value, fireSetEvent, exactInput) {
+            // Ensure numeric input
+            handleNumber = Number(handleNumber);
+            if (!(handleNumber >= 0 && handleNumber < scope_HandleNumbers.length)) {
+                throw new Error("noUiSlider: invalid handle number, got: " + handleNumber);
+            }
+            // Look both backward and forward, since we don't want this handle to "push" other handles (#960);
+            // The exactInput argument can be used to ignore slider stepping (#436)
+            setHandle(handleNumber, resolveToValue(value, handleNumber), true, true, exactInput);
+            fireEvent("update", handleNumber);
+            if (fireSetEvent) {
+                fireEvent("set", handleNumber);
+            }
+        }
+        // Get the slider value.
+        function valueGet(unencoded) {
+            if (unencoded === void 0) { unencoded = false; }
+            if (unencoded) {
+                // return a copy of the raw values
+                return scope_Values.length === 1 ? scope_Values[0] : scope_Values.slice(0);
+            }
+            var values = scope_Values.map(options.format.to);
+            // If only one handle is used, return a single value.
+            if (values.length === 1) {
+                return values[0];
+            }
+            return values;
+        }
+        // Removes classes from the root and empties it.
+        function destroy() {
+            // remove protected internal listeners
+            removeEvent(INTERNAL_EVENT_NS.aria);
+            removeEvent(INTERNAL_EVENT_NS.tooltips);
+            Object.keys(options.cssClasses).forEach(function (key) {
+                removeClass(scope_Target, options.cssClasses[key]);
+            });
+            while (scope_Target.firstChild) {
+                scope_Target.removeChild(scope_Target.firstChild);
+            }
+            delete scope_Target.noUiSlider;
+        }
+        function getNextStepsForHandle(handleNumber) {
+            var location = scope_Locations[handleNumber];
+            var nearbySteps = scope_Spectrum.getNearbySteps(location);
+            var value = scope_Values[handleNumber];
+            var increment = nearbySteps.thisStep.step;
+            var decrement = null;
+            // If snapped, directly use defined step value
+            if (options.snap) {
+                return [
+                    value - nearbySteps.stepBefore.startValue || null,
+                    nearbySteps.stepAfter.startValue - value || null,
+                ];
+            }
+            // If the next value in this step moves into the next step,
+            // the increment is the start of the next step - the current value
+            if (increment !== false) {
+                if (value + increment > nearbySteps.stepAfter.startValue) {
+                    increment = nearbySteps.stepAfter.startValue - value;
+                }
+            }
+            // If the value is beyond the starting point
+            if (value > nearbySteps.thisStep.startValue) {
+                decrement = nearbySteps.thisStep.step;
+            }
+            else if (nearbySteps.stepBefore.step === false) {
+                decrement = false;
+            }
+            // If a handle is at the start of a step, it always steps back into the previous step first
+            else {
+                decrement = value - nearbySteps.stepBefore.highestStep;
+            }
+            // Now, if at the slider edges, there is no in/decrement
+            if (location === 100) {
+                increment = null;
+            }
+            else if (location === 0) {
+                decrement = null;
+            }
+            // As per #391, the comparison for the decrement step can have some rounding issues.
+            var stepDecimals = scope_Spectrum.countStepDecimals();
+            // Round per #391
+            if (increment !== null && increment !== false) {
+                increment = Number(increment.toFixed(stepDecimals));
+            }
+            if (decrement !== null && decrement !== false) {
+                decrement = Number(decrement.toFixed(stepDecimals));
+            }
+            return [decrement, increment];
+        }
+        // Get the current step size for the slider.
+        function getNextSteps() {
+            return scope_HandleNumbers.map(getNextStepsForHandle);
+        }
+        // Updatable: margin, limit, padding, step, range, animate, snap
+        function updateOptions(optionsToUpdate, fireSetEvent) {
+            // Spectrum is created using the range, snap, direction and step options.
+            // 'snap' and 'step' can be updated.
+            // If 'snap' and 'step' are not passed, they should remain unchanged.
+            var v = valueGet();
+            var updateAble = [
+                "margin",
+                "limit",
+                "padding",
+                "range",
+                "animate",
+                "snap",
+                "step",
+                "format",
+                "pips",
+                "tooltips",
+            ];
+            // Only change options that we're actually passed to update.
+            updateAble.forEach(function (name) {
+                // Check for undefined. null removes the value.
+                if (optionsToUpdate[name] !== undefined) {
+                    originalOptions[name] = optionsToUpdate[name];
+                }
+            });
+            var newOptions = testOptions(originalOptions);
+            // Load new options into the slider state
+            updateAble.forEach(function (name) {
+                if (optionsToUpdate[name] !== undefined) {
+                    options[name] = newOptions[name];
+                }
+            });
+            scope_Spectrum = newOptions.spectrum;
+            // Limit, margin and padding depend on the spectrum but are stored outside of it. (#677)
+            options.margin = newOptions.margin;
+            options.limit = newOptions.limit;
+            options.padding = newOptions.padding;
+            // Update pips, removes existing.
+            if (options.pips) {
+                pips(options.pips);
+            }
+            else {
+                removePips();
+            }
+            // Update tooltips, removes existing.
+            if (options.tooltips) {
+                tooltips();
+            }
+            else {
+                removeTooltips();
+            }
+            // Invalidate the current positioning so valueSet forces an update.
+            scope_Locations = [];
+            valueSet(isSet(optionsToUpdate.start) ? optionsToUpdate.start : v, fireSetEvent);
+        }
+        // Initialization steps
+        function setupSlider() {
+            // Create the base element, initialize HTML and set classes.
+            // Add handles and connect elements.
+            scope_Base = addSlider(scope_Target);
+            addElements(options.connect, scope_Base);
+            // Attach user events.
+            bindSliderEvents(options.events);
+            // Use the public value method to set the start values.
+            valueSet(options.start);
+            if (options.pips) {
+                pips(options.pips);
+            }
+            if (options.tooltips) {
+                tooltips();
+            }
+            aria();
+        }
+        setupSlider();
+        var scope_Self = {
+            destroy: destroy,
+            steps: getNextSteps,
+            on: bindEvent,
+            off: removeEvent,
+            get: valueGet,
+            set: valueSet,
+            setHandle: valueSetHandle,
+            reset: valueReset,
+            // Exposed for unit testing, don't use this in your application.
+            __moveHandles: function (upward, proposal, handleNumbers) {
+                moveHandles(upward, proposal, scope_Locations, handleNumbers);
+            },
+            options: originalOptions,
+            updateOptions: updateOptions,
+            target: scope_Target,
+            removePips: removePips,
+            removeTooltips: removeTooltips,
+            getPositions: function () {
+                return scope_Locations.slice();
+            },
+            getTooltips: function () {
+                return scope_Tooltips;
+            },
+            getOrigins: function () {
+                return scope_Handles;
+            },
+            pips: pips, // Issue #594
+        };
+        return scope_Self;
+    }
+    // Run the standard initializer
+    function initialize(target, originalOptions) {
+        if (!target || !target.nodeName) {
+            throw new Error("noUiSlider: create requires a single element, got: " + target);
+        }
+        // Throw an error if the slider was already initialized.
+        if (target.noUiSlider) {
+            throw new Error("noUiSlider: Slider was already initialized.");
+        }
+        // Test the options and create the slider environment;
+        var options = testOptions(originalOptions);
+        var api = scope(target, options, originalOptions);
+        target.noUiSlider = api;
+        return api;
+    }
+    var nouislider = {
+        // Exposed for unit testing, don't use this in your application.
+        __spectrum: Spectrum,
+        // A reference to the default classes, allows global changes.
+        // Use the cssClasses option for changes to one slider.
+        cssClasses: cssClasses,
+        create: initialize,
+    };
+
+    exports.create = initialize;
+    exports.cssClasses = cssClasses;
+    exports["default"] = nouislider;
+
+    Object.defineProperty(exports, '__esModule', { value: true });
+
+}));
+
+
+/***/ }),
+
+/***/ "./node_modules/nouislider/dist/nouislider.css":
+/*!*****************************************************!*\
+  !*** ./node_modules/nouislider/dist/nouislider.css ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_nouislider_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js!../../postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../../sass-loader/dist/cjs.js!./nouislider.css */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/nouislider/dist/nouislider.css");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_nouislider_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_nouislider_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_nouislider_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _css_loader_dist_cjs_js_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_sass_loader_dist_cjs_js_nouislider_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/styles/index.scss":
 /*!*******************************!*\
   !*** ./src/styles/index.scss ***!
@@ -10927,10 +13487,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!../../node_modules/sass-loader/dist/cjs.js!./index.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/styles/index.scss");
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__[__WEBPACK_IMPORT_KEY__]
-/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 
       
       
@@ -10952,12 +13508,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default()), options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default()) && (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default().locals) ? (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6___default().locals) : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_1_use_2_node_modules_sass_loader_dist_cjs_js_index_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -11272,6 +13828,149 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/fonts/Montserrat-Bold.ttf":
+/*!***************************************!*\
+  !*** ./src/fonts/Montserrat-Bold.ttf ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/079ca05d3ded9bc107ab.ttf";
+
+/***/ }),
+
+/***/ "./src/fonts/Montserrat-Regular.ttf":
+/*!******************************************!*\
+  !*** ./src/fonts/Montserrat-Regular.ttf ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/3cd786652b8a2e9d41f2.ttf";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/checkbox/checkbox-active.svg":
+/*!*************************************************************************!*\
+  !*** ./src/styles/form__elements/elements/checkbox/checkbox-active.svg ***!
+  \*************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/702cd61a41ce8378ced1.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/checkbox/checkbox-focused.svg":
+/*!**************************************************************************!*\
+  !*** ./src/styles/form__elements/elements/checkbox/checkbox-focused.svg ***!
+  \**************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/b5edc2d4e5935886bee7.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/checkbox/checkbox-inactive.svg":
+/*!***************************************************************************!*\
+  !*** ./src/styles/form__elements/elements/checkbox/checkbox-inactive.svg ***!
+  \***************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/c9dd8b95099f8435bc21.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/like-button/favorite.svg":
+/*!*********************************************************************!*\
+  !*** ./src/styles/form__elements/elements/like-button/favorite.svg ***!
+  \*********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/cde7f22f6945bf8bd65d.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/like-button/favorite_border.svg":
+/*!****************************************************************************!*\
+  !*** ./src/styles/form__elements/elements/like-button/favorite_border.svg ***!
+  \****************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/69d1f53200b2364767d2.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/radio/inactive.svg":
+/*!***************************************************************!*\
+  !*** ./src/styles/form__elements/elements/radio/inactive.svg ***!
+  \***************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/a81234064c37dd6c49a9.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/radio/radio-active.svg":
+/*!*******************************************************************!*\
+  !*** ./src/styles/form__elements/elements/radio/radio-active.svg ***!
+  \*******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/da8724b345650db8a491.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/rating/star.svg":
+/*!************************************************************!*\
+  !*** ./src/styles/form__elements/elements/rating/star.svg ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/1f1fe8053dc4da9ab067.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/rating/star_border.svg":
+/*!*******************************************************************!*\
+  !*** ./src/styles/form__elements/elements/rating/star_border.svg ***!
+  \*******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/08bf66af203c43cb6f2e.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/toggle/switch-off.svg":
+/*!******************************************************************!*\
+  !*** ./src/styles/form__elements/elements/toggle/switch-off.svg ***!
+  \******************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/9882f0d8316a1fa8ebd1.svg";
+
+/***/ }),
+
+/***/ "./src/styles/form__elements/elements/toggle/switch-on.svg":
+/*!*****************************************************************!*\
+  !*** ./src/styles/form__elements/elements/toggle/switch-on.svg ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "assets/d4ba60a8c28e13a01ac7.svg";
+
 /***/ })
 
 /******/ 	});
@@ -11288,7 +13987,7 @@ module.exports = styleTagTransform;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -11299,6 +13998,9 @@ module.exports = styleTagTransform;
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -11325,6 +14027,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -11341,6 +14055,52 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -11350,17 +14110,37 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.scss */ "./src/styles/index.scss");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! nouislider */ "./node_modules/nouislider/dist/nouislider.js");
+/* harmony import */ var nouislider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(nouislider__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var nouislider_dist_nouislider_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! nouislider/dist/nouislider.css */ "./node_modules/nouislider/dist/nouislider.css");
+/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/index.scss */ "./src/styles/index.scss");
 
 
 
 
 
-console.log("it works");
+document.querySelectorAll('.rating__star').forEach(item => {
+    item.addEventListener('click', () => {
+        item.parentNode.dataset.totalValue = item.dataset.itemValue
+    })
+     
+})
+
+var slider = document.getElementById('slider');
+
+nouislider__WEBPACK_IMPORTED_MODULE_1__.create(slider, {
+    start: [20, 80],
+    connect: true,
+    range: {
+        'min': 5000,
+        'max': 10000
+    }
+});
+
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main04df144c0b669000e398.js.map
+//# sourceMappingURL=maina59a2a651da07aa29b14.js.map
