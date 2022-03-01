@@ -20,3 +20,5 @@ noUiSlider.create(slider, {
         'max': 10000
     }
 });
+
+

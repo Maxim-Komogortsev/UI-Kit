@@ -1,0 +1,33 @@
+.pagination{
+    display: flex;
+    align-items: center;
+}
+.pag-item{
+    list-style: none;
+    display: inline-block;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    font-size: 12px;
+    img{
+        margin: 11px;
+        line-height: 24px;
+    }
+}
+
+.select{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.next{
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 50%;
+}
+.prev{
+    @extend .next;
+}

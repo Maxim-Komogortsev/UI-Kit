@@ -7,6 +7,7 @@
 @use 'elements/rating/rating';
 @use  'elements/price-range/price-range';
 @use 'elements/buttons/buttons';
+@use 'elements/pagination/pagination';
 
 .field-20 {
     margin-top: 20px;
@@ -29,5 +30,8 @@
 .button-row{
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
