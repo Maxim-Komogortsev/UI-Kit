@@ -42,7 +42,7 @@
             margin-right: 15px;
         }
 
-        &:hover{
+        &:hover, &:focus{
             border: 1px solid rgba(31, 32, 65, 0.5);
             p {
                 color: rgba(31, 32, 65, 0.75);

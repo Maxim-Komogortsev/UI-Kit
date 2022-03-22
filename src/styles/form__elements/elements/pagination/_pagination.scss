@@ -1,33 +1,135 @@
-.pagination{
+@keyframes cdp-in {
+    from {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+
+  .cdp {
     display: flex;
     align-items: center;
-}
-.pag-item{
-    list-style: none;
-    display: inline-block;
-    line-height: 40px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    color: rgba(31, 32, 65, 0.5);
-    font-size: 12px;
-    img{
-        margin: 11px;
-        line-height: 24px;
+    font-size: 0;
+    z-index: 6;
+    
+    animation: cdp-in 500ms ease both;
+  
+    &_i {
+      text-align: center;
+      font-size: 12px;
+      line-height: 15px;
+      text-decoration: none;
+      display: inline-block;
+      text-transform: uppercase;
+      height: 40px;
+      min-width: 40px;
+      border-radius: 50%;
+      line-height: 40px;
+      padding: 0;
+      font-weight: 400;
+      letter-spacing: .03em;
+      display: none;
+      color: rgba(31, 32, 65, 0.5);
+      transition: 250ms;
+      
+      &:last-child,
+      &:nth-child(2),
+      &:nth-last-child(2) {
+        display: inline-block;
+      }
     }
-}
+  
+    &_i:hover:not(:first-child):not(:last-child) {
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      opacity: 0.75;
+      color: #fff;
+      font-weight: 700;
+    }
+  
+    &:not([actpage="1"]) &_i:nth-child(1) {
+      display: inline-block;
+    }
+  }
+  @for $i from 1 through 80 {
+    .cdp[actpage="#{$i}"] {
+      // 3 before
+      .cdp_i:nth-child(#{$i - 2}):not(:first-child):not(:nth-child(2)) {
+        display: inline-block;
+        pointer-events: none;
+        color: transparent;
+        border-color: transparent;
+        width: 40px;
+        &:after {
+          content: '...';
+          color: rgba(31, 32, 65, 0.5);
+          font-size: 12px;
+          margin-left: -6px;
+        }
+      }
+      // 2 before
+      .cdp_i:nth-child(#{$i - 1}):not(:first-child) {
+        display: inline-block;
+      }
+      // before
+      .cdp_i:nth-child(#{$i}):not(:first-child) {
+        display: inline-block;
+      }
+      // active
+      .cdp_i:nth-child(#{$i + 1}) {
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        color: #fff;
+        font-weight: 700;
+        display: inline-block;
+  
+        +.cdp_i:last-child {
+          display: none !important;
+        }
+      }
+      // next
+      .cdp_i:nth-child(#{$i + 2}):not(:last-child) {
+        display: inline-block;
+      }
+      // 2 next
+      .cdp_i:nth-child(#{$i + 3}):not(:last-child) {
+        display: inline-block;
+      }
+      // 3 next
+      .cdp_i:nth-child(#{$i + 4}):not(:last-child):not(:nth-last-child(2)) {
+        display: inline-block;
+        pointer-events: none;
+        color: transparent;
+        border-color: transparent;
+        width: 40px;
+        &:after {
+          content: '...';
+          color: rgba(31, 32, 65, 0.5);
+          font-size: 12px;
+          margin-left: -6px;
+        }
+      }
+    }
+  }
 
-.select{
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    color: white;
-    border-radius: 50%;
-    font-weight: 700;
-}
-
-.next{
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-    border-radius: 50%;
-}
-.prev{
-    @extend .next;
+.skip{
+    height: 40px;
+    width:40px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); 
+    img{
+        margin: 11px;   
+        line-height: 24px;
+       
+    }
+}  
+.pagination-bottom{
+    color: rgba(31, 32, 65, 0.75);
+    font: {
+        size: 14px;
+        weight: 400;
+    }
+    line-height: 24px;
+    margin: 0;
 }
