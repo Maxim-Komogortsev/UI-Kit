@@ -54,6 +54,24 @@ window.onload = function(){
         flag = 0
       }
     })
+    // dropdown functional
+    if ($(this).next().text() == 0)
+      $(this).css('border-color', 'rgba(31, 32, 65, 0.25)')
+    $('.counter__button-plus').click(function(){
+      if ($(this).prev().text() < 2)
+        $(this).prev().text(+$(this).prev().text() + 1)
+    })
+    $('.counter__button-minus').click(function () {
+      if ($(this).next().text() > 0)
+        $(this).next().text(+$(this).next().text() - 1); 
+    });
+
+    //checkbox-dropdown arrow rotation
+    $('.checkbox-dropdown__title').click(function(e){
+      e.preventDefault();
+      $('.rotating').toggleClass("rotated");
+      $('.checkbox-dropdown__list').slideToggle();
+    })
 }
 
 

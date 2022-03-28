@@ -44,6 +44,17 @@ html
                     include blocks/pagination/_pagination
         section
             .container
-                include blocks/dropdown/full/_full 
+                .field-40
+                    include blocks/dropdown/full/_full
+                .field-40
+                    .checkbox-dropdown__title
+                        h3.title__text_3 expandable checkbox 
+                        img(src=require("/src/img/expand_more.svg"), icon).rotating
+                .field-40
+                    include blocks/checkbox-dropdown/_checkbox-dropdown
+        section
+            .container
+                .field-40
+                    include blocks/achievments/_achievments
                         
                         
