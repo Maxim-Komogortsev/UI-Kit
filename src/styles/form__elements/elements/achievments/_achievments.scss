@@ -1,9 +1,11 @@
 .achievment{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     border-bottom: 1px solid rgba(31, 32, 65, 0.1);
     width: 280px;
-    height: 65px;
+    height: 54px;
+    padding: 17px 0 17px 0;
+    
 }
 
 .achievment__logo{
@@ -13,19 +15,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-        
-    }
 }
-.achievement__description{
+
+.achievment__description {
     p {
-        margin: 0;
+        margin: 0.5em 0 0.5em 0;
         font-size: 14px;
     }
     .achievment__title{
         font-weight: 700;
+        color: rgba(31, 32, 65, 0.75);
     }
     .achievment__subscription{
         font-weight: 400;
+        color: rgba(31, 32, 65, 0.75);
     }
 }
