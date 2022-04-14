@@ -1,0 +1,46 @@
+.comment{
+    max-width: 711px;
+    max-height: 133px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.comment__row{
+    display: flex;
+    gap: 10px;
+    line-height: 24px;
+    font-size: 14px;
+    .comment__avatar{
+        width: 48px;
+        height: 48px;
+    }
+
+    .comment__like{
+        display: flex;
+        justify-content: flex-end;
+        height: 48px;
+        width: 48px;
+    }
+
+    .comment__person{
+        h3{
+            color: rgba(31, 32, 65, 0.75);
+            margin: 0;
+            font-size: 14px;
+        }
+        p{
+            margin: 0;
+            color: rgba(31, 32, 65, 0.75);
+        }
+    }
+    .comment__text{
+        color: rgba(31, 32, 65, 0.75);
+    }
+}
+
+.comment__person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
