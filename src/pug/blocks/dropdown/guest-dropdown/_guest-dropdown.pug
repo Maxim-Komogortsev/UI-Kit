@@ -1,11 +1,10 @@
 .dropdown-box
     .field__title
-        h3.title__text_3 dropdown
-        p.title__text_p EXPANDED
-    .dropdown-full
-        p.title__text_p 
+        h3.title__text_3 Dropdown
+    .guest-dropdown__area
+        p.title__text_p Сколько гостей
         img(src=require("/src/img/expand_more.svg"), icon)
-    .dropdown-menu
+    .dropdown-menu(style="display: block;")
         .dropdown-menu-row
             h3.title__text_3 спальни
             .counter
@@ -24,8 +23,6 @@
                 .counter__button-minus -
                 .number 0
                 .counter__button-plus +
-        
-    
-
-    
-        
+        .dropdown-menu-row
+            p.help-button очистить
+            p.help-button применить

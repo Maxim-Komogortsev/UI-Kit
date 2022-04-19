@@ -1,0 +1,17 @@
+@import '/src/styles/form__elements/elements/input/_input.scss';
+
+.guest-dropdown__area{
+    @extend .field__area;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}
+
+.help-button{
+    margin: 20px 0 0 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    cursor: pointer;
+}

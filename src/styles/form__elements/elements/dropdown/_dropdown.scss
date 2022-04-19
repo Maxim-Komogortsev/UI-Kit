@@ -14,11 +14,12 @@
 
 .date-dropdown-medium{
     @extend .field__area;
-    width: 264px;
+    width: 243px;
 }
 
 .sub-field{
     @extend .date-dropdown-medium;
+    padding: 0 0 0 15px;
     p{
         color:rgba(31, 32, 65, 0.5)
     }
@@ -26,6 +27,7 @@
 .dropdown-full{
     @extend .date-dropdown-medium;
     border-radius: 4px 4px 0 0;
+    cursor: pointer;
 }
 .dropdown-menu{
     display: none;
@@ -33,7 +35,7 @@
     border: 1px solid rgba(31, 32, 65, 0.5);
     border-top-color: transparent;
     padding: 0px 7px 8px 15px;
-    box-shadow: 0 5px 5px 2px rgb(0, 0, 0, 0.05);
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     .dropdown-menu-row{
         display:flex;
         align-items: center;
