@@ -4,25 +4,25 @@
     .guest-dropdown__area
         p.title__text_p Сколько гостей
         img(src=require("/src/img/expand_more.svg"), icon)
-    .dropdown-menu(style="display: block;")
+    .dropdown-menu(id="guest-dropdown")
         .dropdown-menu-row
             h3.title__text_3 спальни
             .counter
-                .counter__button-minus -
-                .number 0
-                .counter__button-plus + 
+                .counter__button.minus -
+                .number 2
+                .counter__button.plus + 
         .dropdown-menu-row
             h3.title__text_3 кровати
             .counter
-                .counter__button-minus -
-                .number 0
-                .counter__button-plus + 
+                .counter__button.minus -
+                .number 2
+                .counter__button.plus + 
         .dropdown-menu-row
             h3.title__text_3 ванные комнаты
             .counter
-                .counter__button-minus -
-                .number 0
-                .counter__button-plus +
+                .counter__button.minus -
+                .number 1
+                .counter__button.plus +
         .dropdown-menu-row
             p.help-button очистить
             p.help-button применить

@@ -31,6 +31,15 @@ window.onload = function(){
       }
     })
   }
+  function sum() {
+
+    let count = 0
+    $('#guest-dropdown').find('.number').each(function(){
+      count += +($(this).text())
+    })
+
+    return count
+  }
       //Range slider
     var slider = document.getElementById('slider');
 
@@ -63,17 +72,30 @@ window.onload = function(){
     
 
     // dropdown functional
-    if ($(this).next().text() == 0)
-      $(this).css('border-color', 'rgba(31, 32, 65, 0.25)')
-    $('.counter__button-plus').click(function(){
+    
+    $(".counter__button.plus").click(function(){
       if ($(this).prev().text() < 2)
         $(this).prev().text(+$(this).prev().text() + 1)
+      if ($(this).next().text() == 2)
+        $(this).css('border-color', 'rgba(31, 32, 65, 0.25)')
     })
-    $('.counter__button-minus').click(function () {
+    $('.counter__button.minus').click(function () {
       if ($(this).next().text() > 0)
         $(this).next().text(+$(this).next().text() - 1); 
+      if ($(this).next().text() == 0)
+        $(this).css('border-color', 'rgba(31, 32, 65, 0.25)')
     });
+    //dropdown display update
+    var dropdownBtn = $('#guest-dropdown').find('.counter__button')
 
+    dropdownBtn.each(function(){
+      $(this).click(function(){
+        $('.guest-dropdown__area p').text(sum() + ' гостей')
+        if (sum() == 0)
+        $('.guest-dropdown__area p').text('Сколько гостей')
+      })
+    })
+    
     //checkbox-dropdown arrow rotation
     $('.checkbox-dropdown__title').click(function(e){
       e.preventDefault();
