@@ -1,5 +1,9 @@
 @import '/src/styles/form__elements/elements/input/_input.scss';
 
+.delete-container{
+    width: 67.15px;
+}
+
 .guest-dropdown__area{
     @extend .field__area;
     border-radius: 4px 4px 0 0;

@@ -14,6 +14,7 @@ document.querySelectorAll('.rating__star').forEach(item => {
 
 
 window.onload = function(){
+
   //slider function
   function sliding(trigger){
     var flag = 0;
@@ -31,6 +32,8 @@ window.onload = function(){
       }
     })
   }
+
+  // guest counting
   function sum() {
 
     let count = 0
@@ -40,6 +43,9 @@ window.onload = function(){
 
     return count
   }
+
+ 
+ 
       //Range slider
     var slider = document.getElementById('slider');
 
@@ -87,12 +93,39 @@ window.onload = function(){
     });
     //dropdown display update
     var dropdownBtn = $('#guest-dropdown').find('.counter__button')
+    var clearBtn = $('p.help-button.delete')
+    
+
+    clearBtn.hide();
+
+    $('p.help-button.delete').click(function(){
+      $('.guest-dropdown__area p').text('Сколько гостей');
+      $('.number').each(function(){
+        $(this).text('0')
+      })
+    })
 
     dropdownBtn.each(function(){
       $(this).click(function(){
-        $('.guest-dropdown__area p').text(sum() + ' гостей')
-        if (sum() == 0)
-        $('.guest-dropdown__area p').text('Сколько гостей')
+        switch (sum()) {
+          case 1:
+            $('.guest-dropdown__area p').text(sum() + ' гость');
+            clearBtn.show()
+            break;
+          case 2:
+          case 3:
+          case 4:
+            $('.guest-dropdown__area p').text(sum() + ' гостя');
+            break;
+          case 5:
+          case 6:
+            $('.guest-dropdown__area p').text(sum() + ' гостей');
+            break;
+          case 0:
+            $('.guest-dropdown__area p').text('Сколько гостей');
+            clearBtn.hide()
+            break;
+        }
       })
     })
     
