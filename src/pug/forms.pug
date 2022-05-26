@@ -1,0 +1,23 @@
+html 
+    include _head
+    body(style="background: #F4F4F6;")
+        include _logo
+        section
+            .form__area
+                p.title__text_1.max-h Найдём номера под ваши пожелания
+                .dropfield
+                    .dropdown-box
+                        .field__title
+                            p.title__text_3 прибытие
+                        .date-dropdown-small
+                            p.title__text_p ДД.ММ.ГГГГ
+                            img(src=require("/src/img/expand_more.svg"), icon)
+                    .dropdown-box
+                        .field__title
+                            p.title__text_3 выезд
+                        .date-dropdown-small
+                            p.title__text_p ДД.ММ.ГГГГ
+                            img(src=require("/src/img/expand_more.svg"), icon)
+                .pass-button
+                    h3.title__text_3 подобрать номер
+                    img(src=require("/src/img/arrow_forward.svg"), alt="arrow")

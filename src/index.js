@@ -44,8 +44,6 @@ window.onload = function(){
     return count
   }
 
- 
- 
       //Range slider
     var slider = document.getElementById('slider');
 

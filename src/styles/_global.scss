@@ -22,7 +22,18 @@ section{
     margin-top: 37px;
 }
 
+.form__area{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
 
+.max-h{
+    width: 320px;
+}
 
 
 

@@ -26,12 +26,12 @@ module.exports = {
       // new HtmlWebpackPlugin({
       //   name: 'ColorsTypes.html',
       //   template: 'src/pug/ColorsTypes.pug'}),
-      new HtmlWebpackPlugin({
+      // new HtmlWebpackPlugin({
+      //   name: 'forms.html',
+      //   template: 'src/pug/forms.pug'})
+       new HtmlWebpackPlugin({
         name: 'formElem.html',
         template: 'src/pug/formElem.pug'})
-      //  new HtmlWebpackPlugin({
-      //   name: 'formElem.html',
-      //   template: 'src/pug/paigeBlocks.pug'})
     ],
     module: {
       rules: [
@@ -64,7 +64,7 @@ module.exports = {
           type : 'asset/resource'
         },
         {
-          test: /\.(woff|woff2|eot|ttf|otf)$/i,
+          test: /\.(woff|woff2|eot|ttf|otf)$/, //i
           type: 'asset/resource'
         },
         {

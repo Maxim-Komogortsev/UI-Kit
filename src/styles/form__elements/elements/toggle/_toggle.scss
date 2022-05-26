@@ -1,29 +1,107 @@
 @import '/src/styles/mixins/text-size';
 @import '/src/styles/form__elements/elements/checkbox/checkbox';
 
-.toggle{
-    @extend .check;
-    @include text-size(14px, 200, 24px);
-    padding-left: 50px;
-    color: rgba(31, 32, 65, 0.75);
-    max-width: 260px;
-    &__input{
-        @extend .check__input;
-    }
-    &__box{
-        width: 40px;
-        height: 21px;
-        margin-left: -50px;
-        margin-top: 1px;
-        background: url('/src/styles/form__elements/elements/toggle/switch-off.svg');
-    }
+
+.check__item {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+
+	label {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+                color: rgba(31, 32, 65, 0.75);
+                font-size: 14px;
+                line-height: 24px;
+	}
 }
 
-.toggle__input:hover + .toggle__box{
-        background: url('/src/styles/form__elements/elements/toggle/switch-off.svg');
+.default__check[type="checkbox"],
+.default__check[type="radio"] {
+	display: none;
+
+	~ .custom__check {
+		display: flex;
+		align-items: center;
+		height: 18px;
+		border: 1px solid rgba(31, 32, 65, 0.25);
+		position: relative;
+		transition: all 0.4s ease;
+		cursor: pointer;
+
+		&:after {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			transition: all 0.4s ease;
+		}
+	}
+
+	&:not(.switchbox) {
+		~ .custom__check {
+			justify-content: center;
+			width: 16px;
+
+			&:after {
+				visibility: hidden;
+			}
+		}
+	}
+
+	&.switchbox {
+		+ .custom__check {
+			width: 38px;
+			&:after {
+				transform: scale(1.5);
+				left: 4px;
+                                height: 12px;
+                                width: 12px;
+			}
+		}
+
+		&:not(:checked) {
+			~ .custom__check {
+				&:after {
+					background-color: rgba(31, 32, 65, 0.25);
+				}
+			}
+		}
+
+		&:checked {
+			~ .custom__check {
+				&:after {
+					left: 26px;
+				}
+			}
+		}
+	}
+
+	&:disabled {
+		~ .custom__check {
+			opacity: 0.3;
+			cursor: not-allowed;
+		}
+	}
+
+	&:checked {
+		~ .custom__check {
+			border: 1px solid #BC9CFF;
+			&:after {
+				background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+			}
+		}
+	}
 }
 
-.toggle__input:checked + .toggle__box{
-    background: url('/src/styles/form__elements/elements/toggle/switch-on.svg');
+.default__check[type="checkbox"].switchbox {
+	~ .custom__check {
+		border-radius: 50rem;
+		&:after {
+			width: 8px;
+			height: 8px;
+			background-color: #fff;
+			border-radius: 50rem;
+		}
+	}
 }
-
