@@ -45,16 +45,16 @@ window.onload = function(){
   }
 
       //Range slider
-    var slider = document.getElementById('slider');
+    // var slider = document.getElementById('slider');
 
-    noUiSlider.create(slider, {
-        start: [20, 80],
-        connect: true,
-        range: {
-            'min': 5000,
-            'max': 10000
-        }
-    });
+    // noUiSlider.create(slider, {
+    //     start: [20, 80],
+    //     connect: true,
+    //     range: {
+    //         'min': 5000,
+    //         'max': 10000
+    //     }
+    // });
 
   //pagination
     var paginationPage = parseInt($('.cdp').attr('actpage'), 10);

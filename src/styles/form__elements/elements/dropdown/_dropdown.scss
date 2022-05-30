@@ -9,17 +9,19 @@
 }
 .date-dropdown-small{
     @extend .field__area;
+    P{
+        font-size: 14px;
+    }
     width: 148px;
 }
 
 .date-dropdown-medium{
     @extend .field__area;
-    width: 243px;
+    width: 264px;
 }
 
 .sub-field{
     @extend .date-dropdown-medium;
-    padding: 0 0 0 15px;
     p{
         color:rgba(31, 32, 65, 0.5)
     }

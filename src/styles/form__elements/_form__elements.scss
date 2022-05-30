@@ -15,6 +15,25 @@
 @use 'elements/comment/comment';
 @use 'elements/guest-dropdown/guest-dropdown';
 
+.field-10 {
+    margin-top: 10px;
+    &:first-child{
+        margin-top: 0;
+    }
+}
+
+.field-24 {
+    margin-top: 24px;
+    &:first-child{
+        margin-top: 0;
+    }
+}
+.field-30 {
+    margin-top: 30px;
+    &:first-child{
+        margin-top: 0;
+    }
+}
 .field-20 {
     margin-top: 20px;
     &:first-child{
@@ -39,5 +58,15 @@
     margin-bottom: 30px;    
     &:last-child{
         margin-bottom: 0;
+    }
+}
+.enter-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        margin: 0;
+        font-size: 14px;
+        line-height: 18px;
     }
 }

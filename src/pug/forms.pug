@@ -5,19 +5,60 @@ html
         section
             .form__area
                 p.title__text_1.max-h Найдём номера под ваши пожелания
-                .dropfield
-                    .dropdown-box
-                        .field__title
-                            p.title__text_3 прибытие
-                        .date-dropdown-small
-                            p.title__text_p ДД.ММ.ГГГГ
-                            img(src=require("/src/img/expand_more.svg"), icon)
-                    .dropdown-box
-                        .field__title
-                            p.title__text_3 выезд
-                        .date-dropdown-small
-                            p.title__text_p ДД.ММ.ГГГГ
-                            img(src=require("/src/img/expand_more.svg"), icon)
-                .pass-button
-                    h3.title__text_3 подобрать номер
-                    img(src=require("/src/img/arrow_forward.svg"), alt="arrow")
+                .field-20
+                    .dropfield
+                        .dropdown-box
+                            .field__title
+                                p.title__text_3 прибытие
+                            .date-dropdown-small
+                                p.title__text_p ДД.ММ.ГГГГ
+                                img(src=require("/src/img/expand_more.svg"), icon)
+                        .dropdown-box
+                            .field__title
+                                p.title__text_3 выезд
+                            .date-dropdown-small
+                                p.title__text_p ДД.ММ.ГГГГ
+                                img(src=require("/src/img/expand_more.svg"), icon)
+                .field-20                
+                    include blocks/dropdown/guest-dropdown/_guest-dropdown
+                .field-20
+                    .pass-button
+                        h3.title__text_3 подобрать номер
+                        img(src=require("/src/img/arrow_forward.svg"), alt="arrow")
+            .form__area
+                p.title__text_1.max-h Регистрация аккаунта
+                .field-10
+                    .field__area
+                        input(placeholder="Имя")
+                .field-10
+                    .field__area
+                        input(placeholder="Фамилия")
+                .field-10
+                    include blocks/radio/_radio
+                .field-20
+                    .field__title
+                        h3.title__text_3 дата рождения
+                    .field__area
+                        input(placeholder="ДД.ММ.ГГГГ")
+                .field-20
+                    .field__title
+                        h3.title__text_3 данные для входа в сервис
+                    .field__area
+                        input(placeholder="Email" type="email")
+                    .field-10
+                        .field__area
+                            input(placeholder="Пароль" type="password")
+                .field-10
+                    .check__item
+                        label
+                            input(type="checkbox").default__check.switchbox
+                            span.custom__check          
+                            | Получать спецпредложения
+                .field-24
+                    .pass-button
+                        h3.title__text_3 перейти к оплате
+                        img(src=require("/src/img/arrow_forward.svg"), alt="arrow")
+                .field-30    
+                    .enter-row
+                        p Уже есть аккаунт на Toxin
+                        button.empty-button войти

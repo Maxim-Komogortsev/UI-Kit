@@ -26,12 +26,12 @@ module.exports = {
       // new HtmlWebpackPlugin({
       //   name: 'ColorsTypes.html',
       //   template: 'src/pug/ColorsTypes.pug'}),
-      // new HtmlWebpackPlugin({
-      //   name: 'forms.html',
-      //   template: 'src/pug/forms.pug'})
-       new HtmlWebpackPlugin({
-        name: 'formElem.html',
-        template: 'src/pug/formElem.pug'})
+      new HtmlWebpackPlugin({
+        name: 'forms.html',
+        template: 'src/pug/forms.pug'})
+      //  new HtmlWebpackPlugin({
+      //   name: 'formElem.html',
+      //   template: 'src/pug/formElem.pug'})
     ],
     module: {
       rules: [
