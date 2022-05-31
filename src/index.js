@@ -22,12 +22,12 @@ window.onload = function(){
     trigger.click(function () {
       
       if (flag == 0){
-        trigger.next().slideDown()
-        trigger.css('border-color', 'rgba(31, 32, 65, 0.5)')
+        $(this).next().slideDown()
+        $(this).css('border-color', 'rgba(31, 32, 65, 0.5)')
         flag = 1
       } else {
-        trigger.next().slideUp()
-        trigger.css('border-color', '')
+        $(this).next().slideUp()
+        $(this).css('border-color', '')
         flag = 0
       }
     })

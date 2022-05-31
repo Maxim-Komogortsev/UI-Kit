@@ -1,0 +1,51 @@
+.form__area
+    .room-card__head__row
+        .room-card__head__room
+            p № 888
+            button.link-button люкс
+        .room-card__head__price
+            p <span>9 990₽</span> в сутки
+            
+    .field-20    
+        .dropfield
+            .dropdown-box
+                .field__title
+                    p.title__text_3 прибытие
+                .date-dropdown-small
+                    p.title__text_p ДД.ММ.ГГГГ
+                    img(src=require("/src/img/expand_more.svg"), icon)
+            .dropdown-box
+                .field__title
+                    p.title__text_3 выезд
+                .date-dropdown-small
+                    p.title__text_p ДД.ММ.ГГГГ
+                    img(src=require("/src/img/expand_more.svg"), icon)
+    .field-20
+        include ../roomSearchForm/_guest-dropdown
+    .field-20
+        .room-card__price-row
+            .price-row__name
+                p.title__text_p 9 990₽ х 4 суток 
+            .price-row__cost
+                p.title__text_p 39 960₽
+        .room-card__price-row
+            .price-row__name
+                p.title__text_p Сбор за услуги: скидка 2 179₽
+                img(src=require('./ellipse.svg'))
+            .price-row__cost
+                p.title__text_p 0₽
+        .room-card__price-row
+            .price-row__name
+                p.title__text_p Сбор за дополнительные услуги
+                img(src=require('./ellipse.svg'))
+            .price-row__cost
+                p.title__text_p 300₽
+    .field-30
+        .room-card__result
+            h2 Итого
+            .divider
+            h2 38 081₽
+    .field-20
+        .pass-button
+            h3.title__text_3 забронировать
+            img(src=require("/src/img/arrow_forward.svg"), alt="arrow")
